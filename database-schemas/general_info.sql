@@ -1,0 +1,1 @@
+-- SQL script to create the general_info table

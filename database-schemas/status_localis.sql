@@ -1,0 +1,1 @@
+-- SQL script to create the status_localis table
