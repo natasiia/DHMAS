@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="249d4c67-815b-451c-9e19-6eb60d7adff7" name="Changes" comment="everything works so i have both databases can be updated/deleted/viewed using postman. I have a little bit of security but i will change and add more later. wohoo" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="spring-beans.schema" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Saoirse555-pms-1" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectId" id="2ZVMOdO6JheRq0Wcw3OISgCG4DH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/PMS/src/main/resources" />
+      <recent name="$PROJECT_DIR$/PMS/src/main/java" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="PmsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="pms" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pms.PmsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="249d4c67-815b-451c-9e19-6eb60d7adff7" name="Changes" comment="" />
+      <created>1702502763737</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702502763737</updated>
+      <workItem from="1702502769918" duration="22493000" />
+    </task>
+    <task id="LOCAL-00001" summary="I am nearly done my PMS and also wrote instructions in readme on what i did but only thing is patient java file doesnt completely post work but everything else will work but its because of the foreign key">
+      <created>1702575364486</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702575364486</updated>
+    </task>
+    <task id="LOCAL-00002" summary="I am nearly done my PMS and also wrote instructions in readme on what i did but only thing is patient java file doesnt completely post work but everything else will work but its because of the foreign key">
+      <created>1702575403723</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702575403723</updated>
+    </task>
+    <task id="LOCAL-00003" summary="everything works so i have both databases can be updated/deleted/viewed using postman. I have a little bit of security but i will change and add more later. wohoo">
+      <created>1702586488549</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702586488549</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="I am nearly done my PMS and also wrote instructions in readme on what i did but only thing is patient java file doesnt completely post work but everything else will work but its because of the foreign key" />
+    <MESSAGE value="everything works so i have both databases can be updated and" />
+    <MESSAGE value="everything works so i have both databases can be updated/deleted/viewed using postman. I have a little bit of security but i will change and add more later. wohoo" />
+    <option name="LAST_COMMIT_MESSAGE" value="everything works so i have both databases can be updated/deleted/viewed using postman. I have a little bit of security but i will change and add more later. wohoo" />
+  </component>
+</project>

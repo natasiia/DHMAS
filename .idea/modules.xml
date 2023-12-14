@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ANS/ANS.iml" filepath="$PROJECT_DIR$/ANS/ANS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PDCS/pdcs.iml" filepath="$PROJECT_DIR$/PDCS/pdcs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PMS/pms.iml" filepath="$PROJECT_DIR$/PMS/pms.iml" />
+    </modules>
+  </component>
+</project>

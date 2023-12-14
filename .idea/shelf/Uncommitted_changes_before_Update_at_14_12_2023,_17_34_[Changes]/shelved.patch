@@ -1,0 +1,844 @@
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/README.md b/README.md
+--- a/README.md	(revision c0ec54140bc194e6fa1b8d2babf77f91b1f30b19)
++++ b/README.md	(date 1702575044705)
+@@ -1,0 +1,53 @@
++Saoirse PMS--> 
++
++Firstly have to connect to the MySql Database
++so i have the connection like this its in my application.properties you can change that if need be sorry 
++
++### mysql -u root -p ### 
++
++### CREATE DATABASE DHMAS; ###
++
++### USE DHMAS; ###
++### SOURCE /Users/saoirse/Desktop/DHMAS/database-schemas/general_info.sql; ###
++### SOURCE DHMAS/database_schemas/status_localis.sql; ###
++than i checked i had both obvs
++DESCRIBE general_info;
++DESCRIBE status_localis;
++
++Than lets go over to the build
++I have like mvn clean install
++and than  mvn spring-boot:run
++
++ok postman i did a get request using auth first saying basic and putting key in
++http://localhost:8080/api/healthdata and than i used mysql to do this 
++
++INSERT INTO general_info (patient_id, age, gender, diagnosis, medication, insurance_type, treatment_duration)
++-> VALUES
++->     ('patient1', 30, 'Male', 'Heart Disease', 'Aspirin', 'Private', 10),
++->     ('patient2', 25, 'Female', 'Cancer', 'Chemotherapy', 'Uninsured', 15),
++->     ('patient3', 40, 'Male', 'Diabetes', 'Insulin', 'Medicaid', 20);
++
++
++ok now in postman again do the auth but you can do post for healthdata with this in json
++firstly in headers section its key is content-type and value is application/json than normal thing 
++{
++"patientId": "patient4",
++"age": 35,
++"gender": "Male",
++"diagnosis": "Cancer",
++"medication": "Aspirin",
++"insuranceType": "Private",
++"treatmentDuration": 25
++}
++MAKE SURE AS PATIENT_ID IS FOREIGN KEY THEY ARE LINKED ITS SAMNE ONE
++{
++"patient_id": "13456",
++"date": "2023-12-14T12:00:00",
++"heart_rate": 72.5,
++"respiratory_rate": 18,
++"SpO2": 98,
++"temperature": 36.6,
++"status": "Normal"
++}
++
++
+Index: PMS/PatientService.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/PMS/PatientService.java b/PMS/src/main/java/pms/PatientService.java
+rename from PMS/PatientService.java
+rename to PMS/src/main/java/pms/PatientService.java
+--- a/PMS/PatientService.java	(revision c0ec54140bc194e6fa1b8d2babf77f91b1f30b19)
++++ b/PMS/src/main/java/pms/PatientService.java	(date 1702573597866)
+@@ -1,7 +1,8 @@
+-package com.example.pms;
++package pms;
+ 
+ import org.springframework.beans.factory.annotation.Autowired;
+ import org.springframework.stereotype.Service;
++
+ import java.util.List;
+ 
+ @Service
+@@ -13,7 +14,7 @@
+         return patientRepository.findAll();
+     }
+ 
+-    public Patient getPatientById(Long id) {
++    public Patient getPatientById(String id) {
+         return patientRepository.findById(id).orElse(null);
+     }
+ 
+@@ -21,20 +22,18 @@
+         return patientRepository.save(patient);
+     }
+ 
+-    public void deletePatient(Long id) {
++    public void deletePatient(String id) {
+         patientRepository.deleteById(id);
+     }
+-    @Autowired
+-    private PDCSService pdcsService;
+ 
+-    public Patient getPatientWithDeviceData(Long id) {
+-        Patient patient = getPatientById(id);
+-        if (patient != null) {
+-            List<DeviceData> deviceData = pdcsService.getDeviceDataForPatient(id);
+-            patient.setDeviceData(deviceData);
+-        }
+-        return patient;
++    public Patient updatePatient(String id, Patient patientDetails) {
++        return patientRepository.findById(id)
++                .map(patient -> {
++                    // Update fields as needed
++                    return patientRepository.save(patient);
++                }).orElseGet(() -> {
++                    patientDetails.setPatientId(id);
++                    return patientRepository.save(patientDetails);
++                });
+     }
+-
+ }
+-
+Index: PMS/PatientController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/PMS/PatientController.java b/PMS/src/main/java/pms/PatientController.java
+rename from PMS/PatientController.java
+rename to PMS/src/main/java/pms/PatientController.java
+--- a/PMS/PatientController.java	(revision c0ec54140bc194e6fa1b8d2babf77f91b1f30b19)
++++ b/PMS/src/main/java/pms/PatientController.java	(date 1702573937075)
+@@ -1,7 +1,8 @@
+-package com.example.pms;
++package pms;
+ 
+ import org.springframework.beans.factory.annotation.Autowired;
+ import org.springframework.web.bind.annotation.*;
++import org.springframework.http.ResponseEntity;
+ 
+ import java.util.List;
+ 
+@@ -11,30 +12,31 @@
+     @Autowired
+     private PatientService patientService;
+ 
++    @PostMapping
++    public Patient addPatient(@RequestBody Patient patient) {
++        return patientService.savePatient(patient);
++    }
+     @GetMapping
+     public List<Patient> getAllPatients() {
+         return patientService.getAllPatients();
+     }
+ 
+     @GetMapping("/{id}")
+-    public Patient getPatientById(@PathVariable Long id) {
++    public Patient getPatientById(@PathVariable String id) {
+         return patientService.getPatientById(id);
+     }
+ 
+-    @PostMapping
+-    public Patient addPatient(@RequestBody Patient patient) {
+-        return patientService.savePatient(patient);
+-    }
+-
+     @PutMapping("/{id}")
+-    public Patient updatePatient(@PathVariable Long id, @RequestBody Patient patientDetails) {
+-        Patient patient = patientService.getPatientById(id);
+-        // Update fields
+-        return patientService.savePatient(patient);
++    public ResponseEntity<Patient> updatePatient(@PathVariable String id, @RequestBody Patient patientDetails) {
++        Patient updatedPatient = patientService.updatePatient(id, patientDetails);
++        if (updatedPatient == null) {
++            return ResponseEntity.notFound().build();
++        }
++        return ResponseEntity.ok(updatedPatient);
+     }
+ 
+     @DeleteMapping("/{id}")
+-    public void deletePatient(@PathVariable Long id) {
++    public void deletePatient(@PathVariable String id) {
+         patientService.deletePatient(id);
+     }
+ }
+Index: PMS/Patient.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/PMS/Patient.java b/PMS/src/main/java/pms/Patient.java
+rename from PMS/Patient.java
+rename to PMS/src/main/java/pms/Patient.java
+--- a/PMS/Patient.java	(revision c0ec54140bc194e6fa1b8d2babf77f91b1f30b19)
++++ b/PMS/src/main/java/pms/Patient.java	(date 1702572781659)
+@@ -1,20 +1,83 @@
+-package com.example.pms;
++package pms;
+ import javax.persistence.*;
+-import java.util.List;
+-import javax.persistence.OneToMany;
++import java.util.Date;
+ 
+ @Entity
++@Table(name = "status_localis")
+ public class Patient {
+     @Id
+-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+-    private Long id;
++    @Column(name = "patient_id")
++    private String patientId;
++
++    private Date date;
++
++    @Column(name = "heart_rate")
++    private Float heartRate;
++
++    @Column(name = "respiratory_rate")
++    private Integer respiratoryRate;
++
++    @Column(name = "SpO2")
++    private Integer spo2;
++
++    private Float temperature;
++    private String status;
++
++    // Getters and setters
++
++    public String getPatientId() {
++        return patientId;
++    }
++
++    public void setPatientId(String patientId) {
++        this.patientId = patientId;
++    }
++
++    public Date getDate() {
++        return date;
++    }
++
++    public void setDate(Date date) {
++        this.date = date;
++    }
++
++    public Float getHeartRate() {
++        return heartRate;
++    }
++
++    public void setHeartRate(Float heartRate) {
++        this.heartRate = heartRate;
++    }
++
++    public Integer getRespiratoryRate() {
++        return respiratoryRate;
++    }
++
++    public void setRespiratoryRate(Integer respiratoryRate) {
++        this.respiratoryRate = respiratoryRate;
++    }
++
++    public Integer getSpo2() {
++        return spo2;
++    }
+ 
+-    private String name;
+-    private String medicalHistory;
++    public void setSpo2(Integer spo2) {
++        this.spo2 = spo2;
++    }
+ 
+-    // Assuming DeviceData is another entity representing data from PDCS
+-    @OneToMany(mappedBy = "patient")
+-    private List<DeviceData> deviceData;
++    public Float getTemperature() {
++        return temperature;
++    }
+ 
++    public void setTemperature(Float temperature) {
++        this.temperature = temperature;
++    }
+ 
++    public String getStatus() {
++        return status;
++    }
++
++    public void setStatus(String status) {
++        this.status = status;
++    }
+ }
+Index: PMS/PDCSService.java
+===================================================================
+diff --git a/PMS/PDCSService.java b/PMS/PDCSService.java
+deleted file mode 100644
+--- a/PMS/PDCSService.java	(revision c0ec54140bc194e6fa1b8d2babf77f91b1f30b19)
++++ /dev/null	(revision c0ec54140bc194e6fa1b8d2babf77f91b1f30b19)
+@@ -1,13 +0,0 @@
+-package com.example.pms;
+-import org.springframework.stereotype.Service;
+-
+-@Service
+-public class PDCSService {
+-    // Assuming PDCS provides a REST API
+-    public List<DeviceData> getDeviceDataForPatient(Long patientId) {
+-        // Implement API call to PDCS to fetch device data
+-        // This is pseudo-code and depends on the actual API provided by PDCS
+-        return fetchedDeviceData;
+-    }
+-}
+-
+Index: PMS/src/main/java/pms/HealthDataRepository.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/PMS/src/main/java/pms/HealthDataRepository.java b/PMS/src/main/java/pms/HealthDataRepository.java
+new file mode 100644
+--- /dev/null	(date 1702567480137)
++++ b/PMS/src/main/java/pms/HealthDataRepository.java	(date 1702567480137)
+@@ -0,0 +1,7 @@
++package pms;
++
++import org.springframework.data.jpa.repository.JpaRepository;
++
++public interface HealthDataRepository extends JpaRepository<HealthData, String> {
++    // Any additional methods, if necessary
++}
+Index: PMS/src/main/java/pms/devices/DeviceData.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/PMS/src/main/java/pms/devices/DeviceData.java b/PMS/src/main/java/pms/devices/DeviceData.java
+new file mode 100644
+--- /dev/null	(date 1702573591195)
++++ b/PMS/src/main/java/pms/devices/DeviceData.java	(date 1702573591195)
+@@ -0,0 +1,22 @@
++package pms.devices;
++import pms.Patient;
++
++import javax.persistence.Entity;
++import javax.persistence.Id;
++import javax.persistence.GeneratedValue;
++import javax.persistence.GenerationType;
++import javax.persistence.ManyToOne;
++import javax.persistence.JoinColumn;
++
++@Entity
++public class DeviceData {
++    @Id
++    @GeneratedValue(strategy = GenerationType.IDENTITY)
++    private Long id;
++
++    // Fields like heartRate, respiratoryRate, etc.
++
++    @ManyToOne
++    @JoinColumn(name = "patient_id")
++    private Patient patient;
++}
+Index: PMS/src/main/java/pms/devices/PDCSService.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/PMS/src/main/java/pms/devices/PDCSService.java b/PMS/src/main/java/pms/devices/PDCSService.java
+new file mode 100644
+--- /dev/null	(date 1702573591187)
++++ b/PMS/src/main/java/pms/devices/PDCSService.java	(date 1702573591187)
+@@ -0,0 +1,16 @@
++package pms.devices;
++
++import org.springframework.stereotype.Service;
++import pms.devices.DeviceData;
++
++import java.util.List;
++import java.util.ArrayList; // Example import if you're going to create a list manually
++
++@Service
++public class PDCSService {
++    public List<DeviceData> getDeviceDataForPatient(Long patientId) {
++        // Implement API call to PDCS to fetch device data
++        // For now, let's return an empty list or mock data
++        return new ArrayList<DeviceData>();
++    }
++}
+Index: PMS/PmsApplication.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/PMS/PmsApplication.java b/PMS/src/main/java/pms/PmsApplication.java
+rename from PMS/PmsApplication.java
+rename to PMS/src/main/java/pms/PmsApplication.java
+--- a/PMS/PmsApplication.java	(revision c0ec54140bc194e6fa1b8d2babf77f91b1f30b19)
++++ b/PMS/src/main/java/pms/PmsApplication.java	(date 1702558576136)
+@@ -1,4 +1,4 @@
+-package com.example.pms;
++package pms;
+ 
+ import org.springframework.boot.SpringApplication;
+ import org.springframework.boot.autoconfigure.SpringBootApplication;
+Index: PMS/PatientRepository.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/PMS/PatientRepository.java b/PMS/src/main/java/pms/PatientRepository.java
+rename from PMS/PatientRepository.java
+rename to PMS/src/main/java/pms/PatientRepository.java
+--- a/PMS/PatientRepository.java	(revision c0ec54140bc194e6fa1b8d2babf77f91b1f30b19)
++++ b/PMS/src/main/java/pms/PatientRepository.java	(date 1702573065792)
+@@ -1,7 +1,8 @@
+-package com.example.pms;
++package pms;
+ 
+ import org.springframework.data.jpa.repository.JpaRepository;
+ 
+-public interface PatientRepository extends JpaRepository<Patient, Long> {
++public interface PatientRepository extends JpaRepository<Patient, String> {
+     // Additional custom queries can be defined here
+ }
++
+Index: PMS/SecurityConfig.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/PMS/SecurityConfig.java b/PMS/src/main/java/pms/SecurityConfig.java
+rename from PMS/SecurityConfig.java
+rename to PMS/src/main/java/pms/SecurityConfig.java
+--- a/PMS/SecurityConfig.java	(revision c0ec54140bc194e6fa1b8d2babf77f91b1f30b19)
++++ b/PMS/src/main/java/pms/SecurityConfig.java	(date 1702571678553)
+@@ -1,10 +1,86 @@
+-package com.example.pms;
++//package pms;
++//
++//import org.springframework.context.annotation.Bean;
++//import org.springframework.context.annotation.Configuration;
++//import org.springframework.http.HttpMethod;
++//import org.springframework.security.config.annotation.web.builders.HttpSecurity;
++//import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
++//import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
++//import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
++//import org.springframework.security.crypto.password.PasswordEncoder;
++//import org.springframework.security.core.Authentication;
++//import org.springframework.security.core.userdetails.User;
++//import org.springframework.security.core.AuthenticationException;
++//import org.springframework.security.authentication.AuthenticationProvider;
++//import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
++//import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
++//import org.springframework.security.core.userdetails.UserDetails;
++//
++//@Configuration
++//@EnableWebSecurity
++//public class SecurityConfig extends WebSecurityConfigurerAdapter {
++//
++//    @Override
++//    protected void configure(HttpSecurity http) throws Exception {
++//        http
++//                .csrf().disable()
++//                .authorizeRequests()
++//                // Allow public access to specific endpoints (e.g., for POST requests)
++//                .antMatchers(HttpMethod.POST, "/api/healthdata").permitAll()
++//                // Require authentication for other API endpoints
++//                .antMatchers("/api/**").authenticated()
++//                .and()
++//                .httpBasic();
++//    }
++//
++//    @Bean
++//    public PasswordEncoder passwordEncoder() {
++//        return new BCryptPasswordEncoder();
++//    }
++//
++//    @Override
++//    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
++//        auth
++//                .authenticationProvider(new AuthenticationProvider() {
++//                    @Override
++//                    public Authentication authenticate(Authentication authentication) throws AuthenticationException {
++//                        String username = authentication.getName();
++//                        String password = authentication.getCredentials().toString();
++//
++//                        // Print username and password for testing
++//                        System.out.println("Username: " + username);
++//                        System.out.println("Password: " + password);
++//
++//                        // You can add your custom authentication logic here if needed
++//
++//                        // Create a sample UserDetails object (replace with your actual user retrieval logic)
++//                        UserDetails userDetails = User.withUsername(username)
++//                                .password(password)
++//                                .roles("USER")
++//                                .build();
++//
++//                        return new UsernamePasswordAuthenticationToken(userDetails, password, userDetails.getAuthorities());
++//                    }
++//
++//                    @Override
++//                    public boolean supports(Class<?> authentication) {
++//                        return UsernamePasswordAuthenticationToken.class.isAssignableFrom(authentication);
++//                    }
++//                });
++//    }
++//}
++//
+ 
++package pms;
++
++import org.springframework.context.annotation.Bean;
+ import org.springframework.context.annotation.Configuration;
+-import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
++import org.springframework.http.HttpMethod;
+ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+ import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+ import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
++import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
++import org.springframework.security.crypto.password.PasswordEncoder;
+ 
+ @Configuration
+ @EnableWebSecurity
+@@ -15,18 +91,16 @@
+         http
+                 .csrf().disable()
+                 .authorizeRequests()
++                // Allow public access to specific endpoints (e.g., for POST requests)
++                .antMatchers(HttpMethod.POST, "/api/healthdata").permitAll()
++                // Require authentication for other API endpoints
+                 .antMatchers("/api/**").authenticated()
+                 .and()
+                 .httpBasic();
+     }
+ 
+-    @Override
+-    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+-        // Configure in-memory authentication for demonstration purposes
+-        auth.inMemoryAuthentication()
+-                .withUser("user")
+-                .password("{noop}password") // {noop} for plain text, usually you would encrypt
+-                .roles("USER");
+-    }
++//    @Bean
++//    public PasswordEncoder passwordEncoder() {
++//        return new BCryptPasswordEncoder();
++//    }
+ }
+-
+Index: ANS/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/ANS/pom.xml b/ANS/pom.xml
+--- a/ANS/pom.xml	(revision c0ec54140bc194e6fa1b8d2babf77f91b1f30b19)
++++ b/ANS/pom.xml	(date 1702558811760)
+@@ -1,0 +1,1 @@
++
+Index: PMS/HealthDataService.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/PMS/HealthDataService.java b/PMS/src/main/java/pms/HealthDataService.java
+rename from PMS/HealthDataService.java
+rename to PMS/src/main/java/pms/HealthDataService.java
+--- a/PMS/HealthDataService.java	(revision c0ec54140bc194e6fa1b8d2babf77f91b1f30b19)
++++ b/PMS/src/main/java/pms/HealthDataService.java	(date 1702567506815)
+@@ -1,17 +1,29 @@
+-package com.example.pms;
++package pms;
+ 
++import org.springframework.beans.factory.annotation.Autowired;
++import org.springframework.stereotype.Service;
++import java.util.List;
++
++@Service
+ public class HealthDataService {
+-    // Autowire repositories
++    @Autowired
++    private HealthDataRepository healthDataRepository;
+ 
+-    public HealthData saveHealthDataForPatient(Long patientId, HealthData data) {
+-        Patient patient = patientRepository.findById(patientId).orElse(null);
+-        if (patient != null) {
+-            data.setPatient(patient);
+-            return healthDataRepository.save(data);
+-        }
+-        return null;
++    public HealthData saveHealthData(HealthData healthData) {
++        return healthDataRepository.save(healthData);
++    }
++
++    public List<HealthData> getAllHealthData() {
++        return healthDataRepository.findAll();
+     }
+ 
+-    // Other methods
++public HealthData getHealthDataById(String id) {
++    return healthDataRepository.findById(id).orElse(null);
+ }
+ 
++
++    public void deleteHealthData(String id) {
++        healthDataRepository.deleteById(id);
++    }
++
++}
+Index: PMS/HealthDataController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/PMS/HealthDataController.java b/PMS/src/main/java/pms/HealthDataController.java
+rename from PMS/HealthDataController.java
+rename to PMS/src/main/java/pms/HealthDataController.java
+--- a/PMS/HealthDataController.java	(revision c0ec54140bc194e6fa1b8d2babf77f91b1f30b19)
++++ b/PMS/src/main/java/pms/HealthDataController.java	(date 1702567506819)
+@@ -1,9 +1,33 @@
+-package com.example.pms;
++package pms;
+ 
++import org.springframework.beans.factory.annotation.Autowired;
+ import org.springframework.web.bind.annotation.*;
++import java.util.List;
+ 
+ @RestController
+ @RequestMapping("/api/healthdata")
+ public class HealthDataController {
+-    // Autowire services and implement CRUD operations for health data
+-}
+\ No newline at end of file
++    @Autowired
++    private HealthDataService healthDataService;
++
++    @PostMapping
++    public HealthData addHealthData(@RequestBody HealthData healthData) {
++        return healthDataService.saveHealthData(healthData);
++    }
++
++    @GetMapping
++    public List<HealthData> getAllHealthData() {
++        return healthDataService.getAllHealthData();
++    }
++
++    @GetMapping("/{id}")
++    public HealthData getHealthDataById(@PathVariable String id) {
++        return healthDataService.getHealthDataById(id);
++    }
++
++    @DeleteMapping("/{id}")
++    public void deleteHealthData(@PathVariable String id) {
++        healthDataService.deleteHealthData(id);
++    }
++
++}
+Index: PMS/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/PMS/pom.xml b/PMS/pom.xml
+--- a/PMS/pom.xml	(revision c0ec54140bc194e6fa1b8d2babf77f91b1f30b19)
++++ b/PMS/pom.xml	(date 1702567866897)
+@@ -1,0 +1,90 @@
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <groupId>com.example</groupId>
++    <artifactId>pms</artifactId>
++    <version>0.0.1-SNAPSHOT</version>
++    <packaging>jar</packaging>
++
++    <name>pms.Patient Management System</name>
++    <description>Spring Boot application for pms.Patient Management</description>
++
++    <parent>
++        <groupId>org.springframework.boot</groupId>
++        <artifactId>spring-boot-starter-parent</artifactId>
++        <version>2.6.3</version> <!-- Use the version suitable for your project -->
++        <relativePath/> <!-- lookup parent from repository -->
++    </parent>
++
++
++
++    <properties>
++        <java.version>11</java.version>
++    </properties>
++
++    <dependencies>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-web</artifactId>
++        </dependency>
++
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-data-jpa</artifactId>
++        </dependency>
++
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-security</artifactId>
++        </dependency>
++
++        <dependency>
++            <groupId>mysql</groupId>
++            <artifactId>mysql-connector-java</artifactId>
++            <scope>runtime</scope>
++        </dependency>
++
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-test</artifactId>
++            <scope>test</scope>
++        </dependency>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-websocket</artifactId>
++        </dependency>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-actuator</artifactId>
++        </dependency>
++
++
++
++    </dependencies>
++
++    <build>
++        <plugins>
++            <plugin>
++                <groupId>org.apache.maven.plugins</groupId>
++                <artifactId>maven-compiler-plugin</artifactId>
++                <version>3.8.1</version>
++                <configuration>
++                    <source>11</source> <!-- or 20 if using Java 20 -->
++                    <target>11</target> <!-- or 20 if using Java 20 -->
++                </configuration>
++            </plugin>
++            <plugin>
++                <groupId>org.springframework.boot</groupId>
++                <artifactId>spring-boot-maven-plugin</artifactId>
++                <configuration>
++                    <mainClass>pms.PmsApplication</mainClass>
++                </configuration>
++
++            </plugin>
++
++        </plugins>
++    </build>
++
++</project>
+Index: PMS/src/main/java/pms/HealthData.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/PMS/src/main/java/pms/HealthData.java b/PMS/src/main/java/pms/HealthData.java
+new file mode 100644
+--- /dev/null	(date 1702570984151)
++++ b/PMS/src/main/java/pms/HealthData.java	(date 1702570984151)
+@@ -0,0 +1,81 @@
++package pms;
++
++import javax.persistence.*;
++
++@Entity
++@Table(name = "general_info")
++public class HealthData {
++
++    @Id
++    @Column(name = "patient_id")
++    private String patientId;
++
++    private Integer age;
++    private String gender;
++    private String diagnosis;
++    private String medication;
++
++    @Column(name = "insurance_type")
++    private String insuranceType;
++
++    @Column(name = "treatment_duration")
++    private Integer treatmentDuration;
++
++    // Getters and setters
++
++    public String getPatientId() {
++        return patientId;
++    }
++
++    public void setPatientId(String patientId) {
++        this.patientId = patientId;
++    }
++
++    public Integer getAge() {
++        return age;
++    }
++
++    public void setAge(Integer age) {
++        this.age = age;
++    }
++
++    public String getGender() {
++        return gender;
++    }
++
++    public void setGender(String gender) {
++        this.gender = gender;
++    }
++
++    public String getDiagnosis() {
++        return diagnosis;
++    }
++
++    public void setDiagnosis(String diagnosis) {
++        this.diagnosis = diagnosis;
++    }
++
++    public String getMedication() {
++        return medication;
++    }
++
++    public void setMedication(String medication) {
++        this.medication = medication;
++    }
++
++    public String getInsuranceType() {
++        return insuranceType;
++    }
++
++    public void setInsuranceType(String insuranceType) {
++        this.insuranceType = insuranceType;
++    }
++
++    public Integer getTreatmentDuration() {
++        return treatmentDuration;
++    }
++
++    public void setTreatmentDuration(Integer treatmentDuration) {
++        this.treatmentDuration = treatmentDuration;
++    }
++}
