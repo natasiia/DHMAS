@@ -2,6 +2,7 @@ package pms;
 
 import javax.persistence.*;
 
+
 @Entity
 @Table(name = "general_info")
 public class HealthData {

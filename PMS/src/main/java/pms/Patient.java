@@ -8,6 +8,19 @@ public class Patient {
     @Id
     @Column(name = "patient_id")
     private String patientId;
+    @ManyToOne
+    @JoinColumn(name = "patient_id", referencedColumnName = "patient_id", insertable = false, updatable = false)
+    private HealthData healthData;
+
+//    // Getters and setters for other fields...
+//
+    public HealthData getHealthData() {
+        return healthData;
+    }
+
+    public void setHealthData(HealthData healthData) {
+        this.healthData = healthData;
+    }
 
     private Date date;
 
