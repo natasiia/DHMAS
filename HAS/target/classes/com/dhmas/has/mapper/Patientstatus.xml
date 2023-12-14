@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dhmas.has.mapper.Patientstatus">
+
+    <select id="selectAll" resultType="com.dhmas.has.pojo.StatusLocalis">
+        select * from patientstatus;
+    </select>
+
+    <select id="selectBypatient_id" resultType="com.dhmas.has.pojo.StatusLocalis">
+        select * from patientstatus where patient_id = #{id};
+    </select>
+
+    <select id="selectBystatus" resultType="com.dhmas.has.pojo.StatusLocalis">
+        select * from patientstatus where status = #{s};
+    </select>
+
+    <select id="selectByAbnormal" resultType="com.dhmas.has.pojo.StatusLocalis">
+        select * from patientstatus
+        where heart_rate >120 OR heart_rate &lt;40 OR respiratory_rate &lt;35 OR SpO2 &lt;90
+         OR temperature &lt;36 OR temperature >37.5;
+    </select>
+
+    <insert id="add" useGeneratedKeys="true" keyProperty="patient_id">
+        insert into patientstatus (patient_id,date,heart_rate,respiratory_rate,SpO2,temperature,status)
+        values (#{patient_id},#{date},#{heart_rate},#{respiratory_rate},#{SpO2},#{temperature},#{status});
+    </insert>
+
+    <update id="updateAll">
+        update patientstatus
+         set
+             date=#{date},
+             heart_rate=#{heart_rate},
+             respiratory_rate=#{respiratory_rate},
+             SpO2=#{SpO2},
+             temperature=#{temperature},
+             status=#{status}
+        where patient_id=#{patient_id} ;
+    </update>
+    <update id="updateBystatus">
+        update patientstatus
+        set status=#{status}
+        where patient_id=#{patient_id};
+    </update>
+
+    <delete id="deleteBypatient_id">
+        delete from patientstatus where patient_id=#{patient_id};
+    </delete>
+
+
+</mapper>
