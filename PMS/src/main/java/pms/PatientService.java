@@ -1,7 +1,8 @@
-package com.example.pms;
+package pms;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import java.util.List;
 
 @Service
@@ -13,7 +14,7 @@ public class PatientService {
         return patientRepository.findAll();
     }
 
-    public Patient getPatientById(Long id) {
+    public Patient getPatientById(String id) {
         return patientRepository.findById(id).orElse(null);
     }
 
@@ -21,20 +22,18 @@ public class PatientService {
         return patientRepository.save(patient);
     }
 
-    public void deletePatient(Long id) {
+    public void deletePatient(String id) {
         patientRepository.deleteById(id);
     }
-    @Autowired
-    private PDCSService pdcsService;
 
-    public Patient getPatientWithDeviceData(Long id) {
-        Patient patient = getPatientById(id);
-        if (patient != null) {
-            List<DeviceData> deviceData = pdcsService.getDeviceDataForPatient(id);
-            patient.setDeviceData(deviceData);
-        }
-        return patient;
+    public Patient updatePatient(String id, Patient patientDetails) {
+        return patientRepository.findById(id)
+                .map(patient -> {
+                    // Update fields as needed
+                    return patientRepository.save(patient);
+                }).orElseGet(() -> {
+                    patientDetails.setPatientId(id);
+                    return patientRepository.save(patientDetails);
+                });
     }
-
 }
-
