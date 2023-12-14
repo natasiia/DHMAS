@@ -28,7 +28,7 @@ INSERT INTO general_info (patient_id, age, gender, diagnosis, medication, insura
 ->     ('patient3', 40, 'Male', 'Diabetes', 'Insulin', 'Medicaid', 20);
 
 
-ok now in postman again do the auth its baisc auth and than itll say generated password in the terminal 
+ok now in postman again do the auth its basic auth and than itll say generated password in the terminal so copy and paste that username is User
 but you can do post for healthdata with this in json
 firstly in headers section its key is content-type and value is application/json than normal thing 
 {
@@ -42,13 +42,14 @@ firstly in headers section its key is content-type and value is application/json
 }
 MAKE SURE AS PATIENT_ID IS FOREIGN KEY THEY ARE LINKED ITS SAMNE ONE
 {
-"patient_id": "13456",
-"date": "2023-12-14T12:00:00",
-"heart_rate": 72.5,
-"respiratory_rate": 18,
-"SpO2": 98,
-"temperature": 36.6,
+"patientId": "patient6",
+"date": "2023-12-14T00:00:00",
+"heartRate": 75.5,
+"respiratoryRate": 40,
+"spo2": 88,
+"temperature": 40.6,
 "status": "Normal"
 }
+
 
 
