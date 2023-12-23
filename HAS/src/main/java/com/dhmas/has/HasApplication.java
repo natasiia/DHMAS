@@ -18,13 +18,13 @@ public class HasApplication {
     public static Properties properties;
     public static void main(String[] args) throws IOException {
         SpringApplication.run(HasApplication.class, args);
-//创建sqlSessionFactory（数据库操作）
+//Create sqlSessionFactory for database operations
         String resource = "mybatis-config.xml";
         InputStream inputStream = Resources.getResourceAsStream(resource);
         sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
         System.out.println("mybatis runing!");
 
-//定义kafka的properties
+//Define properties of kafka
         properties = new Properties();
         properties.put("bootstrap.servers","localhost:9092");
         properties.put("acks","all");
