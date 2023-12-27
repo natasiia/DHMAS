@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/ANS/ANS.iml" filepath="$PROJECT_DIR$/ANS/ANS.iml" />
       <module fileurl="file://$PROJECT_DIR$/PDCS/pdcs.iml" filepath="$PROJECT_DIR$/PDCS/pdcs.iml" />
       <module fileurl="file://$PROJECT_DIR$/PMS/pms.iml" filepath="$PROJECT_DIR$/PMS/pms.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/DHMAS.iml" filepath="$PROJECT_DIR$/.idea/DHMAS.iml" />
+>>>>>>> origin/Saoirse555-pms-1
     </modules>
   </component>
 </project>
