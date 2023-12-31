@@ -1,0 +1,53 @@
+version: '3.8'
+
+services:
+  mosquitto:
+    image: eclipse-mosquitto:latest
+    container_name: mosquitto
+    ports:
+      - "1883:1883"
+    volumes:
+      - ./config:/mosquitto/config
+      - ./data:/mosquitto/data
+      - ./log:/mosquitto/log
+    restart: unless-stopped
+
+  holter:
+    build:
+      context: ./clients/holter
+      dockerfile: Dockerfile
+    container_name: holter
+    tty: true
+    stdin_open: true
+    depends_on:
+      - mosquitto
+
+  oximeter:
+    build:
+      context: ./clients/oximeter
+      dockerfile: Dockerfile
+    container_name: oximeter
+    tty: true
+    stdin_open: true
+    depends_on:
+      - mosquitto
+
+  respirometer:
+    build:
+      context: ./clients/respirometer
+      dockerfile: Dockerfile
+    container_name: respirometer
+    tty: true
+    stdin_open: true
+    depends_on:
+      - mosquitto
+
+  thermometer:
+    build:
+      context: ./clients/thermometer
+      dockerfile: Dockerfile
+    container_name: thermometer
+    tty: true
+    stdin_open: true
+    depends_on:
+      - mosquitto
