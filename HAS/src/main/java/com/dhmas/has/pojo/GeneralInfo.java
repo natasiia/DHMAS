@@ -1,16 +1,17 @@
-package com.dhmas.has.pojo;
+package com.dhmas.HAS.pojo;
 public class GeneralInfo  implements java.io.Serializable{
-    private Integer patient_id;
+    private String patient_id;
     private Integer age;
     private String gender;
     private String diagnosis;
     private String medication;
     private String insurance_type;
     private Integer treatment_duration;
-    public Integer getPatient_id() {
+    private String email;
+    public String getPatient_id() {
         return patient_id;
     }
-    public void setPatient_id(Integer patient_id) {
+    public void setPatient_id(String patient_id) {
         this.patient_id = patient_id;
     }
 
@@ -62,13 +63,17 @@ public class GeneralInfo  implements java.io.Serializable{
         this.treatment_duration = treatment_duration;
     }
 
-    public GeneralInfo() {
+    public void setEmail(String email) {this.email = email;}
+
+    public String getEmail() {
+        return email;
     }
 
-    public GeneralInfo(Integer patient_id, Integer age,
+
+    public GeneralInfo(String patient_id, Integer age,
                        String gender, String diagnosis,
                        String medication, String insurance_type,
-                       Integer treatment_duration) {
+                       Integer treatment_duration, String email) {
         this.patient_id = patient_id;
         this.age = age;
         this.gender = gender;
@@ -76,6 +81,7 @@ public class GeneralInfo  implements java.io.Serializable{
         this.medication = medication;
         this.insurance_type = insurance_type;
         this.treatment_duration = treatment_duration;
+        this.email = email;
     }
 
     @Override
@@ -87,7 +93,8 @@ public class GeneralInfo  implements java.io.Serializable{
                 ", diagnosis='" + diagnosis + '\'' +
                 ", medication='" + medication + '\'' +
                 ", insurance_type='" + insurance_type + '\'' +
-                ", treatment_duration=" + treatment_duration +
+                ", treatment_duration='" + treatment_duration +
+                ", email= " + email + '\'' +
                 '}';
     }
 }

@@ -1,30 +1,43 @@
-package com.dhmas.has.pojo;
+package com.dhmas.HAS.pojo;
 
-import java.util.Date;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import org.springframework.data.annotation.Id;
+
+import java.time.LocalDateTime;
 
 public class StatusLocalis implements java.io.Serializable{
-    private Integer patient_id;
-    private Date date;
+    @Id
+    private Integer id;
+    private String patient_id;
+    private LocalDateTime date;
     private float heart_rate;
     private Integer respiratory_rate;
-    private Integer SpO2;
+    @JsonProperty("SpO2")
+    private Integer spO2;
     private float temperature;
     private String status;
 
+    public Integer getId() {
+        return id;
+    }
 
-    public Integer getPatient_id() {
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getPatient_id() {
         return patient_id;
     }
 
-    public void setPatient_id(Integer patient_id) {
+    public void setPatient_id(String patient_id) {
         this.patient_id = patient_id;
     }
 
-    public Date getDate() {
+    public LocalDateTime getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(LocalDateTime date) {
         this.date = date;
     }
 
@@ -44,13 +57,14 @@ public class StatusLocalis implements java.io.Serializable{
         this.respiratory_rate = respiratory_rate;
     }
 
-    public Integer getSpO2() {
-        return SpO2;
+    public void setSpO2(Integer spO2) {
+        this.spO2 = spO2;
     }
 
-    public void setSpO2(Integer spO2) {
-        SpO2 = spO2;
+    public Integer getSpO2() {
+        return spO2;
     }
+
 
     public float getTemperature() {
         return temperature;
@@ -71,12 +85,12 @@ public class StatusLocalis implements java.io.Serializable{
     public StatusLocalis() {
     }
 
-    public StatusLocalis(Integer patient_id, Date date, float heart_rate, Integer respiratory_rate, Integer spO2, float temperature, String status) {
+    public StatusLocalis(String patient_id, LocalDateTime date, float heart_rate, Integer respiratory_rate, Integer spO2, float temperature, String status) {
         this.patient_id = patient_id;
         this.date = date;
         this.heart_rate = heart_rate;
         this.respiratory_rate = respiratory_rate;
-        SpO2 = spO2;
+        this.spO2 = spO2;
         this.temperature = temperature;
         this.status = status;
     }
@@ -88,7 +102,7 @@ public class StatusLocalis implements java.io.Serializable{
                 ", date=" + date +
                 ", heart_rate=" + heart_rate +
                 ", respiratory_rate=" + respiratory_rate +
-                ", SpO2=" + SpO2 +
+                ", SpO2=" + spO2 +
                 ", temperature=" + temperature +
                 ", status='" + status + '\'' +
                 '}';

@@ -3,50 +3,57 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.dhmas.has.mapper.Patientstatus">
+<mapper namespace="com.dhmas.HAS.mapper.Patientstatus">
 
-    <select id="selectAll" resultType="com.dhmas.has.pojo.StatusLocalis">
-        select * from patientstatus;
+    <select id="selectAll" resultType="com.dhmas.HAS.pojo.StatusLocalis">
+        select * from status_localis;
     </select>
 
-    <select id="selectBypatient_id" resultType="com.dhmas.has.pojo.StatusLocalis">
-        select * from patientstatus where patient_id = #{id};
+    <select id="selectBypatient_id" resultType="com.dhmas.HAS.pojo.StatusLocalis">
+        select * from status_localis where patient_id = #{id};
     </select>
 
-    <select id="selectBystatus" resultType="com.dhmas.has.pojo.StatusLocalis">
-        select * from patientstatus where status = #{s};
+    <select id="selectBystatus" resultType="com.dhmas.HAS.pojo.StatusLocalis">
+        select * from status_localis where status = #{s};
     </select>
 
-    <select id="selectByAbnormal" resultType="com.dhmas.has.pojo.StatusLocalis">
-        select * from patientstatus
-        where heart_rate >120 OR heart_rate &lt;40 OR respiratory_rate &lt;35 OR SpO2 &lt;90
+    <select id="selectByAbnormal" resultType="com.dhmas.HAS.pojo.StatusLocalis">
+        select * from status_localis
+        where heart_rate >120 OR heart_rate &lt;40 OR respiratory_rate &lt;35 OR spO2 &lt;90
          OR temperature &lt;36 OR temperature >37.5;
     </select>
 
-    <insert id="add" useGeneratedKeys="true" keyProperty="patient_id">
-        insert into patientstatus (patient_id,date,heart_rate,respiratory_rate,SpO2,temperature,status)
-        values (#{patient_id},#{date},#{heart_rate},#{respiratory_rate},#{SpO2},#{temperature},#{status});
+<!--    <insert id="add" useGeneratedKeys="true" keyProperty="patient_id">-->
+<!--        insert into status_localis (patient_id,date,heart_rate,respiratory_rate,SpO2,temperature,status)-->
+<!--        values (#{patient_id},#{date},#{heart_rate},#{respiratory_rate},#{SpO2},#{temperature},#{status});-->
+<!--    </insert>-->
+
+    <insert id="add" keyProperty="id" keyColumn="id" useGeneratedKeys="true">
+        insert into status_localis (patient_id, date, heart_rate, respiratory_rate, spO2, temperature, status)
+        values (#{patient_id}, #{date}, #{heart_rate}, #{respiratory_rate}, #{spO2}, #{temperature}, #{status})
+        returning id;
     </insert>
 
+
     <update id="updateAll">
-        update patientstatus
+        update status_localis
          set
              date=#{date},
              heart_rate=#{heart_rate},
              respiratory_rate=#{respiratory_rate},
-             SpO2=#{SpO2},
+             spO2=#{spO2},
              temperature=#{temperature},
              status=#{status}
         where patient_id=#{patient_id} ;
     </update>
     <update id="updateBystatus">
-        update patientstatus
+        update status_localis
         set status=#{status}
         where patient_id=#{patient_id};
     </update>
 
     <delete id="deleteBypatient_id">
-        delete from patientstatus where patient_id=#{patient_id};
+        delete from status_localis where patient_id=#{patient_id};
     </delete>
 
 

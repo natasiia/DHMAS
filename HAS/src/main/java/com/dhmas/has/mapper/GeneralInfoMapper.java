@@ -1,19 +1,18 @@
-package com.dhmas.has.mapper;
+package com.dhmas.HAS.mapper;
 
-import com.dhmas.has.pojo.GeneralInfo;
-import com.dhmas.has.pojo.StatusLocalis;
+import com.dhmas.HAS.pojo.GeneralInfo;
 
 import java.util.List;
 
 public interface GeneralInfoMapper {
     List<GeneralInfo> selectAll();
 
-    GeneralInfo selectById(int id);
+    GeneralInfo selectById(String id);
 
     void add(GeneralInfo generalInfo);
 
     void update(GeneralInfo generalInfo);
 
-    void deleteById(int id);
+    void deleteById(String id);
 
 }

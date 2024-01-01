@@ -1,4 +1,4 @@
-package com.dhmas.has.pojo;
+package com.dhmas.HAS.pojo;
 
 public class AlertMessage implements java.io.Serializable{
     private GeneralInfo generalInfo;

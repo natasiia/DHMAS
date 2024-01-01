@@ -3,23 +3,29 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.dhmas.has.mapper.GeneralInfoMapper">
+<mapper namespace="com.dhmas.HAS.mapper.GeneralInfoMapper">
 
-    <select id="selectAll" resultType="com.dhmas.has.pojo.GeneralInfo">
-        select * from generalinfo;
+    <select id="selectAll" resultType="com.dhmas.HAS.pojo.GeneralInfo">
+        select * from general_info;
     </select>
 
-    <select id="selectById" resultType="com.dhmas.has.pojo.GeneralInfo">
-        select * from generalinfo where patient_id = #{id};
+    <select id="selectById" resultType="com.dhmas.HAS.pojo.GeneralInfo">
+        select * from general_info where patient_id = #{id};
     </select>
 
-    <insert id="add" useGeneratedKeys="true" keyProperty="patient_id">
-        insert into generalinfo (patient_id,age,gender,diagnosis,medication,insurance_type,treatment_duration)
-        values (#{patient_id},#{age},#{gender},#{diagnosis},#{medication},#{insurance_type},#{treatment_duration});
+<!--    <insert id="add" useGeneratedKeys="true" keyProperty="patient_id">-->
+<!--        insert into general_info (patient_id,age,gender,diagnosis,medication,insurance_type,treatment_duration)-->
+<!--        values (#{patient_id},#{age},#{gender},#{diagnosis},#{medication},#{insurance_type},#{treatment_duration});-->
+<!--    </insert>-->
+
+    <insert id="add" keyProperty="patient_id" keyColumn="patient_id" useGeneratedKeys="true">
+        insert into general_info (patient_id, age, gender, diagnosis, medication, insurance_type, treatment_duration, email)
+        values (#{patient_id}, #{age}, #{gender}, #{diagnosis}, #{medication}, #{insurance_type}, #{treatment_duration}, #{email})
+        returning patient_id;
     </insert>
 
     <update id="update">
-        update generalinfo
+        update general_info
         set
         age=#{age},
         gender=#{gender},
@@ -27,12 +33,13 @@
         medication=#{medication},
         insurance_type=#{insurance_type},
         treatment_duration=#{treatment_duration}
+        email=#{email},
         where patient_id=#{patient_id} ;
     </update>
 
 
     <delete id="deleteById">
-        delete from generalinfo where patient_id=#{patient_id};
+        delete from general_info where patient_id=#{patient_id};
     </delete>
 
 
