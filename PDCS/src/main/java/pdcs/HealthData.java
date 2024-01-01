@@ -1,12 +1,11 @@
 package pdcs;
 
 public class HealthData {
+        private Integer patient_id;
         private Integer heart_rate;
         private Integer SpO2;
         private Integer respiratory_rate;
         private Double temperature;
-        private int patient_id;
-
 
         // Getters and setters for the health data
         public int getHeart_rate() {

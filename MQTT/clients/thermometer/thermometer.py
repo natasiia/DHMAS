@@ -56,10 +56,7 @@ while True:
             client.publish(topic, message, qos=0, retain=False)
 
             # Short delay before sending the next message for another patient
-            time.sleep(2)
-
-    # Wait 15 seconds before sending the next set of messages
-    time.sleep(15)
+            time.sleep(15)
 
 # Stop the client loop before exiting
 client.loop_stop()

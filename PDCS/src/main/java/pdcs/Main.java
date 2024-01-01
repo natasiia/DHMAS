@@ -4,18 +4,24 @@ import org.eclipse.paho.client.mqttv3.*;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
+import org.apache.kafka.clients.producer.KafkaProducer;
+import org.apache.kafka.clients.producer.ProducerRecord;
+
+import java.util.Properties;
 
 public class Main {
-
     // Gson instance for JSON parsing
     private static final Gson gson = new Gson();
 
-    // Shared HealthData instance to store the latest values
-    private static final HealthData healthData = new HealthData();
+    // Shared HealthData instances to store the latest values for each patient
+    private static final HealthData healthDataPatient1 = new HealthData();
+    private static final HealthData healthDataPatient2 = new HealthData();
+
+    private static KafkaProducer<String, String> kafkaProducer;
 
     public static void main(String[] args) throws MqttException, InterruptedException {
         // MQTT broker URL and client ID
-        String brokerUrl = "tcp://localhost:1883";
+        String brokerUrl = "tcp://host.docker.internal:1883";
         String clientId = "PDCSReceiver";
         // Persistence for the client, here using in-memory persistence
         MemoryPersistence persistence = new MemoryPersistence();
@@ -26,21 +32,38 @@ public class Main {
         MqttConnectOptions connOpts = new MqttConnectOptions();
         connOpts.setCleanSession(true);
 
+        // Kafka Producer setup
+        Properties kafkaProps = new Properties();
+        kafkaProps.put("bootstrap.servers", "localhost:9092");
+        kafkaProps.put("acks", "all");
+        kafkaProps.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+        kafkaProps.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+        kafkaProducer = new KafkaProducer<>(kafkaProps);
+
         // Define the callback methods for the MQTT client
         client.setCallback(new MqttCallback() {
             @Override
             public void messageArrived(String topic, MqttMessage message) throws Exception {
                 // Extract patient ID from the topic string
-                int patientId = Integer.parseInt(topic.split("/")[0].replaceAll("\\D+",""));
+                int patientId = Integer.parseInt(topic.split("/")[0].replaceAll("\\D+", ""));
                 // Parse the message payload into a JsonObject
                 JsonObject jsonObject = gson.fromJson(new String(message.getPayload()), JsonObject.class);
 
-                // Synchronize on the shared healthData object
+                // Select the appropriate healthData object based on patient ID
+                HealthData healthData = (patientId == 1) ? healthDataPatient1 : healthDataPatient2;
+                // Set the patient ID in the health data
+                healthData.setPatient_id(patientId);
+
+                // Synchronize on the healthData object
                 synchronized (healthData) {
                     // Update the healthData object with new values from the message
-                    updateHealthData(jsonObject, patientId);
-                    // Print the updated healthData
-                    System.out.println("Received data for patient " + patientId + ": " + healthData);
+                    updateHealthData(jsonObject, healthData);
+                    // Check if all fields are available
+                    if (healthData.isComplete()) {
+                        // Print the updated healthData
+                        System.out.println("Received data for patient " + patientId + ": " + healthData);
+                        sendToKafka(healthData);
+                    }
                 }
             }
 
@@ -70,17 +93,13 @@ public class Main {
             }
         }
 
-        // Wait indefinitely to keep the client running
-        synchronized (client) {
-            client.wait();
+        // Loop to keep the client running and processing messages
+        while (true) {
         }
     }
 
     // Helper method to update health data from the JSON object
-    private static void updateHealthData(JsonObject jsonObject, int patientId) {
-        // Set the patient ID in the health data
-        healthData.setPatient_id(patientId);
-        
+    private static void updateHealthData(JsonObject jsonObject, HealthData healthData) {
         // Iterate over JSON object entries and update corresponding health data fields
         jsonObject.entrySet().forEach(entry -> {
             switch (entry.getKey()) {
@@ -98,5 +117,11 @@ public class Main {
                     break;
             }
         });
+    }
+
+    private static void sendToKafka(HealthData data) {
+        String jsonHealthData = gson.toJson(data);
+        ProducerRecord<String, String> record = new ProducerRecord<>("pdcs_topic", null, jsonHealthData);
+        kafkaProducer.send(record);
     }
 }
