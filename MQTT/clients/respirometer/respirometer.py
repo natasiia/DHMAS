@@ -32,20 +32,20 @@ message_count = 0
 while True:
     if client.connected_flag:
         # Loop through the patient IDs
-        for patient_id in ["patient1", "patient2"]:
+        for patient_id in ["patient1", "patient2","patient3", "patient4","patient5", "patient6","patient7", "patient8","patient9", "patient10"]:
             # Increment the message count
             message_count += 1
 
             # Determine the respiratory rate range based on message count
-            if message_count % 10 == 0:
+            if message_count % 8 == 0:
                 # Every 10th time, generate a rate in the range 10-16 or 26-35
                 if random.choice([True, False]):
                     respiratory_rate = random.randint(10, 16)
                 else:
                     respiratory_rate = random.randint(26, 35)
             else:
-                # For the other times, generate a rate in the range 16-25
-                respiratory_rate = random.randint(16, 25)
+                # For the other times, generate a rate in the range 35-100
+                respiratory_rate = random.randint(35, 100)
 
             # Create the message and determine the topic
             message = json.dumps({"respiratory_rate": respiratory_rate})

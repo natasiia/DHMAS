@@ -32,12 +32,12 @@ message_count = 0
 while True:
     if client.connected_flag:
         # Loop through the patient IDs
-        for patient_id in ["patient1", "patient2"]:
+        for patient_id in ["patient1", "patient2","patient3", "patient4","patient5", "patient6","patient7", "patient8","patient9", "patient10"]:
             # Increment the message count
             message_count += 1
 
             # Determine the temperature range based on message count
-            if message_count % 10 == 0:
+            if message_count % 6 == 0:
                 # Every 10th time, generate a temperature outside the normal range
                 if random.choice([True, False]):
                     temperature = round(random.uniform(35.0, 35.9), 1)

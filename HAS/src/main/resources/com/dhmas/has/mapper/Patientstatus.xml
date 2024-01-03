@@ -19,7 +19,7 @@
 
     <select id="selectByAbnormal" resultType="com.dhmas.HAS.pojo.StatusLocalis">
         select * from status_localis
-        where heart_rate >120 OR heart_rate &lt;40 OR respiratory_rate &lt;35 OR spO2 &lt;90
+        where heart_rate >120 OR heart_rate &lt;40 OR respiratory_rate &lt;35 OR SpO2 &lt;90
          OR temperature &lt;36 OR temperature >37.5;
     </select>
 
@@ -29,8 +29,8 @@
 <!--    </insert>-->
 
     <insert id="add" keyProperty="id" keyColumn="id" useGeneratedKeys="true">
-        insert into status_localis (patient_id, date, heart_rate, respiratory_rate, spO2, temperature, status)
-        values (#{patient_id}, #{date}, #{heart_rate}, #{respiratory_rate}, #{spO2}, #{temperature}, #{status})
+        insert into status_localis (patient_id, date, heart_rate, respiratory_rate, SpO2, temperature, status)
+        values (#{patient_id}, #{date}, #{heart_rate}, #{respiratory_rate}, #{SpO2}, #{temperature}, #{status})
         returning id;
     </insert>
 
@@ -41,7 +41,7 @@
              date=#{date},
              heart_rate=#{heart_rate},
              respiratory_rate=#{respiratory_rate},
-             spO2=#{spO2},
+             SpO2=#{SpO2},
              temperature=#{temperature},
              status=#{status}
         where patient_id=#{patient_id} ;

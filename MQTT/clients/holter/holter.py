@@ -32,17 +32,17 @@ message_count = 0
 while True:
     if client.connected_flag:
         # Loop through the patient IDs
-        for patient_id in ["patient1", "patient2"]:
+        for patient_id in ["patient1", "patient2","patient3", "patient4","patient5", "patient6","patient7", "patient8","patient9", "patient10"]:
             # Increment the message count
             message_count += 1
 
             # Determine the heart rate range based on message count
-            if message_count % 10 == 0:
+            if message_count % 20 == 0:
                 # Every 10th time, generate a heart rate in the range 120-200
-                heart_rate = random.randint(120, 200)
+                heart_rate = float(random.randint(120, 200))
             else:
                 # For the other times, generate a heart rate in the range 40-120
-                heart_rate = random.randint(40, 120)
+                heart_rate = float(random.randint(40.0, 120.0))
 
             # Create the message and determine the topic
             message = json.dumps({"heart_rate": heart_rate})

@@ -32,7 +32,7 @@ message_count = 0
 while True:
     if client.connected_flag:
         # Loop through the patient IDs
-        for patient_id in ["patient1", "patient2"]:
+        for patient_id in ["patient1", "patient2","patient3", "patient4","patient5", "patient6","patient7", "patient8","patient9", "patient10"]:
             # Increment the message count
             message_count += 1
 

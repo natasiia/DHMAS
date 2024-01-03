@@ -7,7 +7,7 @@ import java.util.List;
 public interface GeneralInfoMapper {
     List<GeneralInfo> selectAll();
 
-    GeneralInfo selectById(String id);
+    GeneralInfo selectById(Integer id);
 
     void add(GeneralInfo generalInfo);
 

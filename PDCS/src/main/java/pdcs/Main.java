@@ -1,5 +1,6 @@
 package pdcs;
 
+import com.google.gson.GsonBuilder;
 import org.eclipse.paho.client.mqttv3.*;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 import com.google.gson.Gson;
@@ -8,20 +9,32 @@ import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 
 import java.util.Properties;
+import java.time.LocalDateTime;
 
 public class Main {
     // Gson instance for JSON parsing
-    private static final Gson gson = new Gson();
+    private static final Gson gson = new GsonBuilder()
+            .registerTypeAdapter(LocalDateTime.class, new LocalDateTimeAdapter())
+            .create();
 
     // Shared HealthData instances to store the latest values for each patient
     private static final HealthData healthDataPatient1 = new HealthData();
     private static final HealthData healthDataPatient2 = new HealthData();
+    private static final HealthData healthDataPatient3 = new HealthData();
+    private static final HealthData healthDataPatient4 = new HealthData();
+    private static final HealthData healthDataPatient5 = new HealthData();
+    private static final HealthData healthDataPatient6 = new HealthData();
+    private static final HealthData healthDataPatient7 = new HealthData();
+    private static final HealthData healthDataPatient8 = new HealthData();
+    private static final HealthData healthDataPatient9 = new HealthData();
+    private static final HealthData healthDataPatient10 = new HealthData();
 
     private static KafkaProducer<String, String> kafkaProducer;
 
     public static void main(String[] args) throws MqttException, InterruptedException {
         // MQTT broker URL and client ID
-        String brokerUrl = "tcp://host.docker.internal:1883";
+//        String brokerUrl = "tcp://host.docker.internal:1883";
+        String brokerUrl = "tcp://localhost:1883";
         String clientId = "PDCSReceiver";
         // Persistence for the client, here using in-memory persistence
         MemoryPersistence persistence = new MemoryPersistence();
@@ -46,11 +59,49 @@ public class Main {
             public void messageArrived(String topic, MqttMessage message) throws Exception {
                 // Extract patient ID from the topic string
                 int patientId = Integer.parseInt(topic.split("/")[0].replaceAll("\\D+", ""));
+
                 // Parse the message payload into a JsonObject
                 JsonObject jsonObject = gson.fromJson(new String(message.getPayload()), JsonObject.class);
 
                 // Select the appropriate healthData object based on patient ID
-                HealthData healthData = (patientId == 1) ? healthDataPatient1 : healthDataPatient2;
+//                HealthData healthData = (patientId == 1) ? healthDataPatient1 : healthDataPatient2;
+
+                HealthData healthData = null;
+                switch (patientId) {
+                    case 1:
+                        healthData = healthDataPatient1;
+                        break;
+                    case 2:
+                        healthData = healthDataPatient2;
+                        break;
+                    case 3:
+                        healthData = healthDataPatient3;
+                        break;
+                    case 4:
+                        healthData = healthDataPatient4;
+                        break;
+                    case 5:
+                        healthData = healthDataPatient5;
+                        break;
+                    case 6:
+                        healthData = healthDataPatient6;
+                        break;
+                    case 7:
+                        healthData = healthDataPatient7;
+                        break;
+                    case 8:
+                        healthData = healthDataPatient8;
+                        break;
+                    case 9:
+                        healthData = healthDataPatient9;
+                        break;
+                    case 10:
+                        healthData = healthDataPatient10;
+                        break;
+                }
+
+
+
                 // Set the patient ID in the health data
                 healthData.setPatient_id(patientId);
 
@@ -61,6 +112,7 @@ public class Main {
                     // Check if all fields are available
                     if (healthData.isComplete()) {
                         // Print the updated healthData
+                        healthData.setDate(LocalDateTime.now());
                         System.out.println("Received data for patient " + patientId + ": " + healthData);
                         sendToKafka(healthData);
                     }
@@ -74,6 +126,7 @@ public class Main {
 
             @Override
             public void connectionLost(Throwable cause) {
+                System.out.println(cause);
                 // This method is called when the connection to the broker is lost
                 System.out.println("Connection to MQTT broker lost!");
             }
@@ -86,7 +139,9 @@ public class Main {
 
         // Subscribe to topics for each patient
         String[] topics = {"heart_rate", "SpO2", "respiratory_rate", "temperature"};
-        for (String patient : new String[]{"patient1", "patient2"}) {
+        String[] patients = {"patient1", "patient2", "patient3", "patient4","patient5", "patient6","patient7", "patient8",
+                            "patient9", "patient10"};
+        for (String patient : patients) {
             for (String topic : topics) {
                 // Subscribe to each topic for both patients
                 client.subscribe(patient + "/" + topic, 1);
@@ -104,7 +159,7 @@ public class Main {
         jsonObject.entrySet().forEach(entry -> {
             switch (entry.getKey()) {
                 case "heart_rate":
-                    healthData.setHeart_rate(entry.getValue().getAsInt());
+                    healthData.setHeart_rate(entry.getValue().getAsFloat());
                     break;
                 case "SpO2":
                     healthData.setSpO2(entry.getValue().getAsInt());
@@ -113,7 +168,7 @@ public class Main {
                     healthData.setRespiratory_rate(entry.getValue().getAsInt());
                     break;
                 case "temperature":
-                    healthData.setTemperature(entry.getValue().getAsDouble());
+                    healthData.setTemperature(entry.getValue().getAsFloat());
                     break;
             }
         });

@@ -56,7 +56,7 @@ public class HasApplication {
     public static void messageHandle(StatusLocalis statusLocalis) throws EncodeException, IOException {
         //health status judgement
         statusLocalis.setStatus("Normal");
-        if (statusLocalis.getRespiratory_rate()>16 ||statusLocalis.getHeart_rate()<40
+        if (statusLocalis.getRespiratory_rate()<35 ||statusLocalis.getHeart_rate()<40
                 ||statusLocalis.getHeart_rate()>120 ||statusLocalis.getSpO2()<90
                 ||statusLocalis.getTemperature()<36 ||statusLocalis.getTemperature()>37.5){
             statusLocalis.setStatus("Abnormal");
@@ -78,7 +78,7 @@ public class HasApplication {
 
         //produce kafka if abnormal
         if("Abnormal".equals (statusLocalis.getStatus())){
-            String patientId = statusLocalis.getPatient_id();
+            Integer patientId = statusLocalis.getPatient_id();
             GeneralInfo generalInfo = generalInfomapper.selectById(patientId);
             AlertMessage alertMessage = new AlertMessage(generalInfo, statusLocalis);
             String s = objectMapper.writeValueAsString(alertMessage);

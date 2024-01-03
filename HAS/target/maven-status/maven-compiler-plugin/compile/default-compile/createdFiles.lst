@@ -1,15 +1,6 @@
 com/dhmas/HAS/HasApplication.class
 com/dhmas/HAS/mapper/GeneralInfoMapper.class
 com/dhmas/HAS/pojo/GeneralInfo.class
-com/dhmas/HAS/pojo/GeneralInfoEncoder.class
-com/dhmas/HAS/server/WebSocketServer.class
-com/dhmas/HAS/pojo/StatusLocalisDecoder.class
-com/dhmas/HAS/config/WebSocketConfig.class
-com/dhmas/HAS/consumer.class
-com/dhmas/HAS/pojo/StatusLocalis.class
-com/dhmas/HAS/pojo/GeneralInfoDecoder.class
-com/dhmas/HAS/pojo/StatusLocalisEncoder.class
-com/dhmas/HAS/mapper/Patientstatus.class
 com/dhmas/HAS/pojo/AlertMessage.class
-com/dhmas/HAS/Producer.class
-com/dhmas/HAS/Main.class
+com/dhmas/HAS/pojo/StatusLocalis.class
+com/dhmas/HAS/mapper/Patientstatus.class

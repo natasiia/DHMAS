@@ -1,6 +1,6 @@
 package com.dhmas.HAS.pojo;
 public class GeneralInfo  implements java.io.Serializable{
-    private String patient_id;
+    private Integer patient_id;
     private Integer age;
     private String gender;
     private String diagnosis;
@@ -8,10 +8,10 @@ public class GeneralInfo  implements java.io.Serializable{
     private String insurance_type;
     private Integer treatment_duration;
     private String email;
-    public String getPatient_id() {
+    public Integer getPatient_id() {
         return patient_id;
     }
-    public void setPatient_id(String patient_id) {
+    public void setPatient_id(Integer patient_id) {
         this.patient_id = patient_id;
     }
 
@@ -70,7 +70,7 @@ public class GeneralInfo  implements java.io.Serializable{
     }
 
 
-    public GeneralInfo(String patient_id, Integer age,
+    public GeneralInfo(Integer patient_id, Integer age,
                        String gender, String diagnosis,
                        String medication, String insurance_type,
                        Integer treatment_duration, String email) {
@@ -87,7 +87,7 @@ public class GeneralInfo  implements java.io.Serializable{
     @Override
     public String toString() {
         return "GeneralInfo{" +
-                "patient_id='" + patient_id + '\'' +
+                "patient_id='" + patient_id.toString() + '\'' +
                 ", age=" + age +
                 ", gender='" + gender + '\'' +
                 ", diagnosis='" + diagnosis + '\'' +

@@ -1,16 +1,6 @@
-/Users/xiupingxue/Library/CloudStorage/OneDrive-Personal/COMP4/COMP41720-Distributed Systems/system/HAS/src/main/java/com/dhmas/HAS/pojo/StatusLocalisEncoder.java
-/Users/xiupingxue/Library/CloudStorage/OneDrive-Personal/COMP4/COMP41720-Distributed Systems/system/HAS/src/main/java/com/dhmas/HAS/mapper/Patientstatus.java
-/Users/xiupingxue/Library/CloudStorage/OneDrive-Personal/COMP4/COMP41720-Distributed Systems/system/HAS/src/main/java/com/dhmas/HAS/HasApplication.java
-/Users/xiupingxue/Library/CloudStorage/OneDrive-Personal/COMP4/COMP41720-Distributed Systems/system/HAS/src/main/java/com/dhmas/HAS/pojo/StatusLocalis.java
-/Users/xiupingxue/Library/CloudStorage/OneDrive-Personal/COMP4/COMP41720-Distributed Systems/system/HAS/src/main/java/com/dhmas/HAS/consumer.java
-/Users/xiupingxue/Library/CloudStorage/OneDrive-Personal/COMP4/COMP41720-Distributed Systems/system/HAS/src/main/java/com/dhmas/HAS/Main.java
-/Users/xiupingxue/Library/CloudStorage/OneDrive-Personal/COMP4/COMP41720-Distributed Systems/system/HAS/src/main/java/com/dhmas/HAS/config/WebSocketConfig.java
-/Users/xiupingxue/Library/CloudStorage/OneDrive-Personal/COMP4/COMP41720-Distributed Systems/system/HAS/src/main/java/com/dhmas/HAS/server/WebSocketServer.java
-/Users/xiupingxue/Library/CloudStorage/OneDrive-Personal/COMP4/COMP41720-Distributed Systems/system/HAS/src/main/java/com/dhmas/HAS/pojo/AlertMessage.java
-/Users/xiupingxue/Library/CloudStorage/OneDrive-Personal/COMP4/COMP41720-Distributed Systems/system/HAS/src/main/java/com/dhmas/HAS/pojo/GeneralInfo.java
-/Users/xiupingxue/Library/CloudStorage/OneDrive-Personal/COMP4/COMP41720-Distributed Systems/system/HAS/src/main/java/com/dhmas/HAS/server/WebSocketServerOld.java
-/Users/xiupingxue/Library/CloudStorage/OneDrive-Personal/COMP4/COMP41720-Distributed Systems/system/HAS/src/main/java/com/dhmas/HAS/mapper/GeneralInfoMapper.java
-/Users/xiupingxue/Library/CloudStorage/OneDrive-Personal/COMP4/COMP41720-Distributed Systems/system/HAS/src/main/java/com/dhmas/HAS/pojo/GeneralInfoDecoder.java
-/Users/xiupingxue/Library/CloudStorage/OneDrive-Personal/COMP4/COMP41720-Distributed Systems/system/HAS/src/main/java/com/dhmas/HAS/pojo/GeneralInfoEncoder.java
-/Users/xiupingxue/Library/CloudStorage/OneDrive-Personal/COMP4/COMP41720-Distributed Systems/system/HAS/src/main/java/com/dhmas/HAS/Producer.java
-/Users/xiupingxue/Library/CloudStorage/OneDrive-Personal/COMP4/COMP41720-Distributed Systems/system/HAS/src/main/java/com/dhmas/HAS/pojo/StatusLocalisDecoder.java
+/Users/faylee/Desktop/DHMAS-newest/HAS/src/main/java/com/dhmas/HAS/mapper/GeneralInfoMapper.java
+/Users/faylee/Desktop/DHMAS-newest/HAS/src/main/java/com/dhmas/HAS/HasApplication.java
+/Users/faylee/Desktop/DHMAS-newest/HAS/src/main/java/com/dhmas/HAS/pojo/StatusLocalis.java
+/Users/faylee/Desktop/DHMAS-newest/HAS/src/main/java/com/dhmas/HAS/pojo/GeneralInfo.java
+/Users/faylee/Desktop/DHMAS-newest/HAS/src/main/java/com/dhmas/HAS/mapper/Patientstatus.java
+/Users/faylee/Desktop/DHMAS-newest/HAS/src/main/java/com/dhmas/HAS/pojo/AlertMessage.java
