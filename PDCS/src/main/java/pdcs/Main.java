@@ -34,7 +34,7 @@ public class Main {
     public static void main(String[] args) throws MqttException, InterruptedException {
         // MQTT broker URL and client ID
 //        String brokerUrl = "tcp://host.docker.internal:1883";
-        String brokerUrl = "tcp://localhost:1883";
+        String brokerUrl = "tcp://mosquitto:1883";
         String clientId = "PDCSReceiver";
         // Persistence for the client, here using in-memory persistence
         MemoryPersistence persistence = new MemoryPersistence();
@@ -47,7 +47,7 @@ public class Main {
 
         // Kafka Producer setup
         Properties kafkaProps = new Properties();
-        kafkaProps.put("bootstrap.servers", "localhost:9092");
+        kafkaProps.put("bootstrap.servers", "kafka:29092");
         kafkaProps.put("acks", "all");
         kafkaProps.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         kafkaProps.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
@@ -101,7 +101,6 @@ public class Main {
                 }
 
 
-
                 // Set the patient ID in the health data
                 healthData.setPatient_id(patientId);
 
@@ -140,7 +139,7 @@ public class Main {
         // Subscribe to topics for each patient
         String[] topics = {"heart_rate", "SpO2", "respiratory_rate", "temperature"};
         String[] patients = {"patient1", "patient2", "patient3", "patient4","patient5", "patient6","patient7", "patient8",
-                            "patient9", "patient10"};
+                "patient9", "patient10"};
         for (String patient : patients) {
             for (String topic : topics) {
                 // Subscribe to each topic for both patients
@@ -176,7 +175,8 @@ public class Main {
 
     private static void sendToKafka(HealthData data) {
         String jsonHealthData = gson.toJson(data);
-        ProducerRecord<String, String> record = new ProducerRecord<>("pdcs_topic", null, jsonHealthData);
+        System.out.println("Sending: "+ jsonHealthData);
+        ProducerRecord<String, String> record = new ProducerRecord<>("collection-analysis", null, jsonHealthData);
         kafkaProducer.send(record);
     }
 }

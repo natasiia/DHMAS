@@ -34,7 +34,7 @@ public class HasApplication {
 
         //Create kafka Consumer from PDCS
         Properties properties = new Properties();
-        properties.setProperty("bootstrap.servers","localhost:9092");
+        properties.setProperty("bootstrap.servers","kafka:29092");
         properties.setProperty("group.id","myinfo");
         properties.setProperty("enable.auto.commit","true");
         properties.setProperty("auto.commit.interval.ms","1000");
@@ -42,7 +42,7 @@ public class HasApplication {
         properties.setProperty("value.deserializer","org.apache.kafka.common.serialization.StringDeserializer");
 
         KafkaConsumer<String, String> kafkaConsumer = new KafkaConsumer<>(properties);
-        kafkaConsumer.subscribe(Arrays.asList("pdcs_topic"));
+        kafkaConsumer.subscribe(Arrays.asList("collection-analysis"));
         while (true){
             ConsumerRecords<String, String> records = kafkaConsumer.poll(Duration.ofSeconds(5));
             for (ConsumerRecord<String, String> c:records ) {
@@ -56,7 +56,7 @@ public class HasApplication {
     public static void messageHandle(StatusLocalis statusLocalis) throws EncodeException, IOException {
         //health status judgement
         statusLocalis.setStatus("Normal");
-        if (statusLocalis.getRespiratory_rate()<35 ||statusLocalis.getHeart_rate()<40
+        if (statusLocalis.getRespiratory_rate()<17 || statusLocalis.getRespiratory_rate() > 26 ||statusLocalis.getHeart_rate()<40
                 ||statusLocalis.getHeart_rate()>120 ||statusLocalis.getSpO2()<90
                 ||statusLocalis.getTemperature()<36 ||statusLocalis.getTemperature()>37.5){
             statusLocalis.setStatus("Abnormal");
@@ -88,7 +88,7 @@ public class HasApplication {
 
         //Create Producer
             Properties properties1 = new Properties();
-            properties1.put("bootstrap.servers","localhost:9092");
+            properties1.put("bootstrap.servers","kafka:29092");
             properties1.put("acks","all");
             properties1.put("key.serializer","org.apache.kafka.common.serialization.StringSerializer");
             properties1.put("value.serializer","org.apache.kafka.common.serialization.StringSerializer");

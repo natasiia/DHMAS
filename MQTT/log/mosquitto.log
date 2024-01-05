@@ -1,104 +1,2600 @@
-1704298357: mosquitto version 2.0.18 starting
-1704298357: Config loaded from /mosquitto/config/mosquitto.conf.
-1704298357: Opening ipv4 listen socket on port 1883.
-1704298357: mosquitto version 2.0.18 running
-1704298358: New connection from 172.22.0.3:48957 on port 1883.
-1704298358: New client connected from 172.22.0.3:48957 as Respirometer (p2, c1, k30).
-1704298358: New connection from 172.22.0.4:44403 on port 1883.
-1704298358: New client connected from 172.22.0.4:44403 as Thermometer (p2, c1, k30).
-1704298358: New connection from 172.22.0.5:49537 on port 1883.
-1704298358: New client connected from 172.22.0.5:49537 as Oximeter (p2, c1, k30).
-1704298358: New connection from 172.22.0.6:42771 on port 1883.
-1704298358: New client connected from 172.22.0.6:42771 as Holter (p2, c1, k30).
-1704298400: New connection from 192.168.65.1:31775 on port 1883.
-1704298401: New client connected from 192.168.65.1:31775 as PDCSReceiver (p2, c1, k60).
-1704298976: Client PDCSReceiver closed its connection.
-1704299021: New connection from 192.168.65.1:32265 on port 1883.
-1704299022: New client connected from 192.168.65.1:32265 as PDCSReceiver (p2, c1, k60).
-1704300158: Saving in-memory database to /mosquitto/data//mosquitto.db.
-1704306280: Saving in-memory database to /mosquitto/data//mosquitto.db.
-1704307884: Client PDCSReceiver closed its connection.
-1704307918: Client Oximeter closed its connection.
-1704307918: Client Respirometer closed its connection.
-1704307918: Client Holter closed its connection.
-1704307918: Client Thermometer closed its connection.
-1704307919: mosquitto version 2.0.18 terminating
-1704307919: Saving in-memory database to /mosquitto/data//mosquitto.db.
-1704307984: mosquitto version 2.0.18 starting
-1704307984: Config loaded from /mosquitto/config/mosquitto.conf.
-1704307984: Opening ipv4 listen socket on port 1883.
-1704307984: mosquitto version 2.0.18 running
-1704307985: New connection from 172.24.0.3:48421 on port 1883.
-1704307985: New client connected from 172.24.0.3:48421 as Oximeter (p2, c1, k30).
-1704307985: New connection from 172.24.0.4:58849 on port 1883.
-1704307985: New client connected from 172.24.0.4:58849 as Thermometer (p2, c1, k30).
-1704307985: New connection from 172.24.0.5:41371 on port 1883.
-1704307985: New client connected from 172.24.0.5:41371 as Holter (p2, c1, k30).
-1704307985: New connection from 172.24.0.6:39263 on port 1883.
-1704307985: New client connected from 172.24.0.6:39263 as Respirometer (p2, c1, k30).
-1704308030: New connection from 192.168.65.1:37758 on port 1883.
-1704308030: New client connected from 192.168.65.1:37758 as PDCSReceiver (p2, c1, k60).
-1704309785: Saving in-memory database to /mosquitto/data//mosquitto.db.
-1704311586: Saving in-memory database to /mosquitto/data//mosquitto.db.
-1704313387: Saving in-memory database to /mosquitto/data//mosquitto.db.
-1704315188: Saving in-memory database to /mosquitto/data//mosquitto.db.
-1704316989: Saving in-memory database to /mosquitto/data//mosquitto.db.
-1704318790: Saving in-memory database to /mosquitto/data//mosquitto.db.
-1704318996: Client PDCSReceiver closed its connection.
-1704319095: Client Holter closed its connection.
-1704319095: Client Respirometer closed its connection.
-1704319095: Client Thermometer closed its connection.
-1704319095: Client Oximeter closed its connection.
-1704319095: mosquitto version 2.0.18 terminating
-1704319095: Saving in-memory database to /mosquitto/data//mosquitto.db.
-1704319118: mosquitto version 2.0.18 starting
-1704319118: Config loaded from /mosquitto/config/mosquitto.conf.
-1704319118: Opening ipv4 listen socket on port 1883.
-1704319118: mosquitto version 2.0.18 running
-1704319119: New connection from 172.28.0.3:42549 on port 1883.
-1704319119: New connection from 172.28.0.4:58971 on port 1883.
-1704319119: New client connected from 172.28.0.3:42549 as Respirometer (p2, c1, k30).
-1704319119: New client connected from 172.28.0.4:58971 as Oximeter (p2, c1, k30).
-1704319119: New connection from 172.28.0.6:39439 on port 1883.
-1704319119: New client connected from 172.28.0.6:39439 as Thermometer (p2, c1, k30).
-1704319119: New connection from 172.28.0.5:56431 on port 1883.
-1704319119: New client connected from 172.28.0.5:56431 as Holter (p2, c1, k30).
-1704319823: Client Thermometer closed its connection.
-1704319823: Client Oximeter closed its connection.
-1704319823: Client Holter closed its connection.
-1704319823: Client Respirometer closed its connection.
-1704319823: mosquitto version 2.0.18 terminating
-1704319823: Saving in-memory database to /mosquitto/data//mosquitto.db.
-1704319901: mosquitto version 2.0.18 starting
-1704319901: Config loaded from /mosquitto/config/mosquitto.conf.
-1704319901: Opening ipv4 listen socket on port 1883.
-1704319901: mosquitto version 2.0.18 running
-1704319901: New connection from 172.28.0.3:34149 on port 1883.
-1704319901: New client connected from 172.28.0.3:34149 as Thermometer (p2, c1, k30).
-1704319901: New connection from 172.28.0.5:50519 on port 1883.
-1704319901: New client connected from 172.28.0.5:50519 as Respirometer (p2, c1, k30).
-1704319902: New connection from 172.28.0.4:47715 on port 1883.
-1704319902: New client connected from 172.28.0.4:47715 as Oximeter (p2, c1, k30).
-1704319902: New connection from 172.28.0.6:56657 on port 1883.
-1704319902: New client connected from 172.28.0.6:56657 as Holter (p2, c1, k30).
-1704320069: Client Respirometer closed its connection.
-1704320069: Client Thermometer closed its connection.
-1704320069: Client Holter closed its connection.
-1704320069: Client Oximeter closed its connection.
-1704320069: mosquitto version 2.0.18 terminating
-1704320069: Saving in-memory database to /mosquitto/data//mosquitto.db.
-1704320215: mosquitto version 2.0.18 starting
-1704320215: Config loaded from /mosquitto/config/mosquitto.conf.
-1704320215: Opening ipv4 listen socket on port 1883.
-1704320215: mosquitto version 2.0.18 running
-1704320215: New connection from 172.29.0.3:55403 on port 1883.
-1704320215: New client connected from 172.29.0.3:55403 as Oximeter (p2, c1, k30).
-1704320215: New connection from 172.29.0.4:54373 on port 1883.
-1704320215: New client connected from 172.29.0.4:54373 as Thermometer (p2, c1, k30).
-1704320215: New connection from 172.29.0.6:51609 on port 1883.
-1704320215: New client connected from 172.29.0.6:51609 as Respirometer (p2, c1, k30).
-1704320215: New connection from 172.29.0.5:49555 on port 1883.
-1704320215: New client connected from 172.29.0.5:49555 as Holter (p2, c1, k30).
-1704320292: New connection from 192.168.65.1:43053 on port 1883.
-1704320292: New client connected from 192.168.65.1:43053 as PDCSReceiver (p2, c1, k60).
-1704322016: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704309205: mosquitto version 2.0.18 starting
+1704309205: Config loaded from /mosquitto/config/mosquitto.conf.
+1704309205: Opening ipv4 listen socket on port 1883.
+1704309205: mosquitto version 2.0.18 running
+1704309205: New connection from 172.28.0.3:56189 on port 1883.
+1704309205: New client connected from 172.28.0.3:56189 as Thermometer (p2, c1, k30).
+1704309205: New connection from 172.28.0.4:43391 on port 1883.
+1704309205: New client connected from 172.28.0.4:43391 as Respirometer (p2, c1, k30).
+1704309205: New connection from 172.28.0.5:58865 on port 1883.
+1704309205: New client connected from 172.28.0.5:58865 as Oximeter (p2, c1, k30).
+1704309205: New connection from 172.28.0.6:46791 on port 1883.
+1704309205: New client connected from 172.28.0.6:46791 as Holter (p2, c1, k30).
+1704309359: Client Holter closed its connection.
+1704309359: Client Respirometer closed its connection.
+1704309359: Client Thermometer closed its connection.
+1704309359: Client Oximeter closed its connection.
+1704309360: mosquitto version 2.0.18 terminating
+1704309360: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704309423: mosquitto version 2.0.18 starting
+1704309423: Config loaded from /mosquitto/config/mosquitto.conf.
+1704309423: Opening ipv4 listen socket on port 1883.
+1704309423: mosquitto version 2.0.18 running
+1704309424: New connection from 172.28.0.3:39693 on port 1883.
+1704309424: New client connected from 172.28.0.3:39693 as Holter (p2, c1, k30).
+1704309424: New connection from 172.28.0.4:46825 on port 1883.
+1704309424: New client connected from 172.28.0.4:46825 as Oximeter (p2, c1, k30).
+1704309424: New connection from 172.28.0.6:43521 on port 1883.
+1704309424: New client connected from 172.28.0.6:43521 as Thermometer (p2, c1, k30).
+1704309424: New connection from 172.28.0.5:45695 on port 1883.
+1704309424: New client connected from 172.28.0.5:45695 as Respirometer (p2, c1, k30).
+1704309441: Client Thermometer closed its connection.
+1704309441: Client Respirometer closed its connection.
+1704309441: Client Oximeter closed its connection.
+1704309441: Client Holter closed its connection.
+1704309442: mosquitto version 2.0.18 terminating
+1704309442: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704319940: mosquitto version 2.0.18 starting
+1704319940: Config loaded from /mosquitto/config/mosquitto.conf.
+1704319940: Opening ipv4 listen socket on port 1883.
+1704319940: mosquitto version 2.0.18 running
+1704319940: New connection from 172.18.0.6:52645 on port 1883.
+1704319940: New client connected from 172.18.0.6:52645 as Oximeter (p2, c1, k30).
+1704319941: New connection from 172.18.0.7:40573 on port 1883.
+1704319941: New client connected from 172.18.0.7:40573 as Holter (p2, c1, k30).
+1704319941: New connection from 172.18.0.9:47823 on port 1883.
+1704319941: New client connected from 172.18.0.9:47823 as Thermometer (p2, c1, k30).
+1704319941: New connection from 172.18.0.8:38931 on port 1883.
+1704319941: New client connected from 172.18.0.8:38931 as Respirometer (p2, c1, k30).
+1704319945: New connection from 172.18.0.13:53566 on port 1883.
+1704319945: New client connected from 172.18.0.13:53566 as PDCSReceiver (p2, c1, k60).
+1704320071: Client PDCSReceiver closed its connection.
+1704320081: Client Oximeter closed its connection.
+1704320081: Client Holter closed its connection.
+1704320081: Client Respirometer closed its connection.
+1704320081: Client Thermometer closed its connection.
+1704320081: mosquitto version 2.0.18 terminating
+1704320081: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704320573: mosquitto version 2.0.18 starting
+1704320573: Config loaded from /mosquitto/config/mosquitto.conf.
+1704320573: Opening ipv4 listen socket on port 1883.
+1704320573: mosquitto version 2.0.18 running
+1704320573: New connection from 172.18.0.8:53021 on port 1883.
+1704320573: New client connected from 172.18.0.8:53021 as Respirometer (p2, c1, k30).
+1704320573: New connection from 172.18.0.9:56831 on port 1883.
+1704320573: New client connected from 172.18.0.9:56831 as Oximeter (p2, c1, k30).
+1704320574: New connection from 172.18.0.11:46999 on port 1883.
+1704320574: New client connected from 172.18.0.11:46999 as Thermometer (p2, c1, k30).
+1704320574: New connection from 172.18.0.10:42835 on port 1883.
+1704320574: New client connected from 172.18.0.10:42835 as Holter (p2, c1, k30).
+1704320575: New connection from 172.18.0.13:56150 on port 1883.
+1704320575: New client connected from 172.18.0.13:56150 as PDCSReceiver (p2, c1, k60).
+1704320590: Client PDCSReceiver closed its connection.
+1704320600: Client Holter closed its connection.
+1704320600: Client Oximeter closed its connection.
+1704320600: Client Thermometer closed its connection.
+1704320600: Client Respirometer closed its connection.
+1704320600: mosquitto version 2.0.18 terminating
+1704320600: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704320751: mosquitto version 2.0.18 starting
+1704320751: Config loaded from /mosquitto/config/mosquitto.conf.
+1704320751: Opening ipv4 listen socket on port 1883.
+1704320751: mosquitto version 2.0.18 running
+1704320752: New connection from 172.18.0.8:50699 on port 1883.
+1704320752: New client connected from 172.18.0.8:50699 as Oximeter (p2, c1, k30).
+1704320752: New connection from 172.18.0.9:40137 on port 1883.
+1704320752: New client connected from 172.18.0.9:40137 as Holter (p2, c1, k30).
+1704320753: New connection from 172.18.0.10:34853 on port 1883.
+1704320753: New client connected from 172.18.0.10:34853 as Thermometer (p2, c1, k30).
+1704320753: New connection from 172.18.0.11:37297 on port 1883.
+1704320753: New client connected from 172.18.0.11:37297 as Respirometer (p2, c1, k30).
+1704320755: New connection from 172.18.0.14:55010 on port 1883.
+1704320755: New client connected from 172.18.0.14:55010 as PDCSReceiver (p2, c1, k60).
+1704320763: Client PDCSReceiver closed its connection.
+1704320773: Client Respirometer closed its connection.
+1704320773: Client Oximeter closed its connection.
+1704320773: Client Thermometer closed its connection.
+1704320773: Client Holter closed its connection.
+1704320773: mosquitto version 2.0.18 terminating
+1704320773: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704320890: mosquitto version 2.0.18 starting
+1704320890: Config loaded from /mosquitto/config/mosquitto.conf.
+1704320890: Opening ipv4 listen socket on port 1883.
+1704320890: mosquitto version 2.0.18 running
+1704320891: New connection from 172.18.0.8:55819 on port 1883.
+1704320891: New client connected from 172.18.0.8:55819 as Holter (p2, c1, k30).
+1704320891: New connection from 172.18.0.9:45677 on port 1883.
+1704320891: New client connected from 172.18.0.9:45677 as Oximeter (p2, c1, k30).
+1704320891: New connection from 172.18.0.11:52041 on port 1883.
+1704320891: New client connected from 172.18.0.11:52041 as Respirometer (p2, c1, k30).
+1704320891: New connection from 172.18.0.10:59149 on port 1883.
+1704320891: New client connected from 172.18.0.10:59149 as Thermometer (p2, c1, k30).
+1704320893: New connection from 172.18.0.6:56254 on port 1883.
+1704320893: New client connected from 172.18.0.6:56254 as PDCSReceiver (p2, c1, k60).
+1704320909: Client PDCSReceiver closed its connection.
+1704320919: Client Oximeter closed its connection.
+1704320919: Client Holter closed its connection.
+1704320919: Client Thermometer closed its connection.
+1704320919: Client Respirometer closed its connection.
+1704320919: mosquitto version 2.0.18 terminating
+1704320919: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704321031: mosquitto version 2.0.18 starting
+1704321031: Config loaded from /mosquitto/config/mosquitto.conf.
+1704321031: Opening ipv4 listen socket on port 1883.
+1704321031: mosquitto version 2.0.18 running
+1704321031: New connection from 172.18.0.8:42763 on port 1883.
+1704321031: New client connected from 172.18.0.8:42763 as Respirometer (p2, c1, k30).
+1704321032: New connection from 172.18.0.9:49199 on port 1883.
+1704321032: New client connected from 172.18.0.9:49199 as Oximeter (p2, c1, k30).
+1704321032: New connection from 172.18.0.10:56549 on port 1883.
+1704321032: New client connected from 172.18.0.10:56549 as Thermometer (p2, c1, k30).
+1704321032: New connection from 172.18.0.11:48699 on port 1883.
+1704321032: New client connected from 172.18.0.11:48699 as Holter (p2, c1, k30).
+1704321034: New connection from 172.18.0.14:50686 on port 1883.
+1704321034: New client connected from 172.18.0.14:50686 as PDCSReceiver (p2, c1, k60).
+1704321046: Client PDCSReceiver closed its connection.
+1704321056: Client Holter closed its connection.
+1704321056: Client Thermometer closed its connection.
+1704321056: Client Oximeter closed its connection.
+1704321056: Client Respirometer closed its connection.
+1704321057: mosquitto version 2.0.18 terminating
+1704321057: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704321200: mosquitto version 2.0.18 starting
+1704321200: Config loaded from /mosquitto/config/mosquitto.conf.
+1704321200: Opening ipv4 listen socket on port 1883.
+1704321200: mosquitto version 2.0.18 running
+1704321201: New connection from 172.18.0.6:51579 on port 1883.
+1704321201: New client connected from 172.18.0.6:51579 as Respirometer (p2, c1, k30).
+1704321201: New connection from 172.18.0.7:53719 on port 1883.
+1704321201: New client connected from 172.18.0.7:53719 as Oximeter (p2, c1, k30).
+1704321201: New connection from 172.18.0.8:40627 on port 1883.
+1704321201: New client connected from 172.18.0.8:40627 as Thermometer (p2, c1, k30).
+1704321201: New connection from 172.18.0.9:34101 on port 1883.
+1704321201: New client connected from 172.18.0.9:34101 as Holter (p2, c1, k30).
+1704321203: New connection from 172.18.0.14:45148 on port 1883.
+1704321203: New client connected from 172.18.0.14:45148 as PDCSReceiver (p2, c1, k60).
+1704321212: Client PDCSReceiver closed its connection.
+1704321222: Client Holter closed its connection.
+1704321222: Client Thermometer closed its connection.
+1704321222: Client Respirometer closed its connection.
+1704321222: Client Oximeter closed its connection.
+1704321222: mosquitto version 2.0.18 terminating
+1704321222: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704321264: mosquitto version 2.0.18 starting
+1704321264: Config loaded from /mosquitto/config/mosquitto.conf.
+1704321264: Opening ipv4 listen socket on port 1883.
+1704321264: mosquitto version 2.0.18 running
+1704321265: New connection from 172.18.0.7:34743 on port 1883.
+1704321265: New client connected from 172.18.0.7:34743 as Respirometer (p2, c1, k30).
+1704321265: New connection from 172.18.0.8:50389 on port 1883.
+1704321265: New client connected from 172.18.0.8:50389 as Oximeter (p2, c1, k30).
+1704321265: New connection from 172.18.0.10:48783 on port 1883.
+1704321265: New client connected from 172.18.0.10:48783 as Holter (p2, c1, k30).
+1704321265: New connection from 172.18.0.9:50861 on port 1883.
+1704321265: New client connected from 172.18.0.9:50861 as Thermometer (p2, c1, k30).
+1704321267: New connection from 172.18.0.14:44720 on port 1883.
+1704321267: New client connected from 172.18.0.14:44720 as PDCSReceiver (p2, c1, k60).
+1704321281: Client PDCSReceiver closed its connection.
+1704321291: Client Oximeter closed its connection.
+1704321291: Client Holter closed its connection.
+1704321291: Client Respirometer closed its connection.
+1704321291: Client Thermometer closed its connection.
+1704321291: mosquitto version 2.0.18 terminating
+1704321291: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704321415: mosquitto version 2.0.18 starting
+1704321415: Config loaded from /mosquitto/config/mosquitto.conf.
+1704321415: Opening ipv4 listen socket on port 1883.
+1704321415: mosquitto version 2.0.18 running
+1704321416: New connection from 172.18.0.7:34417 on port 1883.
+1704321416: New client connected from 172.18.0.7:34417 as Respirometer (p2, c1, k30).
+1704321416: New connection from 172.18.0.8:47839 on port 1883.
+1704321416: New client connected from 172.18.0.8:47839 as Thermometer (p2, c1, k30).
+1704321416: New connection from 172.18.0.10:55275 on port 1883.
+1704321416: New client connected from 172.18.0.10:55275 as Oximeter (p2, c1, k30).
+1704321416: New connection from 172.18.0.9:37267 on port 1883.
+1704321416: New client connected from 172.18.0.9:37267 as Holter (p2, c1, k30).
+1704321418: New connection from 172.18.0.14:53462 on port 1883.
+1704321418: New client connected from 172.18.0.14:53462 as PDCSReceiver (p2, c1, k60).
+1704321535: Client PDCSReceiver closed its connection.
+1704321546: Client Respirometer closed its connection.
+1704321546: Client Thermometer closed its connection.
+1704321546: Client Holter closed its connection.
+1704321546: Client Oximeter closed its connection.
+1704321546: mosquitto version 2.0.18 terminating
+1704321546: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704321840: mosquitto version 2.0.18 starting
+1704321840: Config loaded from /mosquitto/config/mosquitto.conf.
+1704321840: Opening ipv4 listen socket on port 1883.
+1704321840: mosquitto version 2.0.18 running
+1704321840: New connection from 172.18.0.6:52711 on port 1883.
+1704321840: New client connected from 172.18.0.6:52711 as Oximeter (p2, c1, k30).
+1704321840: New connection from 172.18.0.7:50935 on port 1883.
+1704321840: New client connected from 172.18.0.7:50935 as Respirometer (p2, c1, k30).
+1704321840: New connection from 172.18.0.8:60865 on port 1883.
+1704321840: New client connected from 172.18.0.8:60865 as Thermometer (p2, c1, k30).
+1704321840: New connection from 172.18.0.9:38233 on port 1883.
+1704321840: New client connected from 172.18.0.9:38233 as Holter (p2, c1, k30).
+1704321842: New connection from 172.18.0.12:51538 on port 1883.
+1704321842: New client connected from 172.18.0.12:51538 as PDCSReceiver (p2, c1, k60).
+1704321872: Client PDCSReceiver closed its connection.
+1704321882: Client Thermometer closed its connection.
+1704321882: Client Respirometer closed its connection.
+1704321882: Client Oximeter closed its connection.
+1704321882: Client Holter closed its connection.
+1704321883: mosquitto version 2.0.18 terminating
+1704321883: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704321978: mosquitto version 2.0.18 starting
+1704321978: Config loaded from /mosquitto/config/mosquitto.conf.
+1704321978: Opening ipv4 listen socket on port 1883.
+1704321978: mosquitto version 2.0.18 running
+1704321979: New connection from 172.18.0.6:51453 on port 1883.
+1704321979: New client connected from 172.18.0.6:51453 as Oximeter (p2, c1, k30).
+1704321979: New connection from 172.18.0.7:45799 on port 1883.
+1704321979: New client connected from 172.18.0.7:45799 as Holter (p2, c1, k30).
+1704321979: New connection from 172.18.0.8:48115 on port 1883.
+1704321979: New client connected from 172.18.0.8:48115 as Respirometer (p2, c1, k30).
+1704321979: New connection from 172.18.0.9:60181 on port 1883.
+1704321979: New client connected from 172.18.0.9:60181 as Thermometer (p2, c1, k30).
+1704321980: New connection from 172.18.0.14:48646 on port 1883.
+1704321981: New client connected from 172.18.0.14:48646 as PDCSReceiver (p2, c1, k60).
+1704322109: Client PDCSReceiver closed its connection.
+1704322119: Client Holter closed its connection.
+1704322119: Client Thermometer closed its connection.
+1704322119: Client Oximeter closed its connection.
+1704322119: Client Respirometer closed its connection.
+1704322120: mosquitto version 2.0.18 terminating
+1704322120: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704322314: mosquitto version 2.0.18 starting
+1704322314: Config loaded from /mosquitto/config/mosquitto.conf.
+1704322314: Opening ipv4 listen socket on port 1883.
+1704322314: mosquitto version 2.0.18 running
+1704322314: New connection from 172.18.0.6:60753 on port 1883.
+1704322315: New client connected from 172.18.0.6:60753 as Holter (p2, c1, k30).
+1704322315: New connection from 172.18.0.7:58771 on port 1883.
+1704322315: New client connected from 172.18.0.7:58771 as Oximeter (p2, c1, k30).
+1704322315: New connection from 172.18.0.8:60775 on port 1883.
+1704322315: New client connected from 172.18.0.8:60775 as Respirometer (p2, c1, k30).
+1704322315: New connection from 172.18.0.9:51857 on port 1883.
+1704322315: New client connected from 172.18.0.9:51857 as Thermometer (p2, c1, k30).
+1704322317: New connection from 172.18.0.12:53532 on port 1883.
+1704322317: New client connected from 172.18.0.12:53532 as PDCSReceiver (p2, c1, k60).
+1704322339: Client PDCSReceiver closed its connection.
+1704322349: Client Respirometer closed its connection.
+1704322350: Client Oximeter closed its connection.
+1704322350: Client Holter closed its connection.
+1704322350: Client Thermometer closed its connection.
+1704322350: mosquitto version 2.0.18 terminating
+1704322350: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704322521: mosquitto version 2.0.18 starting
+1704322521: Config loaded from /mosquitto/config/mosquitto.conf.
+1704322521: Opening ipv4 listen socket on port 1883.
+1704322521: mosquitto version 2.0.18 running
+1704322522: New connection from 172.18.0.9:52165 on port 1883.
+1704322522: New client connected from 172.18.0.9:52165 as Respirometer (p2, c1, k30).
+1704322522: New connection from 172.18.0.8:51175 on port 1883.
+1704322522: New client connected from 172.18.0.8:51175 as Holter (p2, c1, k30).
+1704322522: New connection from 172.18.0.11:51327 on port 1883.
+1704322522: New connection from 172.18.0.10:48175 on port 1883.
+1704322522: New client connected from 172.18.0.11:51327 as Thermometer (p2, c1, k30).
+1704322522: New client connected from 172.18.0.10:48175 as Oximeter (p2, c1, k30).
+1704322523: New connection from 172.18.0.14:47510 on port 1883.
+1704322524: New client connected from 172.18.0.14:47510 as PDCSReceiver (p2, c1, k60).
+1704322544: Client PDCSReceiver closed its connection.
+1704322554: Client Holter closed its connection.
+1704322554: Client Thermometer closed its connection.
+1704322554: Client Respirometer closed its connection.
+1704322554: Client Oximeter closed its connection.
+1704322554: mosquitto version 2.0.18 terminating
+1704322554: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704322621: mosquitto version 2.0.18 starting
+1704322621: Config loaded from /mosquitto/config/mosquitto.conf.
+1704322621: Opening ipv4 listen socket on port 1883.
+1704322621: mosquitto version 2.0.18 running
+1704322622: New connection from 172.18.0.9:51087 on port 1883.
+1704322622: New connection from 172.18.0.10:34997 on port 1883.
+1704322622: New client connected from 172.18.0.9:51087 as Respirometer (p2, c1, k30).
+1704322622: New client connected from 172.18.0.10:34997 as Holter (p2, c1, k30).
+1704322622: New connection from 172.18.0.7:39281 on port 1883.
+1704322622: New client connected from 172.18.0.7:39281 as Thermometer (p2, c1, k30).
+1704322622: New connection from 172.18.0.8:41585 on port 1883.
+1704322622: New client connected from 172.18.0.8:41585 as Oximeter (p2, c1, k30).
+1704322624: New connection from 172.18.0.14:46704 on port 1883.
+1704322624: New client connected from 172.18.0.14:46704 as PDCSReceiver (p2, c1, k60).
+1704322671: Client PDCSReceiver closed its connection.
+1704322682: Client Oximeter closed its connection.
+1704322682: Client Holter closed its connection.
+1704322682: Client Thermometer closed its connection.
+1704322682: Client Respirometer closed its connection.
+1704322682: mosquitto version 2.0.18 terminating
+1704322682: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704322848: mosquitto version 2.0.18 starting
+1704322848: Config loaded from /mosquitto/config/mosquitto.conf.
+1704322848: Opening ipv4 listen socket on port 1883.
+1704322848: mosquitto version 2.0.18 running
+1704322848: New connection from 172.18.0.6:46583 on port 1883.
+1704322848: New client connected from 172.18.0.6:46583 as Respirometer (p2, c1, k30).
+1704322848: New connection from 172.18.0.7:54059 on port 1883.
+1704322848: New client connected from 172.18.0.7:54059 as Holter (p2, c1, k30).
+1704322848: New connection from 172.18.0.8:45643 on port 1883.
+1704322848: New client connected from 172.18.0.8:45643 as Thermometer (p2, c1, k30).
+1704322848: New connection from 172.18.0.9:37663 on port 1883.
+1704322848: New client connected from 172.18.0.9:37663 as Oximeter (p2, c1, k30).
+1704322850: New connection from 172.18.0.14:33220 on port 1883.
+1704322850: New client connected from 172.18.0.14:33220 as PDCSReceiver (p2, c1, k60).
+1704322924: Client PDCSReceiver closed its connection.
+1704322934: Client Respirometer closed its connection.
+1704322934: Client Oximeter closed its connection.
+1704322934: Client Holter closed its connection.
+1704322934: Client Thermometer closed its connection.
+1704322934: mosquitto version 2.0.18 terminating
+1704322934: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704323094: mosquitto version 2.0.18 starting
+1704323094: Config loaded from /mosquitto/config/mosquitto.conf.
+1704323094: Opening ipv4 listen socket on port 1883.
+1704323094: mosquitto version 2.0.18 running
+1704323095: New connection from 172.18.0.9:33957 on port 1883.
+1704323095: New client connected from 172.18.0.9:33957 as Oximeter (p2, c1, k30).
+1704323095: New connection from 172.18.0.10:55413 on port 1883.
+1704323095: New client connected from 172.18.0.10:55413 as Thermometer (p2, c1, k30).
+1704323095: New connection from 172.18.0.11:47803 on port 1883.
+1704323095: New client connected from 172.18.0.11:47803 as Holter (p2, c1, k30).
+1704323095: New connection from 172.18.0.8:35735 on port 1883.
+1704323095: New client connected from 172.18.0.8:35735 as Respirometer (p2, c1, k30).
+1704323096: New connection from 172.18.0.14:35332 on port 1883.
+1704323096: New client connected from 172.18.0.14:35332 as PDCSReceiver (p2, c1, k60).
+1704323118: Client PDCSReceiver closed its connection.
+1704323128: Client Holter closed its connection.
+1704323128: Client Thermometer closed its connection.
+1704323128: Client Respirometer closed its connection.
+1704323128: Client Oximeter closed its connection.
+1704323129: mosquitto version 2.0.18 terminating
+1704323129: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704323497: mosquitto version 2.0.18 starting
+1704323497: Config loaded from /mosquitto/config/mosquitto.conf.
+1704323497: Opening ipv4 listen socket on port 1883.
+1704323497: mosquitto version 2.0.18 running
+1704323498: New connection from 172.18.0.7:35433 on port 1883.
+1704323498: New client connected from 172.18.0.7:35433 as Thermometer (p2, c1, k30).
+1704323498: New connection from 172.18.0.8:43289 on port 1883.
+1704323498: New connection from 172.18.0.6:57625 on port 1883.
+1704323498: New client connected from 172.18.0.8:43289 as Oximeter (p2, c1, k30).
+1704323498: New client connected from 172.18.0.6:57625 as Holter (p2, c1, k30).
+1704323499: New connection from 172.18.0.9:33751 on port 1883.
+1704323499: New client connected from 172.18.0.9:33751 as Respirometer (p2, c1, k30).
+1704323501: New connection from 172.18.0.12:36144 on port 1883.
+1704323502: New client connected from 172.18.0.12:36144 as PDCSReceiver (p2, c1, k60).
+1704323631: Client PDCSReceiver closed its connection.
+1704323641: Client Respirometer closed its connection.
+1704323641: Client Oximeter closed its connection.
+1704323641: Client Thermometer closed its connection.
+1704323641: Client Holter closed its connection.
+1704323641: mosquitto version 2.0.18 terminating
+1704323641: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704323881: mosquitto version 2.0.18 starting
+1704323881: Config loaded from /mosquitto/config/mosquitto.conf.
+1704323881: Opening ipv4 listen socket on port 1883.
+1704323881: mosquitto version 2.0.18 running
+1704323882: New connection from 172.18.0.8:34135 on port 1883.
+1704323882: New client connected from 172.18.0.8:34135 as Holter (p2, c1, k30).
+1704323882: New connection from 172.18.0.11:56153 on port 1883.
+1704323882: New client connected from 172.18.0.11:56153 as Thermometer (p2, c1, k30).
+1704323882: New connection from 172.18.0.10:34995 on port 1883.
+1704323882: New client connected from 172.18.0.10:34995 as Oximeter (p2, c1, k30).
+1704323882: New connection from 172.18.0.9:43439 on port 1883.
+1704323882: New client connected from 172.18.0.9:43439 as Respirometer (p2, c1, k30).
+1704323884: New connection from 172.18.0.14:55988 on port 1883.
+1704323885: New client connected from 172.18.0.14:55988 as PDCSReceiver (p2, c1, k60).
+1704323930: Client PDCSReceiver closed its connection.
+1704323940: Client Holter closed its connection.
+1704323940: Client Thermometer closed its connection.
+1704323940: Client Respirometer closed its connection.
+1704323940: Client Oximeter closed its connection.
+1704323941: mosquitto version 2.0.18 terminating
+1704323941: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704324115: mosquitto version 2.0.18 starting
+1704324115: Config loaded from /mosquitto/config/mosquitto.conf.
+1704324115: Opening ipv4 listen socket on port 1883.
+1704324115: mosquitto version 2.0.18 running
+1704324116: New connection from 172.18.0.8:55523 on port 1883.
+1704324116: New client connected from 172.18.0.8:55523 as Holter (p2, c1, k30).
+1704324116: New connection from 172.18.0.9:57277 on port 1883.
+1704324116: New client connected from 172.18.0.9:57277 as Thermometer (p2, c1, k30).
+1704324116: New connection from 172.18.0.11:58799 on port 1883.
+1704324116: New client connected from 172.18.0.11:58799 as Oximeter (p2, c1, k30).
+1704324116: New connection from 172.18.0.10:36303 on port 1883.
+1704324116: New client connected from 172.18.0.10:36303 as Respirometer (p2, c1, k30).
+1704324118: New connection from 172.18.0.14:49168 on port 1883.
+1704324118: New client connected from 172.18.0.14:49168 as PDCSReceiver (p2, c1, k60).
+1704324144: Client PDCSReceiver closed its connection.
+1704324154: Client Oximeter closed its connection.
+1704324154: Client Holter closed its connection.
+1704324154: Client Thermometer closed its connection.
+1704324154: Client Respirometer closed its connection.
+1704324154: mosquitto version 2.0.18 terminating
+1704324154: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704324247: mosquitto version 2.0.18 starting
+1704324247: Config loaded from /mosquitto/config/mosquitto.conf.
+1704324247: Opening ipv4 listen socket on port 1883.
+1704324247: mosquitto version 2.0.18 running
+1704324247: New connection from 172.18.0.6:48807 on port 1883.
+1704324247: New client connected from 172.18.0.6:48807 as Oximeter (p2, c1, k30).
+1704324248: New connection from 172.18.0.7:43859 on port 1883.
+1704324248: New client connected from 172.18.0.7:43859 as Thermometer (p2, c1, k30).
+1704324248: New connection from 172.18.0.8:34533 on port 1883.
+1704324248: New client connected from 172.18.0.8:34533 as Respirometer (p2, c1, k30).
+1704324248: New connection from 172.18.0.9:33111 on port 1883.
+1704324248: New client connected from 172.18.0.9:33111 as Holter (p2, c1, k30).
+1704324250: New connection from 172.18.0.12:40564 on port 1883.
+1704324250: New client connected from 172.18.0.12:40564 as PDCSReceiver (p2, c1, k60).
+1704324277: Client PDCSReceiver closed its connection.
+1704324287: Client Oximeter closed its connection.
+1704324287: Client Thermometer closed its connection.
+1704324287: Client Respirometer closed its connection.
+1704324287: Client Holter closed its connection.
+1704324288: mosquitto version 2.0.18 terminating
+1704324288: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704324341: mosquitto version 2.0.18 starting
+1704324341: Config loaded from /mosquitto/config/mosquitto.conf.
+1704324341: Opening ipv4 listen socket on port 1883.
+1704324341: mosquitto version 2.0.18 running
+1704324342: New connection from 172.18.0.7:49947 on port 1883.
+1704324342: New client connected from 172.18.0.7:49947 as Respirometer (p2, c1, k30).
+1704324342: New connection from 172.18.0.8:48553 on port 1883.
+1704324342: New client connected from 172.18.0.8:48553 as Holter (p2, c1, k30).
+1704324342: New connection from 172.18.0.9:34639 on port 1883.
+1704324342: New client connected from 172.18.0.9:34639 as Oximeter (p2, c1, k30).
+1704324342: New connection from 172.18.0.10:38467 on port 1883.
+1704324342: New client connected from 172.18.0.10:38467 as Thermometer (p2, c1, k30).
+1704324343: New connection from 172.18.0.14:34338 on port 1883.
+1704324344: New client connected from 172.18.0.14:34338 as PDCSReceiver (p2, c1, k60).
+1704324367: Client PDCSReceiver closed its connection.
+1704324378: Client Oximeter closed its connection.
+1704324378: Client Holter closed its connection.
+1704324378: Client Respirometer closed its connection.
+1704324378: Client Thermometer closed its connection.
+1704324378: mosquitto version 2.0.18 terminating
+1704324378: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704324755: mosquitto version 2.0.18 starting
+1704324755: Config loaded from /mosquitto/config/mosquitto.conf.
+1704324755: Opening ipv4 listen socket on port 1883.
+1704324755: mosquitto version 2.0.18 running
+1704324755: New connection from 172.19.0.8:43167 on port 1883.
+1704324755: New client connected from 172.19.0.8:43167 as Thermometer (p2, c1, k30).
+1704324755: New connection from 172.19.0.9:36197 on port 1883.
+1704324755: New client connected from 172.19.0.9:36197 as Holter (p2, c1, k30).
+1704324756: New connection from 172.19.0.10:50471 on port 1883.
+1704324756: New client connected from 172.19.0.10:50471 as Respirometer (p2, c1, k30).
+1704324756: New connection from 172.19.0.11:53153 on port 1883.
+1704324756: New client connected from 172.19.0.11:53153 as Oximeter (p2, c1, k30).
+1704324757: New connection from 172.19.0.14:56964 on port 1883.
+1704324757: New client connected from 172.19.0.14:56964 as PDCSReceiver (p2, c1, k60).
+1704324803: Client PDCSReceiver closed its connection.
+1704324813: Client Respirometer closed its connection.
+1704324813: Client Oximeter closed its connection.
+1704324813: Client Holter closed its connection.
+1704324813: Client Thermometer closed its connection.
+1704324813: mosquitto version 2.0.18 terminating
+1704324813: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704324891: mosquitto version 2.0.18 starting
+1704324891: Config loaded from /mosquitto/config/mosquitto.conf.
+1704324891: Opening ipv4 listen socket on port 1883.
+1704324891: mosquitto version 2.0.18 running
+1704324891: New connection from 172.19.0.7:42655 on port 1883.
+1704324891: New client connected from 172.19.0.7:42655 as Thermometer (p2, c1, k30).
+1704324892: New connection from 172.19.0.9:54749 on port 1883.
+1704324892: New client connected from 172.19.0.9:54749 as Holter (p2, c1, k30).
+1704324892: New connection from 172.19.0.8:42503 on port 1883.
+1704324892: New client connected from 172.19.0.8:42503 as Oximeter (p2, c1, k30).
+1704324892: New connection from 172.19.0.10:58789 on port 1883.
+1704324892: New client connected from 172.19.0.10:58789 as Respirometer (p2, c1, k30).
+1704324893: New connection from 172.19.0.14:39440 on port 1883.
+1704324894: New client connected from 172.19.0.14:39440 as PDCSReceiver (p2, c1, k60).
+1704325226: Client PDCSReceiver closed its connection.
+1704325236: Client Respirometer closed its connection.
+1704325236: Client Oximeter closed its connection.
+1704325236: Client Holter closed its connection.
+1704325236: Client Thermometer closed its connection.
+1704325237: mosquitto version 2.0.18 terminating
+1704325237: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704325492: mosquitto version 2.0.18 starting
+1704325492: Config loaded from /mosquitto/config/mosquitto.conf.
+1704325492: Opening ipv4 listen socket on port 1883.
+1704325492: mosquitto version 2.0.18 running
+1704325493: New connection from 172.19.0.7:38867 on port 1883.
+1704325493: New client connected from 172.19.0.7:38867 as Respirometer (p2, c1, k30).
+1704325493: New connection from 172.19.0.8:55235 on port 1883.
+1704325493: New client connected from 172.19.0.8:55235 as Holter (p2, c1, k30).
+1704325493: New connection from 172.19.0.9:39675 on port 1883.
+1704325493: New client connected from 172.19.0.9:39675 as Thermometer (p2, c1, k30).
+1704325493: New connection from 172.19.0.11:36093 on port 1883.
+1704325493: New client connected from 172.19.0.11:36093 as Oximeter (p2, c1, k30).
+1704325495: New connection from 172.19.0.14:52648 on port 1883.
+1704325496: New client connected from 172.19.0.14:52648 as PDCSReceiver (p2, c1, k60).
+1704325511: Client PDCSReceiver closed its connection.
+1704325521: Client Holter closed its connection.
+1704325521: Client Respirometer closed its connection.
+1704325521: Client Oximeter closed its connection.
+1704325521: Client Thermometer closed its connection.
+1704325521: mosquitto version 2.0.18 terminating
+1704325521: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704325610: mosquitto version 2.0.18 starting
+1704325610: Config loaded from /mosquitto/config/mosquitto.conf.
+1704325610: Opening ipv4 listen socket on port 1883.
+1704325610: mosquitto version 2.0.18 running
+1704325611: New connection from 172.19.0.7:39103 on port 1883.
+1704325611: New client connected from 172.19.0.7:39103 as Holter (p2, c1, k30).
+1704325611: New connection from 172.19.0.9:38843 on port 1883.
+1704325611: New client connected from 172.19.0.9:38843 as Thermometer (p2, c1, k30).
+1704325611: New connection from 172.19.0.10:58945 on port 1883.
+1704325611: New client connected from 172.19.0.10:58945 as Oximeter (p2, c1, k30).
+1704325612: New connection from 172.19.0.11:59505 on port 1883.
+1704325612: New client connected from 172.19.0.11:59505 as Respirometer (p2, c1, k30).
+1704325613: New connection from 172.19.0.14:47252 on port 1883.
+1704325613: New client connected from 172.19.0.14:47252 as PDCSReceiver (p2, c1, k60).
+1704325643: Client PDCSReceiver closed its connection.
+1704325653: Client Thermometer closed its connection.
+1704325653: Client Holter closed its connection.
+1704325653: Client Oximeter closed its connection.
+1704325653: Client Respirometer closed its connection.
+1704325653: mosquitto version 2.0.18 terminating
+1704325653: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704325723: mosquitto version 2.0.18 starting
+1704325723: Config loaded from /mosquitto/config/mosquitto.conf.
+1704325723: Opening ipv4 listen socket on port 1883.
+1704325723: mosquitto version 2.0.18 running
+1704325724: New connection from 172.19.0.7:42593 on port 1883.
+1704325724: New client connected from 172.19.0.7:42593 as Thermometer (p2, c1, k30).
+1704325724: New connection from 172.19.0.8:41979 on port 1883.
+1704325724: New client connected from 172.19.0.8:41979 as Oximeter (p2, c1, k30).
+1704325724: New connection from 172.19.0.9:49833 on port 1883.
+1704325724: New client connected from 172.19.0.9:49833 as Holter (p2, c1, k30).
+1704325724: New connection from 172.19.0.10:51951 on port 1883.
+1704325724: New client connected from 172.19.0.10:51951 as Respirometer (p2, c1, k30).
+1704325726: New connection from 172.19.0.14:46988 on port 1883.
+1704325727: New client connected from 172.19.0.14:46988 as PDCSReceiver (p2, c1, k60).
+1704325739: Client PDCSReceiver closed its connection.
+1704325749: Client Oximeter closed its connection.
+1704325749: Client Thermometer closed its connection.
+1704325749: Client Holter closed its connection.
+1704325749: Client Respirometer closed its connection.
+1704325749: mosquitto version 2.0.18 terminating
+1704325749: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704325855: mosquitto version 2.0.18 starting
+1704325855: Config loaded from /mosquitto/config/mosquitto.conf.
+1704325855: Opening ipv4 listen socket on port 1883.
+1704325855: mosquitto version 2.0.18 running
+1704325855: New connection from 172.19.0.8:36715 on port 1883.
+1704325855: New client connected from 172.19.0.8:36715 as Thermometer (p2, c1, k30).
+1704325855: New connection from 172.19.0.10:48353 on port 1883.
+1704325855: New client connected from 172.19.0.10:48353 as Holter (p2, c1, k30).
+1704325855: New connection from 172.19.0.9:40589 on port 1883.
+1704325855: New client connected from 172.19.0.9:40589 as Respirometer (p2, c1, k30).
+1704325856: New connection from 172.19.0.11:36705 on port 1883.
+1704325856: New client connected from 172.19.0.11:36705 as Oximeter (p2, c1, k30).
+1704325857: New connection from 172.19.0.14:54244 on port 1883.
+1704325857: New client connected from 172.19.0.14:54244 as PDCSReceiver (p2, c1, k60).
+1704325865: Client PDCSReceiver closed its connection.
+1704325875: Client Thermometer closed its connection.
+1704325875: Client Respirometer closed its connection.
+1704325875: Client Oximeter closed its connection.
+1704325875: Client Holter closed its connection.
+1704325875: mosquitto version 2.0.18 terminating
+1704325875: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704325880: mosquitto version 2.0.18 starting
+1704325880: Config loaded from /mosquitto/config/mosquitto.conf.
+1704325880: Opening ipv4 listen socket on port 1883.
+1704325880: mosquitto version 2.0.18 running
+1704325880: New connection from 172.19.0.7:58555 on port 1883.
+1704325880: New client connected from 172.19.0.7:58555 as Thermometer (p2, c1, k30).
+1704325881: New connection from 172.19.0.9:34945 on port 1883.
+1704325881: New client connected from 172.19.0.9:34945 as Oximeter (p2, c1, k30).
+1704325881: New connection from 172.19.0.8:53589 on port 1883.
+1704325881: New client connected from 172.19.0.8:53589 as Holter (p2, c1, k30).
+1704325881: New connection from 172.19.0.10:48095 on port 1883.
+1704325881: New client connected from 172.19.0.10:48095 as Respirometer (p2, c1, k30).
+1704325882: New connection from 172.19.0.14:36024 on port 1883.
+1704325883: New client connected from 172.19.0.14:36024 as PDCSReceiver (p2, c1, k60).
+1704325894: Client PDCSReceiver closed its connection.
+1704325904: Client Thermometer closed its connection.
+1704325904: Client Holter closed its connection.
+1704325904: Client Respirometer closed its connection.
+1704325904: Client Oximeter closed its connection.
+1704325905: mosquitto version 2.0.18 terminating
+1704325905: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704325948: mosquitto version 2.0.18 starting
+1704325948: Config loaded from /mosquitto/config/mosquitto.conf.
+1704325948: Opening ipv4 listen socket on port 1883.
+1704325948: mosquitto version 2.0.18 running
+1704325949: New connection from 172.19.0.6:60771 on port 1883.
+1704325949: New client connected from 172.19.0.6:60771 as Holter (p2, c1, k30).
+1704325949: New connection from 172.19.0.8:55357 on port 1883.
+1704325949: New client connected from 172.19.0.8:55357 as Respirometer (p2, c1, k30).
+1704325949: New connection from 172.19.0.7:49689 on port 1883.
+1704325949: New client connected from 172.19.0.7:49689 as Oximeter (p2, c1, k30).
+1704325949: New connection from 172.19.0.9:50767 on port 1883.
+1704325949: New client connected from 172.19.0.9:50767 as Thermometer (p2, c1, k30).
+1704325951: New connection from 172.19.0.14:44952 on port 1883.
+1704325951: New client connected from 172.19.0.14:44952 as PDCSReceiver (p2, c1, k60).
+1704325962: Client PDCSReceiver closed its connection.
+1704325972: Client Oximeter closed its connection.
+1704325972: Client Holter closed its connection.
+1704325972: Client Respirometer closed its connection.
+1704325972: Client Thermometer closed its connection.
+1704325972: mosquitto version 2.0.18 terminating
+1704325972: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704326005: mosquitto version 2.0.18 starting
+1704326005: Config loaded from /mosquitto/config/mosquitto.conf.
+1704326005: Opening ipv4 listen socket on port 1883.
+1704326005: mosquitto version 2.0.18 running
+1704326006: New connection from 172.19.0.8:45001 on port 1883.
+1704326006: New client connected from 172.19.0.8:45001 as Respirometer (p2, c1, k30).
+1704326006: New connection from 172.19.0.10:53787 on port 1883.
+1704326006: New client connected from 172.19.0.10:53787 as Oximeter (p2, c1, k30).
+1704326006: New connection from 172.19.0.9:44697 on port 1883.
+1704326006: New client connected from 172.19.0.9:44697 as Thermometer (p2, c1, k30).
+1704326006: New connection from 172.19.0.11:60401 on port 1883.
+1704326006: New client connected from 172.19.0.11:60401 as Holter (p2, c1, k30).
+1704326007: New connection from 172.19.0.14:51344 on port 1883.
+1704326008: New client connected from 172.19.0.14:51344 as PDCSReceiver (p2, c1, k60).
+1704326020: Client PDCSReceiver closed its connection.
+1704326030: Client Oximeter closed its connection.
+1704326030: Client Respirometer closed its connection.
+1704326030: Client Holter closed its connection.
+1704326030: Client Thermometer closed its connection.
+1704326031: mosquitto version 2.0.18 terminating
+1704326031: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704326377: mosquitto version 2.0.18 starting
+1704326377: Config loaded from /mosquitto/config/mosquitto.conf.
+1704326377: Opening ipv4 listen socket on port 1883.
+1704326377: mosquitto version 2.0.18 running
+1704326377: New connection from 172.19.0.7:57823 on port 1883.
+1704326377: New client connected from 172.19.0.7:57823 as Holter (p2, c1, k30).
+1704326377: New connection from 172.19.0.8:60049 on port 1883.
+1704326377: New client connected from 172.19.0.8:60049 as Thermometer (p2, c1, k30).
+1704326378: New connection from 172.19.0.9:37787 on port 1883.
+1704326378: New client connected from 172.19.0.9:37787 as Respirometer (p2, c1, k30).
+1704326378: New connection from 172.19.0.10:32959 on port 1883.
+1704326378: New client connected from 172.19.0.10:32959 as Oximeter (p2, c1, k30).
+1704326380: New connection from 172.19.0.13:38480 on port 1883.
+1704326380: New client connected from 172.19.0.13:38480 as PDCSReceiver (p2, c1, k60).
+1704326393: Client PDCSReceiver closed its connection.
+1704326404: Client Oximeter closed its connection.
+1704326404: Client Thermometer closed its connection.
+1704326404: Client Holter closed its connection.
+1704326404: Client Respirometer closed its connection.
+1704326404: mosquitto version 2.0.18 terminating
+1704326404: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704326461: mosquitto version 2.0.18 starting
+1704326461: Config loaded from /mosquitto/config/mosquitto.conf.
+1704326461: Opening ipv4 listen socket on port 1883.
+1704326461: mosquitto version 2.0.18 running
+1704326462: New connection from 172.19.0.7:54717 on port 1883.
+1704326462: New client connected from 172.19.0.7:54717 as Holter (p2, c1, k30).
+1704326462: New connection from 172.19.0.8:49455 on port 1883.
+1704326462: New client connected from 172.19.0.8:49455 as Oximeter (p2, c1, k30).
+1704326462: New connection from 172.19.0.9:47267 on port 1883.
+1704326462: New client connected from 172.19.0.9:47267 as Thermometer (p2, c1, k30).
+1704326462: New connection from 172.19.0.10:46387 on port 1883.
+1704326462: New client connected from 172.19.0.10:46387 as Respirometer (p2, c1, k30).
+1704326464: New connection from 172.19.0.14:44234 on port 1883.
+1704326464: New client connected from 172.19.0.14:44234 as PDCSReceiver (p2, c1, k60).
+1704326477: Client PDCSReceiver closed its connection.
+1704326488: Client Oximeter closed its connection.
+1704326488: Client Holter closed its connection.
+1704326488: Client Respirometer closed its connection.
+1704326488: Client Thermometer closed its connection.
+1704326488: mosquitto version 2.0.18 terminating
+1704326488: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704326556: mosquitto version 2.0.18 starting
+1704326556: Config loaded from /mosquitto/config/mosquitto.conf.
+1704326556: Opening ipv4 listen socket on port 1883.
+1704326556: mosquitto version 2.0.18 running
+1704326556: New connection from 172.19.0.7:52111 on port 1883.
+1704326556: New client connected from 172.19.0.7:52111 as Respirometer (p2, c1, k30).
+1704326556: New connection from 172.19.0.6:56825 on port 1883.
+1704326556: New client connected from 172.19.0.6:56825 as Thermometer (p2, c1, k30).
+1704326556: New connection from 172.19.0.8:50181 on port 1883.
+1704326556: New client connected from 172.19.0.8:50181 as Holter (p2, c1, k30).
+1704326556: New connection from 172.19.0.9:58633 on port 1883.
+1704326556: New client connected from 172.19.0.9:58633 as Oximeter (p2, c1, k30).
+1704326558: New connection from 172.19.0.14:39446 on port 1883.
+1704326559: New client connected from 172.19.0.14:39446 as PDCSReceiver (p2, c1, k60).
+1704326572: Client PDCSReceiver closed its connection.
+1704326582: Client Oximeter closed its connection.
+1704326582: Client Thermometer closed its connection.
+1704326582: Client Respirometer closed its connection.
+1704326582: Client Holter closed its connection.
+1704326582: mosquitto version 2.0.18 terminating
+1704326582: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704326906: mosquitto version 2.0.18 starting
+1704326906: Config loaded from /mosquitto/config/mosquitto.conf.
+1704326906: Opening ipv4 listen socket on port 1883.
+1704326906: mosquitto version 2.0.18 running
+1704326906: New connection from 172.19.0.9:44331 on port 1883.
+1704326906: New client connected from 172.19.0.9:44331 as Thermometer (p2, c1, k30).
+1704326906: New connection from 172.19.0.8:35963 on port 1883.
+1704326906: New client connected from 172.19.0.8:35963 as Respirometer (p2, c1, k30).
+1704326906: New connection from 172.19.0.10:50183 on port 1883.
+1704326906: New client connected from 172.19.0.10:50183 as Holter (p2, c1, k30).
+1704326907: New connection from 172.19.0.11:38927 on port 1883.
+1704326907: New client connected from 172.19.0.11:38927 as Oximeter (p2, c1, k30).
+1704326909: New connection from 172.19.0.14:33332 on port 1883.
+1704326909: New client connected from 172.19.0.14:33332 as PDCSReceiver (p2, c1, k60).
+1704326926: Client PDCSReceiver closed its connection.
+1704326936: Client Thermometer closed its connection.
+1704326936: Client Respirometer closed its connection.
+1704326936: Client Holter closed its connection.
+1704326936: Client Oximeter closed its connection.
+1704326937: mosquitto version 2.0.18 terminating
+1704326937: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704327008: mosquitto version 2.0.18 starting
+1704327008: Config loaded from /mosquitto/config/mosquitto.conf.
+1704327008: Opening ipv4 listen socket on port 1883.
+1704327008: mosquitto version 2.0.18 running
+1704327009: New connection from 172.19.0.7:33039 on port 1883.
+1704327009: New client connected from 172.19.0.7:33039 as Oximeter (p2, c1, k30).
+1704327009: New connection from 172.19.0.8:37671 on port 1883.
+1704327009: New client connected from 172.19.0.8:37671 as Thermometer (p2, c1, k30).
+1704327009: New connection from 172.19.0.9:39065 on port 1883.
+1704327009: New client connected from 172.19.0.9:39065 as Respirometer (p2, c1, k30).
+1704327009: New connection from 172.19.0.10:43185 on port 1883.
+1704327009: New client connected from 172.19.0.10:43185 as Holter (p2, c1, k30).
+1704327010: New connection from 172.19.0.13:35354 on port 1883.
+1704327010: New client connected from 172.19.0.13:35354 as PDCSReceiver (p2, c1, k60).
+1704327777: Client PDCSReceiver closed its connection.
+1704327788: Client Thermometer closed its connection.
+1704327788: Client Holter closed its connection.
+1704327788: Client Oximeter closed its connection.
+1704327788: Client Respirometer closed its connection.
+1704327788: mosquitto version 2.0.18 terminating
+1704327788: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704327838: mosquitto version 2.0.18 starting
+1704327838: Config loaded from /mosquitto/config/mosquitto.conf.
+1704327838: Opening ipv4 listen socket on port 1883.
+1704327838: mosquitto version 2.0.18 running
+1704327839: New connection from 172.20.0.8:56523 on port 1883.
+1704327839: New client connected from 172.20.0.8:56523 as Oximeter (p2, c1, k30).
+1704327839: New connection from 172.20.0.10:32831 on port 1883.
+1704327839: New client connected from 172.20.0.10:32831 as Holter (p2, c1, k30).
+1704327839: New connection from 172.20.0.11:37295 on port 1883.
+1704327839: New client connected from 172.20.0.11:37295 as Respirometer (p2, c1, k30).
+1704327839: New connection from 172.20.0.9:48211 on port 1883.
+1704327839: New client connected from 172.20.0.9:48211 as Thermometer (p2, c1, k30).
+1704327841: New connection from 172.20.0.13:45362 on port 1883.
+1704327841: New client connected from 172.20.0.13:45362 as PDCSReceiver (p2, c1, k60).
+1704327893: Client PDCSReceiver closed its connection.
+1704327903: Client Oximeter closed its connection.
+1704327903: Client Thermometer closed its connection.
+1704327903: Client Respirometer closed its connection.
+1704327903: Client Holter closed its connection.
+1704327904: mosquitto version 2.0.18 terminating
+1704327904: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704328000: mosquitto version 2.0.18 starting
+1704328000: Config loaded from /mosquitto/config/mosquitto.conf.
+1704328000: Opening ipv4 listen socket on port 1883.
+1704328000: mosquitto version 2.0.18 running
+1704328001: New connection from 172.21.0.8:32891 on port 1883.
+1704328001: New connection from 172.21.0.9:33663 on port 1883.
+1704328001: New client connected from 172.21.0.8:32891 as Oximeter (p2, c1, k30).
+1704328001: New client connected from 172.21.0.9:33663 as Thermometer (p2, c1, k30).
+1704328001: New connection from 172.21.0.11:41351 on port 1883.
+1704328001: New client connected from 172.21.0.11:41351 as Holter (p2, c1, k30).
+1704328001: New connection from 172.21.0.10:56971 on port 1883.
+1704328001: New client connected from 172.21.0.10:56971 as Respirometer (p2, c1, k30).
+1704328003: New connection from 172.21.0.13:54716 on port 1883.
+1704328003: New client connected from 172.21.0.13:54716 as PDCSReceiver (p2, c1, k60).
+1704328018: Client PDCSReceiver closed its connection.
+1704328028: Client Oximeter closed its connection.
+1704328028: Client Respirometer closed its connection.
+1704328028: Client Holter closed its connection.
+1704328028: Client Thermometer closed its connection.
+1704328028: mosquitto version 2.0.18 terminating
+1704328028: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704328084: mosquitto version 2.0.18 starting
+1704328084: Config loaded from /mosquitto/config/mosquitto.conf.
+1704328084: Opening ipv4 listen socket on port 1883.
+1704328084: mosquitto version 2.0.18 running
+1704328085: New connection from 172.21.0.8:39021 on port 1883.
+1704328085: New client connected from 172.21.0.8:39021 as Respirometer (p2, c1, k30).
+1704328085: New connection from 172.21.0.9:54537 on port 1883.
+1704328085: New client connected from 172.21.0.9:54537 as Thermometer (p2, c1, k30).
+1704328086: New connection from 172.21.0.11:37877 on port 1883.
+1704328086: New client connected from 172.21.0.11:37877 as Holter (p2, c1, k30).
+1704328086: New connection from 172.21.0.10:37751 on port 1883.
+1704328086: New client connected from 172.21.0.10:37751 as Oximeter (p2, c1, k30).
+1704328087: New connection from 172.21.0.12:44524 on port 1883.
+1704328088: New client connected from 172.21.0.12:44524 as PDCSReceiver (p2, c1, k60).
+1704328128: Client PDCSReceiver closed its connection.
+1704328138: Client Oximeter closed its connection.
+1704328138: Client Holter closed its connection.
+1704328138: Client Thermometer closed its connection.
+1704328138: Client Respirometer closed its connection.
+1704328138: mosquitto version 2.0.18 terminating
+1704328138: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704328214: mosquitto version 2.0.18 starting
+1704328214: Config loaded from /mosquitto/config/mosquitto.conf.
+1704328214: Opening ipv4 listen socket on port 1883.
+1704328214: mosquitto version 2.0.18 running
+1704328215: New connection from 172.21.0.7:58153 on port 1883.
+1704328215: New client connected from 172.21.0.7:58153 as Oximeter (p2, c1, k30).
+1704328215: New connection from 172.21.0.8:37507 on port 1883.
+1704328215: New client connected from 172.21.0.8:37507 as Thermometer (p2, c1, k30).
+1704328215: New connection from 172.21.0.10:45637 on port 1883.
+1704328215: New connection from 172.21.0.9:37617 on port 1883.
+1704328215: New client connected from 172.21.0.10:45637 as Respirometer (p2, c1, k30).
+1704328215: New client connected from 172.21.0.9:37617 as Holter (p2, c1, k30).
+1704328217: New connection from 172.21.0.14:43728 on port 1883.
+1704328218: New client connected from 172.21.0.14:43728 as PDCSReceiver (p2, c1, k60).
+1704328224: Client PDCSReceiver closed its connection.
+1704328234: Client Holter closed its connection.
+1704328234: Client Thermometer closed its connection.
+1704328234: Client Respirometer closed its connection.
+1704328234: Client Oximeter closed its connection.
+1704328234: mosquitto version 2.0.18 terminating
+1704328234: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704328276: mosquitto version 2.0.18 starting
+1704328276: Config loaded from /mosquitto/config/mosquitto.conf.
+1704328276: Opening ipv4 listen socket on port 1883.
+1704328276: mosquitto version 2.0.18 running
+1704328276: New connection from 172.21.0.7:35873 on port 1883.
+1704328276: New client connected from 172.21.0.7:35873 as Respirometer (p2, c1, k30).
+1704328276: New connection from 172.21.0.8:42817 on port 1883.
+1704328276: New client connected from 172.21.0.8:42817 as Oximeter (p2, c1, k30).
+1704328276: New connection from 172.21.0.9:48401 on port 1883.
+1704328276: New client connected from 172.21.0.9:48401 as Thermometer (p2, c1, k30).
+1704328276: New connection from 172.21.0.10:33057 on port 1883.
+1704328276: New client connected from 172.21.0.10:33057 as Holter (p2, c1, k30).
+1704328278: New connection from 172.21.0.14:32928 on port 1883.
+1704328278: New client connected from 172.21.0.14:32928 as PDCSReceiver (p2, c1, k60).
+1704328350: Client PDCSReceiver closed its connection.
+1704328360: Client Oximeter closed its connection.
+1704328360: Client Respirometer closed its connection.
+1704328360: Client Thermometer closed its connection.
+1704328360: Client Holter closed its connection.
+1704328361: mosquitto version 2.0.18 terminating
+1704328361: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704328382: mosquitto version 2.0.18 starting
+1704328382: Config loaded from /mosquitto/config/mosquitto.conf.
+1704328382: Opening ipv4 listen socket on port 1883.
+1704328382: mosquitto version 2.0.18 running
+1704328382: New connection from 172.21.0.8:45025 on port 1883.
+1704328382: New client connected from 172.21.0.8:45025 as Oximeter (p2, c1, k30).
+1704328382: New connection from 172.21.0.10:39879 on port 1883.
+1704328382: New client connected from 172.21.0.10:39879 as Holter (p2, c1, k30).
+1704328382: New connection from 172.21.0.9:49819 on port 1883.
+1704328382: New client connected from 172.21.0.9:49819 as Respirometer (p2, c1, k30).
+1704328382: New connection from 172.21.0.11:56325 on port 1883.
+1704328382: New client connected from 172.21.0.11:56325 as Thermometer (p2, c1, k30).
+1704328384: New connection from 172.21.0.14:52584 on port 1883.
+1704328384: New client connected from 172.21.0.14:52584 as PDCSReceiver (p2, c1, k60).
+1704328881: Client PDCSReceiver closed its connection.
+1704328891: Client Thermometer closed its connection.
+1704328891: Client Oximeter closed its connection.
+1704328891: Client Respirometer closed its connection.
+1704328891: Client Holter closed its connection.
+1704328892: mosquitto version 2.0.18 terminating
+1704328892: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704328947: mosquitto version 2.0.18 starting
+1704328947: Config loaded from /mosquitto/config/mosquitto.conf.
+1704328947: Opening ipv4 listen socket on port 1883.
+1704328947: mosquitto version 2.0.18 running
+1704328947: New connection from 172.21.0.8:38679 on port 1883.
+1704328947: New connection from 172.21.0.9:58127 on port 1883.
+1704328947: New client connected from 172.21.0.8:38679 as Thermometer (p2, c1, k30).
+1704328947: New client connected from 172.21.0.9:58127 as Holter (p2, c1, k30).
+1704328947: New connection from 172.21.0.7:35261 on port 1883.
+1704328947: New client connected from 172.21.0.7:35261 as Oximeter (p2, c1, k30).
+1704328948: New connection from 172.21.0.10:57061 on port 1883.
+1704328948: New client connected from 172.21.0.10:57061 as Respirometer (p2, c1, k30).
+1704328949: New connection from 172.21.0.14:53786 on port 1883.
+1704328949: New client connected from 172.21.0.14:53786 as PDCSReceiver (p2, c1, k60).
+1704328970: Client PDCSReceiver closed its connection.
+1704328980: Client Respirometer closed its connection.
+1704328980: Client Thermometer closed its connection.
+1704328980: Client Holter closed its connection.
+1704328980: Client Oximeter closed its connection.
+1704328980: mosquitto version 2.0.18 terminating
+1704328980: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704329024: mosquitto version 2.0.18 starting
+1704329024: Config loaded from /mosquitto/config/mosquitto.conf.
+1704329024: Opening ipv4 listen socket on port 1883.
+1704329024: mosquitto version 2.0.18 running
+1704329024: New connection from 172.21.0.6:54455 on port 1883.
+1704329024: New client connected from 172.21.0.6:54455 as Thermometer (p2, c1, k30).
+1704329025: New connection from 172.21.0.7:37623 on port 1883.
+1704329025: New client connected from 172.21.0.7:37623 as Holter (p2, c1, k30).
+1704329025: New connection from 172.21.0.8:45319 on port 1883.
+1704329025: New client connected from 172.21.0.8:45319 as Respirometer (p2, c1, k30).
+1704329025: New connection from 172.21.0.9:33145 on port 1883.
+1704329025: New client connected from 172.21.0.9:33145 as Oximeter (p2, c1, k30).
+1704329026: New connection from 172.21.0.14:52858 on port 1883.
+1704329027: New client connected from 172.21.0.14:52858 as PDCSReceiver (p2, c1, k60).
+1704329125: Client PDCSReceiver closed its connection.
+1704329136: Client Oximeter closed its connection.
+1704329136: Client Holter closed its connection.
+1704329136: Client Respirometer closed its connection.
+1704329136: Client Thermometer closed its connection.
+1704329136: mosquitto version 2.0.18 terminating
+1704329136: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704329263: mosquitto version 2.0.18 starting
+1704329263: Config loaded from /mosquitto/config/mosquitto.conf.
+1704329263: Opening ipv4 listen socket on port 1883.
+1704329263: mosquitto version 2.0.18 running
+1704329266: New connection from 172.21.0.7:58665 on port 1883.
+1704329266: New client connected from 172.21.0.7:58665 as Holter (p2, c1, k30).
+1704329266: New connection from 172.21.0.8:48289 on port 1883.
+1704329266: New client connected from 172.21.0.8:48289 as Thermometer (p2, c1, k30).
+1704329266: New connection from 172.21.0.10:54535 on port 1883.
+1704329266: New client connected from 172.21.0.10:54535 as Oximeter (p2, c1, k30).
+1704329266: New connection from 172.21.0.9:59621 on port 1883.
+1704329266: New client connected from 172.21.0.9:59621 as Respirometer (p2, c1, k30).
+1704329269: New connection from 172.21.0.14:34630 on port 1883.
+1704329269: New client connected from 172.21.0.14:34630 as PDCSReceiver (p2, c1, k60).
+1704329362: Client PDCSReceiver closed its connection.
+1704329372: Client Thermometer closed its connection.
+1704329372: Client Holter closed its connection.
+1704329372: Client Oximeter closed its connection.
+1704329372: Client Respirometer closed its connection.
+1704329372: mosquitto version 2.0.18 terminating
+1704329372: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704329418: mosquitto version 2.0.18 starting
+1704329418: Config loaded from /mosquitto/config/mosquitto.conf.
+1704329418: Opening ipv4 listen socket on port 1883.
+1704329418: mosquitto version 2.0.18 running
+1704329418: New connection from 172.21.0.8:33641 on port 1883.
+1704329418: New client connected from 172.21.0.8:33641 as Respirometer (p2, c1, k30).
+1704329419: New connection from 172.21.0.9:55377 on port 1883.
+1704329419: New client connected from 172.21.0.9:55377 as Holter (p2, c1, k30).
+1704329419: New connection from 172.21.0.10:41757 on port 1883.
+1704329419: New client connected from 172.21.0.10:41757 as Thermometer (p2, c1, k30).
+1704329419: New connection from 172.21.0.11:50347 on port 1883.
+1704329419: New client connected from 172.21.0.11:50347 as Oximeter (p2, c1, k30).
+1704329420: New connection from 172.21.0.14:43170 on port 1883.
+1704329420: New client connected from 172.21.0.14:43170 as PDCSReceiver (p2, c1, k60).
+1704329461: Client PDCSReceiver closed its connection.
+1704329472: Client Oximeter closed its connection.
+1704329472: Client Holter closed its connection.
+1704329472: Client Thermometer closed its connection.
+1704329472: Client Respirometer closed its connection.
+1704329472: mosquitto version 2.0.18 terminating
+1704329472: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704329541: mosquitto version 2.0.18 starting
+1704329541: Config loaded from /mosquitto/config/mosquitto.conf.
+1704329541: Opening ipv4 listen socket on port 1883.
+1704329541: mosquitto version 2.0.18 running
+1704329542: New connection from 172.21.0.8:41831 on port 1883.
+1704329542: New client connected from 172.21.0.8:41831 as Oximeter (p2, c1, k30).
+1704329542: New connection from 172.21.0.7:60857 on port 1883.
+1704329542: New client connected from 172.21.0.7:60857 as Respirometer (p2, c1, k30).
+1704329542: New connection from 172.21.0.10:41673 on port 1883.
+1704329542: New client connected from 172.21.0.10:41673 as Holter (p2, c1, k30).
+1704329542: New connection from 172.21.0.9:47545 on port 1883.
+1704329542: New client connected from 172.21.0.9:47545 as Thermometer (p2, c1, k30).
+1704329544: New connection from 172.21.0.14:59222 on port 1883.
+1704329544: New client connected from 172.21.0.14:59222 as PDCSReceiver (p2, c1, k60).
+1704329669: Client PDCSReceiver closed its connection.
+1704329679: Client Oximeter closed its connection.
+1704329679: Client Respirometer closed its connection.
+1704329679: Client Holter closed its connection.
+1704329679: Client Thermometer closed its connection.
+1704329680: mosquitto version 2.0.18 terminating
+1704329680: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704329813: mosquitto version 2.0.18 starting
+1704329813: Config loaded from /mosquitto/config/mosquitto.conf.
+1704329813: Opening ipv4 listen socket on port 1883.
+1704329813: mosquitto version 2.0.18 running
+1704329814: New connection from 172.21.0.7:33823 on port 1883.
+1704329814: New connection from 172.21.0.9:38331 on port 1883.
+1704329814: New connection from 172.21.0.8:49873 on port 1883.
+1704329815: New client connected from 172.21.0.7:33823 as Oximeter (p2, c1, k30).
+1704329815: New client connected from 172.21.0.9:38331 as Holter (p2, c1, k30).
+1704329815: New client connected from 172.21.0.8:49873 as Thermometer (p2, c1, k30).
+1704329815: New connection from 172.21.0.6:55443 on port 1883.
+1704329815: New client connected from 172.21.0.6:55443 as Respirometer (p2, c1, k30).
+1704329817: New connection from 172.21.0.14:44746 on port 1883.
+1704329817: New client connected from 172.21.0.14:44746 as PDCSReceiver (p2, c1, k60).
+1704329952: Client PDCSReceiver closed its connection.
+1704329962: Client Oximeter closed its connection.
+1704329962: Client Holter closed its connection.
+1704329962: Client Thermometer closed its connection.
+1704329962: Client Respirometer closed its connection.
+1704329963: mosquitto version 2.0.18 terminating
+1704329963: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704329984: mosquitto version 2.0.18 starting
+1704329984: Config loaded from /mosquitto/config/mosquitto.conf.
+1704329984: Opening ipv4 listen socket on port 1883.
+1704329984: mosquitto version 2.0.18 running
+1704329985: New connection from 172.21.0.9:52187 on port 1883.
+1704329985: New client connected from 172.21.0.9:52187 as Thermometer (p2, c1, k30).
+1704329985: New connection from 172.21.0.8:36789 on port 1883.
+1704329985: New client connected from 172.21.0.8:36789 as Holter (p2, c1, k30).
+1704329985: New connection from 172.21.0.11:43585 on port 1883.
+1704329985: New client connected from 172.21.0.11:43585 as Respirometer (p2, c1, k30).
+1704329985: New connection from 172.21.0.10:50313 on port 1883.
+1704329985: New client connected from 172.21.0.10:50313 as Oximeter (p2, c1, k30).
+1704329987: New connection from 172.21.0.14:56312 on port 1883.
+1704329988: New client connected from 172.21.0.14:56312 as PDCSReceiver (p2, c1, k60).
+1704330009: Client PDCSReceiver closed its connection.
+1704330019: Client Holter closed its connection.
+1704330019: Client Respirometer closed its connection.
+1704330019: Client Thermometer closed its connection.
+1704330019: Client Oximeter closed its connection.
+1704330020: mosquitto version 2.0.18 terminating
+1704330020: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704330172: mosquitto version 2.0.18 starting
+1704330172: Config loaded from /mosquitto/config/mosquitto.conf.
+1704330172: Opening ipv4 listen socket on port 1883.
+1704330172: mosquitto version 2.0.18 running
+1704330173: New connection from 172.21.0.7:35415 on port 1883.
+1704330173: New client connected from 172.21.0.7:35415 as Thermometer (p2, c1, k30).
+1704330173: New connection from 172.21.0.9:53367 on port 1883.
+1704330173: New client connected from 172.21.0.9:53367 as Respirometer (p2, c1, k30).
+1704330173: New connection from 172.21.0.10:56889 on port 1883.
+1704330173: New client connected from 172.21.0.10:56889 as Holter (p2, c1, k30).
+1704330173: New connection from 172.21.0.8:37747 on port 1883.
+1704330173: New client connected from 172.21.0.8:37747 as Oximeter (p2, c1, k30).
+1704330175: New connection from 172.21.0.14:36784 on port 1883.
+1704330176: New client connected from 172.21.0.14:36784 as PDCSReceiver (p2, c1, k60).
+1704330226: Client PDCSReceiver closed its connection.
+1704330236: Client Respirometer closed its connection.
+1704330236: Client Holter closed its connection.
+1704330236: Client Thermometer closed its connection.
+1704330236: Client Oximeter closed its connection.
+1704330237: mosquitto version 2.0.18 terminating
+1704330237: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704330327: mosquitto version 2.0.18 starting
+1704330327: Config loaded from /mosquitto/config/mosquitto.conf.
+1704330327: Opening ipv4 listen socket on port 1883.
+1704330327: mosquitto version 2.0.18 running
+1704330327: New connection from 172.21.0.6:49313 on port 1883.
+1704330327: New client connected from 172.21.0.6:49313 as Holter (p2, c1, k30).
+1704330327: New connection from 172.21.0.7:59383 on port 1883.
+1704330327: New client connected from 172.21.0.7:59383 as Respirometer (p2, c1, k30).
+1704330328: New connection from 172.21.0.8:59985 on port 1883.
+1704330328: New client connected from 172.21.0.8:59985 as Oximeter (p2, c1, k30).
+1704330328: New connection from 172.21.0.9:48397 on port 1883.
+1704330328: New client connected from 172.21.0.9:48397 as Thermometer (p2, c1, k30).
+1704330330: New connection from 172.21.0.14:33586 on port 1883.
+1704330330: New client connected from 172.21.0.14:33586 as PDCSReceiver (p2, c1, k60).
+1704330377: Client PDCSReceiver closed its connection.
+1704330388: Client Respirometer closed its connection.
+1704330388: Client Oximeter closed its connection.
+1704330388: Client Thermometer closed its connection.
+1704330388: Client Holter closed its connection.
+1704330388: mosquitto version 2.0.18 terminating
+1704330388: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704330432: mosquitto version 2.0.18 starting
+1704330432: Config loaded from /mosquitto/config/mosquitto.conf.
+1704330432: Opening ipv4 listen socket on port 1883.
+1704330432: mosquitto version 2.0.18 running
+1704330432: New connection from 172.21.0.8:60973 on port 1883.
+1704330432: New client connected from 172.21.0.8:60973 as Oximeter (p2, c1, k30).
+1704330432: New connection from 172.21.0.9:51355 on port 1883.
+1704330433: New client connected from 172.21.0.9:51355 as Holter (p2, c1, k30).
+1704330433: New connection from 172.21.0.10:37409 on port 1883.
+1704330433: New client connected from 172.21.0.10:37409 as Respirometer (p2, c1, k30).
+1704330433: New connection from 172.21.0.11:50563 on port 1883.
+1704330433: New client connected from 172.21.0.11:50563 as Thermometer (p2, c1, k30).
+1704330434: New connection from 172.21.0.14:33432 on port 1883.
+1704330434: New client connected from 172.21.0.14:33432 as PDCSReceiver (p2, c1, k60).
+1704330499: Client PDCSReceiver closed its connection.
+1704330510: Client Thermometer closed its connection.
+1704330510: Client Holter closed its connection.
+1704330510: Client Oximeter closed its connection.
+1704330510: Client Respirometer closed its connection.
+1704330510: mosquitto version 2.0.18 terminating
+1704330510: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704330564: mosquitto version 2.0.18 starting
+1704330564: Config loaded from /mosquitto/config/mosquitto.conf.
+1704330564: Opening ipv4 listen socket on port 1883.
+1704330564: mosquitto version 2.0.18 running
+1704330565: New connection from 172.21.0.7:59105 on port 1883.
+1704330565: New client connected from 172.21.0.7:59105 as Oximeter (p2, c1, k30).
+1704330565: New connection from 172.21.0.10:41599 on port 1883.
+1704330565: New client connected from 172.21.0.10:41599 as Respirometer (p2, c1, k30).
+1704330565: New connection from 172.21.0.8:49587 on port 1883.
+1704330565: New client connected from 172.21.0.8:49587 as Thermometer (p2, c1, k30).
+1704330565: New connection from 172.21.0.9:34765 on port 1883.
+1704330565: New client connected from 172.21.0.9:34765 as Holter (p2, c1, k30).
+1704330566: New connection from 172.21.0.14:44270 on port 1883.
+1704330566: New client connected from 172.21.0.14:44270 as PDCSReceiver (p2, c1, k60).
+1704330577: Client PDCSReceiver closed its connection.
+1704330588: Client Oximeter closed its connection.
+1704330588: Client Thermometer closed its connection.
+1704330588: Client Respirometer closed its connection.
+1704330588: Client Holter closed its connection.
+1704330588: mosquitto version 2.0.18 terminating
+1704330588: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704330644: mosquitto version 2.0.18 starting
+1704330644: Config loaded from /mosquitto/config/mosquitto.conf.
+1704330644: Opening ipv4 listen socket on port 1883.
+1704330644: mosquitto version 2.0.18 running
+1704330645: New connection from 172.21.0.6:53073 on port 1883.
+1704330645: New client connected from 172.21.0.6:53073 as Holter (p2, c1, k30).
+1704330645: New connection from 172.21.0.7:50233 on port 1883.
+1704330645: New client connected from 172.21.0.7:50233 as Respirometer (p2, c1, k30).
+1704330645: New connection from 172.21.0.8:51535 on port 1883.
+1704330645: New client connected from 172.21.0.8:51535 as Oximeter (p2, c1, k30).
+1704330645: New connection from 172.21.0.9:42245 on port 1883.
+1704330645: New client connected from 172.21.0.9:42245 as Thermometer (p2, c1, k30).
+1704330647: New connection from 172.21.0.14:48390 on port 1883.
+1704330647: New client connected from 172.21.0.14:48390 as PDCSReceiver (p2, c1, k60).
+1704330742: Client PDCSReceiver closed its connection.
+1704330752: Client Respirometer closed its connection.
+1704330753: Client Holter closed its connection.
+1704330753: Client Thermometer closed its connection.
+1704330753: Client Oximeter closed its connection.
+1704330753: mosquitto version 2.0.18 terminating
+1704330753: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704330809: mosquitto version 2.0.18 starting
+1704330809: Config loaded from /mosquitto/config/mosquitto.conf.
+1704330809: Opening ipv4 listen socket on port 1883.
+1704330809: mosquitto version 2.0.18 running
+1704330810: New connection from 172.21.0.8:38801 on port 1883.
+1704330810: New client connected from 172.21.0.8:38801 as Respirometer (p2, c1, k30).
+1704330810: New connection from 172.21.0.9:54765 on port 1883.
+1704330810: New client connected from 172.21.0.9:54765 as Holter (p2, c1, k30).
+1704330810: New connection from 172.21.0.10:40027 on port 1883.
+1704330810: New client connected from 172.21.0.10:40027 as Oximeter (p2, c1, k30).
+1704330810: New connection from 172.21.0.11:41655 on port 1883.
+1704330810: New client connected from 172.21.0.11:41655 as Thermometer (p2, c1, k30).
+1704330812: New connection from 172.21.0.14:45052 on port 1883.
+1704330812: New client connected from 172.21.0.14:45052 as PDCSReceiver (p2, c1, k60).
+1704330960: Client PDCSReceiver closed its connection.
+1704330970: Client Respirometer closed its connection.
+1704330970: Client Thermometer closed its connection.
+1704330970: Client Oximeter closed its connection.
+1704330970: Client Holter closed its connection.
+1704330971: mosquitto version 2.0.18 terminating
+1704330971: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704330997: mosquitto version 2.0.18 starting
+1704330997: Config loaded from /mosquitto/config/mosquitto.conf.
+1704330997: Opening ipv4 listen socket on port 1883.
+1704330997: mosquitto version 2.0.18 running
+1704330998: New connection from 172.21.0.7:58307 on port 1883.
+1704330998: New client connected from 172.21.0.7:58307 as Respirometer (p2, c1, k30).
+1704330998: New connection from 172.21.0.8:57961 on port 1883.
+1704330998: New client connected from 172.21.0.8:57961 as Thermometer (p2, c1, k30).
+1704330998: New connection from 172.21.0.9:55903 on port 1883.
+1704330998: New client connected from 172.21.0.9:55903 as Oximeter (p2, c1, k30).
+1704330999: New connection from 172.21.0.11:53335 on port 1883.
+1704330999: New client connected from 172.21.0.11:53335 as Holter (p2, c1, k30).
+1704331001: New connection from 172.21.0.14:43608 on port 1883.
+1704331001: New client connected from 172.21.0.14:43608 as PDCSReceiver (p2, c1, k60).
+1704331023: Client PDCSReceiver closed its connection.
+1704331033: Client Respirometer closed its connection.
+1704331033: Client Holter closed its connection.
+1704331033: Client Thermometer closed its connection.
+1704331033: Client Oximeter closed its connection.
+1704331033: mosquitto version 2.0.18 terminating
+1704331033: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704331462: mosquitto version 2.0.18 starting
+1704331462: Config loaded from /mosquitto/config/mosquitto.conf.
+1704331462: Opening ipv4 listen socket on port 1883.
+1704331462: mosquitto version 2.0.18 running
+1704331463: New connection from 172.21.0.8:44391 on port 1883.
+1704331463: New client connected from 172.21.0.8:44391 as Thermometer (p2, c1, k30).
+1704331464: New connection from 172.21.0.9:36295 on port 1883.
+1704331464: New client connected from 172.21.0.9:36295 as Oximeter (p2, c1, k30).
+1704331464: New connection from 172.21.0.10:41155 on port 1883.
+1704331464: New client connected from 172.21.0.10:41155 as Holter (p2, c1, k30).
+1704331464: New connection from 172.21.0.11:37789 on port 1883.
+1704331464: New client connected from 172.21.0.11:37789 as Respirometer (p2, c1, k30).
+1704331467: New connection from 172.21.0.14:46438 on port 1883.
+1704331467: New client connected from 172.21.0.14:46438 as PDCSReceiver (p2, c1, k60).
+1704331707: Client PDCSReceiver closed its connection.
+1704331717: Client Holter closed its connection.
+1704331717: Client Respirometer closed its connection.
+1704331717: Client Thermometer closed its connection.
+1704331717: Client Oximeter closed its connection.
+1704331718: mosquitto version 2.0.18 terminating
+1704331718: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704332151: mosquitto version 2.0.18 starting
+1704332151: Config loaded from /mosquitto/config/mosquitto.conf.
+1704332151: Opening ipv4 listen socket on port 1883.
+1704332151: mosquitto version 2.0.18 running
+1704332152: New connection from 172.21.0.7:55833 on port 1883.
+1704332152: New client connected from 172.21.0.7:55833 as Thermometer (p2, c1, k30).
+1704332152: New connection from 172.21.0.9:45481 on port 1883.
+1704332152: New client connected from 172.21.0.9:45481 as Respirometer (p2, c1, k30).
+1704332152: New connection from 172.21.0.8:59807 on port 1883.
+1704332152: New client connected from 172.21.0.8:59807 as Holter (p2, c1, k30).
+1704332152: New connection from 172.21.0.10:58597 on port 1883.
+1704332152: New client connected from 172.21.0.10:58597 as Oximeter (p2, c1, k30).
+1704332155: New connection from 172.21.0.14:45696 on port 1883.
+1704332155: New client connected from 172.21.0.14:45696 as PDCSReceiver (p2, c1, k60).
+1704332255: Client PDCSReceiver closed its connection.
+1704332265: Client Holter closed its connection.
+1704332265: Client Thermometer closed its connection.
+1704332265: Client Respirometer closed its connection.
+1704332265: Client Oximeter closed its connection.
+1704332266: mosquitto version 2.0.18 terminating
+1704332266: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704332633: mosquitto version 2.0.18 starting
+1704332633: Config loaded from /mosquitto/config/mosquitto.conf.
+1704332633: Opening ipv4 listen socket on port 1883.
+1704332633: mosquitto version 2.0.18 running
+1704332634: New connection from 172.21.0.8:51247 on port 1883.
+1704332634: New connection from 172.21.0.9:56717 on port 1883.
+1704332634: New client connected from 172.21.0.8:51247 as Respirometer (p2, c1, k30).
+1704332634: New client connected from 172.21.0.9:56717 as Thermometer (p2, c1, k30).
+1704332634: New connection from 172.21.0.10:58907 on port 1883.
+1704332634: New connection from 172.21.0.11:39643 on port 1883.
+1704332634: New client connected from 172.21.0.10:58907 as Holter (p2, c1, k30).
+1704332634: New client connected from 172.21.0.11:39643 as Oximeter (p2, c1, k30).
+1704332636: New connection from 172.21.0.14:57930 on port 1883.
+1704332636: New client connected from 172.21.0.14:57930 as PDCSReceiver (p2, c1, k60).
+1704333116: Client PDCSReceiver closed its connection.
+1704333126: Client Respirometer closed its connection.
+1704333126: Client Thermometer closed its connection.
+1704333126: Client Holter closed its connection.
+1704333126: Client Oximeter closed its connection.
+1704333126: mosquitto version 2.0.18 terminating
+1704333126: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704333200: mosquitto version 2.0.18 starting
+1704333200: Config loaded from /mosquitto/config/mosquitto.conf.
+1704333200: Opening ipv4 listen socket on port 1883.
+1704333200: mosquitto version 2.0.18 running
+1704333201: New connection from 172.21.0.9:44489 on port 1883.
+1704333201: New client connected from 172.21.0.9:44489 as Thermometer (p2, c1, k30).
+1704333201: New connection from 172.21.0.8:34897 on port 1883.
+1704333201: New client connected from 172.21.0.8:34897 as Oximeter (p2, c1, k30).
+1704333201: New connection from 172.21.0.10:50291 on port 1883.
+1704333201: New client connected from 172.21.0.10:50291 as Respirometer (p2, c1, k30).
+1704333201: New connection from 172.21.0.11:41537 on port 1883.
+1704333201: New client connected from 172.21.0.11:41537 as Holter (p2, c1, k30).
+1704333203: New connection from 172.21.0.14:43826 on port 1883.
+1704333204: New client connected from 172.21.0.14:43826 as PDCSReceiver (p2, c1, k60).
+1704333293: Client PDCSReceiver closed its connection.
+1704333303: Client Thermometer closed its connection.
+1704333303: Client Oximeter closed its connection.
+1704333303: Client Respirometer closed its connection.
+1704333303: Client Holter closed its connection.
+1704333304: mosquitto version 2.0.18 terminating
+1704333304: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704333832: mosquitto version 2.0.18 starting
+1704333832: Config loaded from /mosquitto/config/mosquitto.conf.
+1704333832: Opening ipv4 listen socket on port 1883.
+1704333832: mosquitto version 2.0.18 running
+1704333833: New connection from 172.21.0.8:39983 on port 1883.
+1704333833: New client connected from 172.21.0.8:39983 as Respirometer (p2, c1, k30).
+1704333833: New connection from 172.21.0.9:45735 on port 1883.
+1704333833: New client connected from 172.21.0.9:45735 as Holter (p2, c1, k30).
+1704333833: New connection from 172.21.0.7:40339 on port 1883.
+1704333833: New client connected from 172.21.0.7:40339 as Thermometer (p2, c1, k30).
+1704333833: New connection from 172.21.0.10:32995 on port 1883.
+1704333833: New client connected from 172.21.0.10:32995 as Oximeter (p2, c1, k30).
+1704333835: New connection from 172.21.0.14:35354 on port 1883.
+1704333835: New client connected from 172.21.0.14:35354 as PDCSReceiver (p2, c1, k60).
+1704333858: Client PDCSReceiver closed its connection.
+1704333868: Client Respirometer closed its connection.
+1704333868: Client Oximeter closed its connection.
+1704333868: Client Thermometer closed its connection.
+1704333868: Client Holter closed its connection.
+1704333869: mosquitto version 2.0.18 terminating
+1704333869: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704334038: mosquitto version 2.0.18 starting
+1704334038: Config loaded from /mosquitto/config/mosquitto.conf.
+1704334038: Opening ipv4 listen socket on port 1883.
+1704334038: mosquitto version 2.0.18 running
+1704334039: New connection from 172.21.0.7:35755 on port 1883.
+1704334039: New client connected from 172.21.0.7:35755 as Oximeter (p2, c1, k30).
+1704334039: New connection from 172.21.0.10:37329 on port 1883.
+1704334039: New client connected from 172.21.0.10:37329 as Respirometer (p2, c1, k30).
+1704334039: New connection from 172.21.0.9:34519 on port 1883.
+1704334039: New client connected from 172.21.0.9:34519 as Holter (p2, c1, k30).
+1704334039: New connection from 172.21.0.8:36645 on port 1883.
+1704334039: New client connected from 172.21.0.8:36645 as Thermometer (p2, c1, k30).
+1704334041: New connection from 172.21.0.14:45354 on port 1883.
+1704334041: New client connected from 172.21.0.14:45354 as PDCSReceiver (p2, c1, k60).
+1704334356: Client PDCSReceiver closed its connection.
+1704334366: Client Holter closed its connection.
+1704334366: Client Oximeter closed its connection.
+1704334366: Client Thermometer closed its connection.
+1704334366: Client Respirometer closed its connection.
+1704334366: mosquitto version 2.0.18 terminating
+1704334366: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704334483: mosquitto version 2.0.18 starting
+1704334483: Config loaded from /mosquitto/config/mosquitto.conf.
+1704334483: Opening ipv4 listen socket on port 1883.
+1704334483: mosquitto version 2.0.18 running
+1704334484: New connection from 172.21.0.6:51537 on port 1883.
+1704334484: New client connected from 172.21.0.6:51537 as Oximeter (p2, c1, k30).
+1704334484: New connection from 172.21.0.8:55599 on port 1883.
+1704334484: New client connected from 172.21.0.8:55599 as Respirometer (p2, c1, k30).
+1704334484: New connection from 172.21.0.7:43635 on port 1883.
+1704334484: New client connected from 172.21.0.7:43635 as Holter (p2, c1, k30).
+1704334484: New connection from 172.21.0.9:41291 on port 1883.
+1704334484: New client connected from 172.21.0.9:41291 as Thermometer (p2, c1, k30).
+1704334486: New connection from 172.21.0.12:51588 on port 1883.
+1704334486: New client connected from 172.21.0.12:51588 as PDCSReceiver (p2, c1, k60).
+1704335519: Client PDCSReceiver closed its connection.
+1704335529: Client Oximeter closed its connection.
+1704335529: Client Thermometer closed its connection.
+1704335529: Client Holter closed its connection.
+1704335529: Client Respirometer closed its connection.
+1704335530: mosquitto version 2.0.18 terminating
+1704335530: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704335560: mosquitto version 2.0.18 starting
+1704335560: Config loaded from /mosquitto/config/mosquitto.conf.
+1704335560: Opening ipv4 listen socket on port 1883.
+1704335560: mosquitto version 2.0.18 running
+1704335561: New connection from 172.21.0.6:44311 on port 1883.
+1704335561: New client connected from 172.21.0.6:44311 as Respirometer (p2, c1, k30).
+1704335561: New connection from 172.21.0.7:48887 on port 1883.
+1704335561: New client connected from 172.21.0.7:48887 as Oximeter (p2, c1, k30).
+1704335561: New connection from 172.21.0.8:55161 on port 1883.
+1704335561: New client connected from 172.21.0.8:55161 as Holter (p2, c1, k30).
+1704335561: New connection from 172.21.0.9:59763 on port 1883.
+1704335561: New client connected from 172.21.0.9:59763 as Thermometer (p2, c1, k30).
+1704335564: New connection from 172.21.0.12:53748 on port 1883.
+1704335564: New client connected from 172.21.0.12:53748 as PDCSReceiver (p2, c1, k60).
+1704335694: Client PDCSReceiver closed its connection.
+1704335704: Client Respirometer closed its connection.
+1704335704: Client Oximeter closed its connection.
+1704335704: Client Thermometer closed its connection.
+1704335704: Client Holter closed its connection.
+1704335704: mosquitto version 2.0.18 terminating
+1704335704: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704335976: mosquitto version 2.0.18 starting
+1704335976: Config loaded from /mosquitto/config/mosquitto.conf.
+1704335976: Opening ipv4 listen socket on port 1883.
+1704335976: mosquitto version 2.0.18 running
+1704335976: New connection from 172.21.0.7:54273 on port 1883.
+1704335976: New client connected from 172.21.0.7:54273 as Thermometer (p2, c1, k30).
+1704335976: New connection from 172.21.0.8:51049 on port 1883.
+1704335976: New client connected from 172.21.0.8:51049 as Respirometer (p2, c1, k30).
+1704335976: New connection from 172.21.0.9:40561 on port 1883.
+1704335976: New client connected from 172.21.0.9:40561 as Holter (p2, c1, k30).
+1704335976: New connection from 172.21.0.10:44367 on port 1883.
+1704335977: New client connected from 172.21.0.10:44367 as Oximeter (p2, c1, k30).
+1704335978: New connection from 172.21.0.14:38436 on port 1883.
+1704335978: New client connected from 172.21.0.14:38436 as PDCSReceiver (p2, c1, k60).
+1704336120: Client PDCSReceiver closed its connection.
+1704336130: Client Oximeter closed its connection.
+1704336130: Client Thermometer closed its connection.
+1704336130: Client Holter closed its connection.
+1704336130: Client Respirometer closed its connection.
+1704336130: mosquitto version 2.0.18 terminating
+1704336130: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704336355: mosquitto version 2.0.18 starting
+1704336355: Config loaded from /mosquitto/config/mosquitto.conf.
+1704336355: Opening ipv4 listen socket on port 1883.
+1704336355: mosquitto version 2.0.18 running
+1704336356: New connection from 172.22.0.7:35943 on port 1883.
+1704336356: New client connected from 172.22.0.7:35943 as Thermometer (p2, c1, k30).
+1704336356: New connection from 172.22.0.8:60245 on port 1883.
+1704336356: New client connected from 172.22.0.8:60245 as Respirometer (p2, c1, k30).
+1704336356: New connection from 172.22.0.9:41753 on port 1883.
+1704336356: New client connected from 172.22.0.9:41753 as Holter (p2, c1, k30).
+1704336356: New connection from 172.22.0.10:41889 on port 1883.
+1704336356: New client connected from 172.22.0.10:41889 as Oximeter (p2, c1, k30).
+1704336359: New connection from 172.22.0.14:53144 on port 1883.
+1704336360: New client connected from 172.22.0.14:53144 as PDCSReceiver (p2, c1, k60).
+1704336588: Client PDCSReceiver closed its connection.
+1704336598: Client Oximeter closed its connection.
+1704336598: Client Thermometer closed its connection.
+1704336598: Client Respirometer closed its connection.
+1704336598: Client Holter closed its connection.
+1704336598: mosquitto version 2.0.18 terminating
+1704336598: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704336636: mosquitto version 2.0.18 starting
+1704336636: Config loaded from /mosquitto/config/mosquitto.conf.
+1704336636: Opening ipv4 listen socket on port 1883.
+1704336636: mosquitto version 2.0.18 running
+1704336637: New connection from 172.22.0.8:42097 on port 1883.
+1704336637: New client connected from 172.22.0.8:42097 as Holter (p2, c1, k30).
+1704336637: New connection from 172.22.0.11:47243 on port 1883.
+1704336637: New client connected from 172.22.0.11:47243 as Oximeter (p2, c1, k30).
+1704336637: New connection from 172.22.0.10:48655 on port 1883.
+1704336637: New client connected from 172.22.0.10:48655 as Respirometer (p2, c1, k30).
+1704336637: New connection from 172.22.0.9:48329 on port 1883.
+1704336637: New client connected from 172.22.0.9:48329 as Thermometer (p2, c1, k30).
+1704336639: New connection from 172.22.0.14:57760 on port 1883.
+1704336639: New client connected from 172.22.0.14:57760 as PDCSReceiver (p2, c1, k60).
+1704336837: Client PDCSReceiver closed its connection.
+1704336848: Client Thermometer closed its connection.
+1704336848: Client Holter closed its connection.
+1704336848: Client Respirometer closed its connection.
+1704336848: Client Oximeter closed its connection.
+1704336848: mosquitto version 2.0.18 terminating
+1704336848: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704337290: mosquitto version 2.0.18 starting
+1704337290: Config loaded from /mosquitto/config/mosquitto.conf.
+1704337290: Opening ipv4 listen socket on port 1883.
+1704337290: mosquitto version 2.0.18 running
+1704337291: New connection from 172.22.0.8:47025 on port 1883.
+1704337291: New client connected from 172.22.0.8:47025 as Respirometer (p2, c1, k30).
+1704337291: New connection from 172.22.0.11:54923 on port 1883.
+1704337291: New client connected from 172.22.0.11:54923 as Thermometer (p2, c1, k30).
+1704337291: New connection from 172.22.0.9:38075 on port 1883.
+1704337291: New client connected from 172.22.0.9:38075 as Holter (p2, c1, k30).
+1704337291: New connection from 172.22.0.10:43967 on port 1883.
+1704337291: New client connected from 172.22.0.10:43967 as Oximeter (p2, c1, k30).
+1704337294: New connection from 172.22.0.14:44030 on port 1883.
+1704337294: New client connected from 172.22.0.14:44030 as PDCSReceiver (p2, c1, k60).
+1704337730: Client PDCSReceiver closed its connection.
+1704337740: Client Oximeter closed its connection.
+1704337740: Client Respirometer closed its connection.
+1704337740: Client Holter closed its connection.
+1704337740: Client Thermometer closed its connection.
+1704337740: mosquitto version 2.0.18 terminating
+1704337740: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704337740: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1704337740: Error: No such file or directory.
+1704412246: mosquitto version 2.0.18 starting
+1704412246: Config loaded from /mosquitto/config/mosquitto.conf.
+1704412246: Opening ipv4 listen socket on port 1883.
+1704412246: mosquitto version 2.0.18 running
+1704412247: New connection from 172.24.0.8:47431 on port 1883.
+1704412247: New client connected from 172.24.0.8:47431 as Oximeter (p2, c1, k30).
+1704412247: New connection from 172.24.0.9:48375 on port 1883.
+1704412247: New client connected from 172.24.0.9:48375 as Holter (p2, c1, k30).
+1704412247: New connection from 172.24.0.11:36341 on port 1883.
+1704412247: New client connected from 172.24.0.11:36341 as Thermometer (p2, c1, k30).
+1704412247: New connection from 172.24.0.12:51983 on port 1883.
+1704412247: New client connected from 172.24.0.12:51983 as Respirometer (p2, c1, k30).
+1704412248: New connection from 172.24.0.15:45650 on port 1883.
+1704412248: New client connected from 172.24.0.15:45650 as PDCSReceiver (p2, c1, k60).
+1704412569: Client PDCSReceiver closed its connection.
+1704412580: Client Respirometer closed its connection.
+1704412580: Client Thermometer closed its connection.
+1704412580: Client Holter closed its connection.
+1704412580: Client Oximeter closed its connection.
+1704412580: mosquitto version 2.0.18 terminating
+1704412580: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704412592: mosquitto version 2.0.18 starting
+1704412592: Config loaded from /mosquitto/config/mosquitto.conf.
+1704412592: Opening ipv4 listen socket on port 1883.
+1704412592: mosquitto version 2.0.18 running
+1704412593: New connection from 172.24.0.9:59257 on port 1883.
+1704412593: New connection from 172.24.0.8:43393 on port 1883.
+1704412593: New client connected from 172.24.0.9:59257 as Thermometer (p2, c1, k30).
+1704412593: New client connected from 172.24.0.8:43393 as Respirometer (p2, c1, k30).
+1704412594: New connection from 172.24.0.10:33497 on port 1883.
+1704412594: New client connected from 172.24.0.10:33497 as Holter (p2, c1, k30).
+1704412594: New connection from 172.24.0.11:57253 on port 1883.
+1704412594: New client connected from 172.24.0.11:57253 as Oximeter (p2, c1, k30).
+1704412598: New connection from 172.24.0.15:53394 on port 1883.
+1704412598: New client connected from 172.24.0.15:53394 as PDCSReceiver (p2, c1, k60).
+1704412851: Client PDCSReceiver closed its connection.
+1704412862: Client Thermometer closed its connection.
+1704412862: Client Oximeter closed its connection.
+1704412862: Client Holter closed its connection.
+1704412862: Client Respirometer closed its connection.
+1704412862: mosquitto version 2.0.18 terminating
+1704412862: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704413003: mosquitto version 2.0.18 starting
+1704413003: Config loaded from /mosquitto/config/mosquitto.conf.
+1704413003: Opening ipv4 listen socket on port 1883.
+1704413003: mosquitto version 2.0.18 running
+1704413004: New connection from 172.18.0.8:45581 on port 1883.
+1704413004: New client connected from 172.18.0.8:45581 as Thermometer (p2, c1, k30).
+1704413005: New connection from 172.18.0.6:41813 on port 1883.
+1704413005: New client connected from 172.18.0.6:41813 as Oximeter (p2, c1, k30).
+1704413005: New connection from 172.18.0.7:52971 on port 1883.
+1704413005: New client connected from 172.18.0.7:52971 as Respirometer (p2, c1, k30).
+1704413005: New connection from 172.18.0.9:34345 on port 1883.
+1704413005: New client connected from 172.18.0.9:34345 as Holter (p2, c1, k30).
+1704413008: New connection from 172.18.0.14:41714 on port 1883.
+1704413008: New client connected from 172.18.0.14:41714 as PDCSReceiver (p2, c1, k60).
+1704413443: Client PDCSReceiver closed its connection.
+1704413454: Client Respirometer closed its connection.
+1704413454: Client Thermometer closed its connection.
+1704413454: Client Oximeter closed its connection.
+1704413454: Client Holter closed its connection.
+1704413454: mosquitto version 2.0.18 terminating
+1704413454: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704413685: mosquitto version 2.0.18 starting
+1704413685: Config loaded from /mosquitto/config/mosquitto.conf.
+1704413685: Opening ipv4 listen socket on port 1883.
+1704413685: mosquitto version 2.0.18 running
+1704413686: New connection from 172.19.0.7:51029 on port 1883.
+1704413686: New client connected from 172.19.0.7:51029 as Oximeter (p2, c1, k30).
+1704413686: New connection from 172.19.0.8:38709 on port 1883.
+1704413686: New client connected from 172.19.0.8:38709 as Respirometer (p2, c1, k30).
+1704413686: New connection from 172.19.0.9:42785 on port 1883.
+1704413686: New client connected from 172.19.0.9:42785 as Holter (p2, c1, k30).
+1704413686: New connection from 172.19.0.10:34529 on port 1883.
+1704413686: New client connected from 172.19.0.10:34529 as Thermometer (p2, c1, k30).
+1704413687: New connection from 172.19.0.14:33940 on port 1883.
+1704413688: New client connected from 172.19.0.14:33940 as PDCSReceiver (p2, c1, k60).
+1704413701: Client PDCSReceiver closed its connection.
+1704413711: Client Oximeter closed its connection.
+1704413711: Client Thermometer closed its connection.
+1704413711: Client Respirometer closed its connection.
+1704413711: Client Holter closed its connection.
+1704413711: mosquitto version 2.0.18 terminating
+1704413711: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704413921: mosquitto version 2.0.18 starting
+1704413921: Config loaded from /mosquitto/config/mosquitto.conf.
+1704413921: Opening ipv4 listen socket on port 1883.
+1704413921: mosquitto version 2.0.18 running
+1704413922: New connection from 172.19.0.6:60201 on port 1883.
+1704413922: New connection from 172.19.0.7:45665 on port 1883.
+1704413922: New client connected from 172.19.0.6:60201 as Respirometer (p2, c1, k30).
+1704413922: New client connected from 172.19.0.7:45665 as Oximeter (p2, c1, k30).
+1704413922: New connection from 172.19.0.8:60699 on port 1883.
+1704413922: New client connected from 172.19.0.8:60699 as Thermometer (p2, c1, k30).
+1704413922: New connection from 172.19.0.9:59731 on port 1883.
+1704413922: New client connected from 172.19.0.9:59731 as Holter (p2, c1, k30).
+1704413926: New connection from 172.19.0.14:51618 on port 1883.
+1704413926: New client connected from 172.19.0.14:51618 as PDCSReceiver (p2, c1, k60).
+1704413940: Client PDCSReceiver closed its connection.
+1704413950: Client Holter closed its connection.
+1704413950: Client Respirometer closed its connection.
+1704413950: Client Thermometer closed its connection.
+1704413950: Client Oximeter closed its connection.
+1704413951: mosquitto version 2.0.18 terminating
+1704413951: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704414006: mosquitto version 2.0.18 starting
+1704414006: Config loaded from /mosquitto/config/mosquitto.conf.
+1704414006: Opening ipv4 listen socket on port 1883.
+1704414006: mosquitto version 2.0.18 running
+1704414006: New connection from 172.19.0.7:59981 on port 1883.
+1704414006: New client connected from 172.19.0.7:59981 as Holter (p2, c1, k30).
+1704414006: New connection from 172.19.0.8:56211 on port 1883.
+1704414006: New client connected from 172.19.0.8:56211 as Respirometer (p2, c1, k30).
+1704414007: New connection from 172.19.0.9:48203 on port 1883.
+1704414007: New client connected from 172.19.0.9:48203 as Thermometer (p2, c1, k30).
+1704414007: New connection from 172.19.0.10:54783 on port 1883.
+1704414007: New client connected from 172.19.0.10:54783 as Oximeter (p2, c1, k30).
+1704414010: New connection from 172.19.0.14:52284 on port 1883.
+1704414010: New client connected from 172.19.0.14:52284 as PDCSReceiver (p2, c1, k60).
+1704415148: Client PDCSReceiver closed its connection.
+1704415158: Client Oximeter closed its connection.
+1704415158: Client Holter closed its connection.
+1704415158: Client Thermometer closed its connection.
+1704415158: Client Respirometer closed its connection.
+1704415159: mosquitto version 2.0.18 terminating
+1704415159: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704415211: mosquitto version 2.0.18 starting
+1704415211: Config loaded from /mosquitto/config/mosquitto.conf.
+1704415211: Opening ipv4 listen socket on port 1883.
+1704415211: mosquitto version 2.0.18 running
+1704415212: New connection from 172.20.0.8:52987 on port 1883.
+1704415212: New client connected from 172.20.0.8:52987 as Holter (p2, c1, k30).
+1704415213: New connection from 172.20.0.9:51687 on port 1883.
+1704415213: New client connected from 172.20.0.9:51687 as Thermometer (p2, c1, k30).
+1704415213: New connection from 172.20.0.11:40029 on port 1883.
+1704415213: New client connected from 172.20.0.11:40029 as Oximeter (p2, c1, k30).
+1704415213: New connection from 172.20.0.10:37395 on port 1883.
+1704415213: New client connected from 172.20.0.10:37395 as Respirometer (p2, c1, k30).
+1704415216: New connection from 172.20.0.15:33422 on port 1883.
+1704415217: New client connected from 172.20.0.15:33422 as PDCSReceiver (p2, c1, k60).
+1704415229: Client PDCSReceiver closed its connection.
+1704415239: Client Thermometer closed its connection.
+1704415239: Client Respirometer closed its connection.
+1704415239: Client Oximeter closed its connection.
+1704415239: Client Holter closed its connection.
+1704415240: mosquitto version 2.0.18 terminating
+1704415240: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704415273: mosquitto version 2.0.18 starting
+1704415273: Config loaded from /mosquitto/config/mosquitto.conf.
+1704415273: Opening ipv4 listen socket on port 1883.
+1704415273: mosquitto version 2.0.18 running
+1704415274: New connection from 172.20.0.8:47635 on port 1883.
+1704415274: New connection from 172.20.0.7:40001 on port 1883.
+1704415275: New client connected from 172.20.0.8:47635 as Oximeter (p2, c1, k30).
+1704415275: New client connected from 172.20.0.7:40001 as Holter (p2, c1, k30).
+1704415275: New connection from 172.20.0.9:51443 on port 1883.
+1704415275: New client connected from 172.20.0.9:51443 as Thermometer (p2, c1, k30).
+1704415275: New connection from 172.20.0.10:43555 on port 1883.
+1704415275: New client connected from 172.20.0.10:43555 as Respirometer (p2, c1, k30).
+1704415278: New connection from 172.20.0.14:40126 on port 1883.
+1704415278: New client connected from 172.20.0.14:40126 as PDCSReceiver (p2, c1, k60).
+1704415315: Client PDCSReceiver closed its connection.
+1704415325: Client Respirometer closed its connection.
+1704415325: Client Oximeter closed its connection.
+1704415325: Client Thermometer closed its connection.
+1704415325: Client Holter closed its connection.
+1704415325: mosquitto version 2.0.18 terminating
+1704415325: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704415350: mosquitto version 2.0.18 starting
+1704415350: Config loaded from /mosquitto/config/mosquitto.conf.
+1704415350: Opening ipv4 listen socket on port 1883.
+1704415350: mosquitto version 2.0.18 running
+1704415350: New connection from 172.21.0.7:38621 on port 1883.
+1704415350: New client connected from 172.21.0.7:38621 as Holter (p2, c1, k30).
+1704415350: New connection from 172.21.0.8:45677 on port 1883.
+1704415350: New client connected from 172.21.0.8:45677 as Thermometer (p2, c1, k30).
+1704415350: New connection from 172.21.0.9:53293 on port 1883.
+1704415350: New client connected from 172.21.0.9:53293 as Respirometer (p2, c1, k30).
+1704415350: New connection from 172.21.0.10:49585 on port 1883.
+1704415350: New client connected from 172.21.0.10:49585 as Oximeter (p2, c1, k30).
+1704415352: New connection from 172.21.0.14:56370 on port 1883.
+1704415353: New client connected from 172.21.0.14:56370 as PDCSReceiver (p2, c1, k60).
+1704415360: Client PDCSReceiver closed its connection.
+1704415370: Client Respirometer closed its connection.
+1704415370: Client Thermometer closed its connection.
+1704415370: Client Oximeter closed its connection.
+1704415370: Client Holter closed its connection.
+1704415370: mosquitto version 2.0.18 terminating
+1704415370: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704415421: mosquitto version 2.0.18 starting
+1704415421: Config loaded from /mosquitto/config/mosquitto.conf.
+1704415421: Opening ipv4 listen socket on port 1883.
+1704415421: mosquitto version 2.0.18 running
+1704415422: New connection from 172.22.0.7:47463 on port 1883.
+1704415422: New client connected from 172.22.0.7:47463 as Respirometer (p2, c1, k30).
+1704415422: New connection from 172.22.0.8:60567 on port 1883.
+1704415422: New client connected from 172.22.0.8:60567 as Oximeter (p2, c1, k30).
+1704415422: New connection from 172.22.0.9:56063 on port 1883.
+1704415422: New client connected from 172.22.0.9:56063 as Holter (p2, c1, k30).
+1704415422: New connection from 172.22.0.11:47359 on port 1883.
+1704415422: New client connected from 172.22.0.11:47359 as Thermometer (p2, c1, k30).
+1704415424: New connection from 172.22.0.15:43652 on port 1883.
+1704415424: New client connected from 172.22.0.15:43652 as PDCSReceiver (p2, c1, k60).
+1704415543: Client PDCSReceiver closed its connection.
+1704415554: Client Holter closed its connection.
+1704415554: Client Oximeter closed its connection.
+1704415554: Client Thermometer closed its connection.
+1704415554: Client Respirometer closed its connection.
+1704415554: mosquitto version 2.0.18 terminating
+1704415554: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704415611: mosquitto version 2.0.18 starting
+1704415611: Config loaded from /mosquitto/config/mosquitto.conf.
+1704415611: Opening ipv4 listen socket on port 1883.
+1704415611: mosquitto version 2.0.18 running
+1704415611: New connection from 172.22.0.11:50207 on port 1883.
+1704415611: New connection from 172.22.0.8:56293 on port 1883.
+1704415611: New client connected from 172.22.0.11:50207 as Thermometer (p2, c1, k30).
+1704415611: New client connected from 172.22.0.8:56293 as Holter (p2, c1, k30).
+1704415611: New connection from 172.22.0.9:45795 on port 1883.
+1704415611: New client connected from 172.22.0.9:45795 as Oximeter (p2, c1, k30).
+1704415612: New connection from 172.22.0.10:60077 on port 1883.
+1704415612: New client connected from 172.22.0.10:60077 as Respirometer (p2, c1, k30).
+1704415614: New connection from 172.22.0.14:36926 on port 1883.
+1704415614: New client connected from 172.22.0.14:36926 as PDCSReceiver (p2, c1, k60).
+1704415914: Client PDCSReceiver closed its connection.
+1704415924: Client Holter closed its connection.
+1704415924: Client Respirometer closed its connection.
+1704415924: Client Thermometer closed its connection.
+1704415924: Client Oximeter closed its connection.
+1704415924: mosquitto version 2.0.18 terminating
+1704415924: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704415952: mosquitto version 2.0.18 starting
+1704415952: Config loaded from /mosquitto/config/mosquitto.conf.
+1704415952: Opening ipv4 listen socket on port 1883.
+1704415952: mosquitto version 2.0.18 running
+1704415952: New connection from 172.22.0.6:49419 on port 1883.
+1704415952: New client connected from 172.22.0.6:49419 as Holter (p2, c1, k30).
+1704415952: New connection from 172.22.0.7:42769 on port 1883.
+1704415952: New client connected from 172.22.0.7:42769 as Respirometer (p2, c1, k30).
+1704415952: New connection from 172.22.0.9:44783 on port 1883.
+1704415952: New connection from 172.22.0.8:50233 on port 1883.
+1704415952: New client connected from 172.22.0.9:44783 as Oximeter (p2, c1, k30).
+1704415952: New client connected from 172.22.0.8:50233 as Thermometer (p2, c1, k30).
+1704415955: New connection from 172.22.0.14:40076 on port 1883.
+1704415955: New client connected from 172.22.0.14:40076 as PDCSReceiver (p2, c1, k60).
+1704416005: Client PDCSReceiver closed its connection.
+1704416015: Client Thermometer closed its connection.
+1704416015: Client Respirometer closed its connection.
+1704416015: Client Holter closed its connection.
+1704416015: Client Oximeter closed its connection.
+1704416016: mosquitto version 2.0.18 terminating
+1704416016: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704416071: mosquitto version 2.0.18 starting
+1704416071: Config loaded from /mosquitto/config/mosquitto.conf.
+1704416071: Opening ipv4 listen socket on port 1883.
+1704416071: mosquitto version 2.0.18 running
+1704416072: New connection from 172.24.0.8:41963 on port 1883.
+1704416072: New client connected from 172.24.0.8:41963 as Thermometer (p2, c1, k30).
+1704416073: New connection from 172.24.0.11:60391 on port 1883.
+1704416073: New client connected from 172.24.0.11:60391 as Respirometer (p2, c1, k30).
+1704416073: New connection from 172.24.0.9:36117 on port 1883.
+1704416073: New client connected from 172.24.0.9:36117 as Holter (p2, c1, k30).
+1704416073: New connection from 172.24.0.10:60065 on port 1883.
+1704416073: New client connected from 172.24.0.10:60065 as Oximeter (p2, c1, k30).
+1704416074: New connection from 172.24.0.14:55940 on port 1883.
+1704416075: New client connected from 172.24.0.14:55940 as PDCSReceiver (p2, c1, k60).
+1704416315: Client PDCSReceiver closed its connection.
+1704416325: Client Holter closed its connection.
+1704416325: Client Thermometer closed its connection.
+1704416325: Client Oximeter closed its connection.
+1704416325: Client Respirometer closed its connection.
+1704416325: mosquitto version 2.0.18 terminating
+1704416325: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704416377: mosquitto version 2.0.18 starting
+1704416377: Config loaded from /mosquitto/config/mosquitto.conf.
+1704416377: Opening ipv4 listen socket on port 1883.
+1704416377: mosquitto version 2.0.18 running
+1704416378: New connection from 172.24.0.6:50551 on port 1883.
+1704416378: New client connected from 172.24.0.6:50551 as Oximeter (p2, c1, k30).
+1704416378: New connection from 172.24.0.7:35583 on port 1883.
+1704416378: New client connected from 172.24.0.7:35583 as Holter (p2, c1, k30).
+1704416378: New connection from 172.24.0.8:36729 on port 1883.
+1704416378: New client connected from 172.24.0.8:36729 as Thermometer (p2, c1, k30).
+1704416378: New connection from 172.24.0.9:41309 on port 1883.
+1704416378: New client connected from 172.24.0.9:41309 as Respirometer (p2, c1, k30).
+1704416381: New connection from 172.24.0.14:48282 on port 1883.
+1704416382: New client connected from 172.24.0.14:48282 as PDCSReceiver (p2, c1, k60).
+1704416412: Client PDCSReceiver closed its connection.
+1704416422: Client Thermometer closed its connection.
+1704416422: Client Holter closed its connection.
+1704416422: Client Respirometer closed its connection.
+1704416422: Client Oximeter closed its connection.
+1704416422: mosquitto version 2.0.18 terminating
+1704416422: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704416648: mosquitto version 2.0.18 starting
+1704416648: Config loaded from /mosquitto/config/mosquitto.conf.
+1704416648: Opening ipv4 listen socket on port 1883.
+1704416648: mosquitto version 2.0.18 running
+1704416648: New connection from 172.24.0.7:33161 on port 1883.
+1704416649: New client connected from 172.24.0.7:33161 as Respirometer (p2, c1, k30).
+1704416649: New connection from 172.24.0.6:51861 on port 1883.
+1704416649: New client connected from 172.24.0.6:51861 as Holter (p2, c1, k30).
+1704416649: New connection from 172.24.0.8:57289 on port 1883.
+1704416649: New client connected from 172.24.0.8:57289 as Oximeter (p2, c1, k30).
+1704416649: New connection from 172.24.0.9:36879 on port 1883.
+1704416649: New client connected from 172.24.0.9:36879 as Thermometer (p2, c1, k30).
+1704416651: New connection from 172.24.0.12:53040 on port 1883.
+1704416651: New client connected from 172.24.0.12:53040 as PDCSReceiver (p2, c1, k60).
+1704416727: Client PDCSReceiver closed its connection.
+1704416737: Client Thermometer closed its connection.
+1704416737: Client Respirometer closed its connection.
+1704416737: Client Oximeter closed its connection.
+1704416737: Client Holter closed its connection.
+1704416738: mosquitto version 2.0.18 terminating
+1704416738: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704416920: mosquitto version 2.0.18 starting
+1704416920: Config loaded from /mosquitto/config/mosquitto.conf.
+1704416920: Opening ipv4 listen socket on port 1883.
+1704416920: mosquitto version 2.0.18 running
+1704416921: New connection from 172.24.0.7:55067 on port 1883.
+1704416921: New client connected from 172.24.0.7:55067 as Oximeter (p2, c1, k30).
+1704416921: New connection from 172.24.0.8:57249 on port 1883.
+1704416921: New client connected from 172.24.0.8:57249 as Thermometer (p2, c1, k30).
+1704416921: New connection from 172.24.0.10:40139 on port 1883.
+1704416921: New connection from 172.24.0.9:32903 on port 1883.
+1704416921: New client connected from 172.24.0.10:40139 as Respirometer (p2, c1, k30).
+1704416921: New client connected from 172.24.0.9:32903 as Holter (p2, c1, k30).
+1704416923: New connection from 172.24.0.14:46518 on port 1883.
+1704416924: New client connected from 172.24.0.14:46518 as PDCSReceiver (p2, c1, k60).
+1704417078: Client PDCSReceiver closed its connection.
+1704417089: Client Holter closed its connection.
+1704417089: Client Oximeter closed its connection.
+1704417089: Client Thermometer closed its connection.
+1704417089: Client Respirometer closed its connection.
+1704417089: mosquitto version 2.0.18 terminating
+1704417089: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704417114: mosquitto version 2.0.18 starting
+1704417114: Config loaded from /mosquitto/config/mosquitto.conf.
+1704417114: Opening ipv4 listen socket on port 1883.
+1704417114: mosquitto version 2.0.18 running
+1704417115: New connection from 172.24.0.8:42859 on port 1883.
+1704417115: New client connected from 172.24.0.8:42859 as Holter (p2, c1, k30).
+1704417115: New connection from 172.24.0.7:37399 on port 1883.
+1704417115: New client connected from 172.24.0.7:37399 as Respirometer (p2, c1, k30).
+1704417115: New connection from 172.24.0.10:47611 on port 1883.
+1704417115: New client connected from 172.24.0.10:47611 as Thermometer (p2, c1, k30).
+1704417115: New connection from 172.24.0.9:34559 on port 1883.
+1704417115: New client connected from 172.24.0.9:34559 as Oximeter (p2, c1, k30).
+1704417117: New connection from 172.24.0.14:36228 on port 1883.
+1704417118: New client connected from 172.24.0.14:36228 as PDCSReceiver (p2, c1, k60).
+1704417152: Client PDCSReceiver closed its connection.
+1704417162: Client Holter closed its connection.
+1704417162: Client Thermometer closed its connection.
+1704417162: Client Oximeter closed its connection.
+1704417162: Client Respirometer closed its connection.
+1704417163: mosquitto version 2.0.18 terminating
+1704417163: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704417194: mosquitto version 2.0.18 starting
+1704417194: Config loaded from /mosquitto/config/mosquitto.conf.
+1704417194: Opening ipv4 listen socket on port 1883.
+1704417194: mosquitto version 2.0.18 running
+1704417195: New connection from 172.24.0.8:53343 on port 1883.
+1704417195: New client connected from 172.24.0.8:53343 as Oximeter (p2, c1, k30).
+1704417195: New connection from 172.24.0.9:44681 on port 1883.
+1704417195: New client connected from 172.24.0.9:44681 as Holter (p2, c1, k30).
+1704417195: New connection from 172.24.0.11:36113 on port 1883.
+1704417195: New connection from 172.24.0.10:50685 on port 1883.
+1704417195: New client connected from 172.24.0.11:36113 as Respirometer (p2, c1, k30).
+1704417195: New client connected from 172.24.0.10:50685 as Thermometer (p2, c1, k30).
+1704417198: New connection from 172.24.0.14:60716 on port 1883.
+1704417198: New client connected from 172.24.0.14:60716 as PDCSReceiver (p2, c1, k60).
+1704417243: Client PDCSReceiver closed its connection.
+1704417253: Client Thermometer closed its connection.
+1704417253: Client Oximeter closed its connection.
+1704417253: Client Respirometer closed its connection.
+1704417253: Client Holter closed its connection.
+1704417254: mosquitto version 2.0.18 terminating
+1704417254: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704417414: mosquitto version 2.0.18 starting
+1704417414: Config loaded from /mosquitto/config/mosquitto.conf.
+1704417414: Opening ipv4 listen socket on port 1883.
+1704417414: mosquitto version 2.0.18 running
+1704417415: New connection from 172.24.0.8:38533 on port 1883.
+1704417415: New connection from 172.24.0.7:38467 on port 1883.
+1704417415: New client connected from 172.24.0.8:38533 as Holter (p2, c1, k30).
+1704417415: New client connected from 172.24.0.7:38467 as Oximeter (p2, c1, k30).
+1704417415: New connection from 172.24.0.9:37377 on port 1883.
+1704417415: New client connected from 172.24.0.9:37377 as Respirometer (p2, c1, k30).
+1704417415: New connection from 172.24.0.10:54659 on port 1883.
+1704417415: New client connected from 172.24.0.10:54659 as Thermometer (p2, c1, k30).
+1704417417: New connection from 172.24.0.14:59594 on port 1883.
+1704417417: New client connected from 172.24.0.14:59594 as PDCSReceiver (p2, c1, k60).
+1704417640: Client PDCSReceiver closed its connection.
+1704417650: Client Respirometer closed its connection.
+1704417650: Client Oximeter closed its connection.
+1704417650: Client Thermometer closed its connection.
+1704417650: Client Holter closed its connection.
+1704417651: mosquitto version 2.0.18 terminating
+1704417651: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704417686: mosquitto version 2.0.18 starting
+1704417686: Config loaded from /mosquitto/config/mosquitto.conf.
+1704417686: Opening ipv4 listen socket on port 1883.
+1704417686: mosquitto version 2.0.18 running
+1704417686: New connection from 172.24.0.9:36555 on port 1883.
+1704417686: New client connected from 172.24.0.9:36555 as Holter (p2, c1, k30).
+1704417687: New connection from 172.24.0.7:35793 on port 1883.
+1704417687: New connection from 172.24.0.8:54143 on port 1883.
+1704417687: New connection from 172.24.0.10:49633 on port 1883.
+1704417687: New client connected from 172.24.0.7:35793 as Respirometer (p2, c1, k30).
+1704417687: New client connected from 172.24.0.8:54143 as Thermometer (p2, c1, k30).
+1704417687: New client connected from 172.24.0.10:49633 as Oximeter (p2, c1, k30).
+1704417688: New connection from 172.24.0.14:59956 on port 1883.
+1704417689: New client connected from 172.24.0.14:59956 as PDCSReceiver (p2, c1, k60).
+1704417809: Client PDCSReceiver closed its connection.
+1704417819: Client Respirometer closed its connection.
+1704417819: Client Thermometer closed its connection.
+1704417819: Client Oximeter closed its connection.
+1704417819: Client Holter closed its connection.
+1704417819: mosquitto version 2.0.18 terminating
+1704417819: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704417864: mosquitto version 2.0.18 starting
+1704417864: Config loaded from /mosquitto/config/mosquitto.conf.
+1704417864: Opening ipv4 listen socket on port 1883.
+1704417864: mosquitto version 2.0.18 running
+1704417865: New connection from 172.24.0.6:42745 on port 1883.
+1704417865: New client connected from 172.24.0.6:42745 as Respirometer (p2, c1, k30).
+1704417865: New connection from 172.24.0.8:48653 on port 1883.
+1704417865: New client connected from 172.24.0.8:48653 as Thermometer (p2, c1, k30).
+1704417865: New connection from 172.24.0.7:41361 on port 1883.
+1704417865: New client connected from 172.24.0.7:41361 as Oximeter (p2, c1, k30).
+1704417865: New connection from 172.24.0.9:47535 on port 1883.
+1704417865: New client connected from 172.24.0.9:47535 as Holter (p2, c1, k30).
+1704417868: New connection from 172.24.0.14:51008 on port 1883.
+1704417869: New client connected from 172.24.0.14:51008 as PDCSReceiver (p2, c1, k60).
+1704417888: Client PDCSReceiver closed its connection.
+1704417899: Client Oximeter closed its connection.
+1704417899: Client Thermometer closed its connection.
+1704417899: Client Holter closed its connection.
+1704417899: Client Respirometer closed its connection.
+1704417899: mosquitto version 2.0.18 terminating
+1704417899: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704417967: mosquitto version 2.0.18 starting
+1704417967: Config loaded from /mosquitto/config/mosquitto.conf.
+1704417967: Opening ipv4 listen socket on port 1883.
+1704417967: mosquitto version 2.0.18 running
+1704417968: New connection from 172.24.0.7:45995 on port 1883.
+1704417968: New connection from 172.24.0.8:34635 on port 1883.
+1704417968: New client connected from 172.24.0.7:45995 as Respirometer (p2, c1, k30).
+1704417968: New client connected from 172.24.0.8:34635 as Holter (p2, c1, k30).
+1704417968: New connection from 172.24.0.9:47187 on port 1883.
+1704417968: New client connected from 172.24.0.9:47187 as Thermometer (p2, c1, k30).
+1704417968: New connection from 172.24.0.10:53237 on port 1883.
+1704417968: New client connected from 172.24.0.10:53237 as Oximeter (p2, c1, k30).
+1704417971: New connection from 172.24.0.14:43130 on port 1883.
+1704417971: New client connected from 172.24.0.14:43130 as PDCSReceiver (p2, c1, k60).
+1704417999: Client PDCSReceiver closed its connection.
+1704418010: Client Thermometer closed its connection.
+1704418010: Client Oximeter closed its connection.
+1704418010: Client Respirometer closed its connection.
+1704418010: Client Holter closed its connection.
+1704418010: mosquitto version 2.0.18 terminating
+1704418010: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704418035: mosquitto version 2.0.18 starting
+1704418035: Config loaded from /mosquitto/config/mosquitto.conf.
+1704418035: Opening ipv4 listen socket on port 1883.
+1704418035: mosquitto version 2.0.18 running
+1704418037: New connection from 172.24.0.7:55977 on port 1883.
+1704418037: New connection from 172.24.0.6:60429 on port 1883.
+1704418037: New client connected from 172.24.0.7:55977 as Respirometer (p2, c1, k30).
+1704418037: New client connected from 172.24.0.6:60429 as Holter (p2, c1, k30).
+1704418037: New connection from 172.24.0.9:47787 on port 1883.
+1704418037: New client connected from 172.24.0.9:47787 as Thermometer (p2, c1, k30).
+1704418037: New connection from 172.24.0.8:47227 on port 1883.
+1704418037: New client connected from 172.24.0.8:47227 as Oximeter (p2, c1, k30).
+1704418040: New connection from 172.24.0.14:60756 on port 1883.
+1704418040: New client connected from 172.24.0.14:60756 as PDCSReceiver (p2, c1, k60).
+1704418088: Client PDCSReceiver closed its connection.
+1704418098: Client Thermometer closed its connection.
+1704418098: Client Holter closed its connection.
+1704418098: Client Oximeter closed its connection.
+1704418098: Client Respirometer closed its connection.
+1704418098: mosquitto version 2.0.18 terminating
+1704418098: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704418127: mosquitto version 2.0.18 starting
+1704418127: Config loaded from /mosquitto/config/mosquitto.conf.
+1704418127: Opening ipv4 listen socket on port 1883.
+1704418127: mosquitto version 2.0.18 running
+1704418128: New connection from 172.24.0.8:51867 on port 1883.
+1704418128: New client connected from 172.24.0.8:51867 as Holter (p2, c1, k30).
+1704418128: New connection from 172.24.0.7:60919 on port 1883.
+1704418128: New client connected from 172.24.0.7:60919 as Thermometer (p2, c1, k30).
+1704418128: New connection from 172.24.0.9:46687 on port 1883.
+1704418128: New client connected from 172.24.0.9:46687 as Oximeter (p2, c1, k30).
+1704418128: New connection from 172.24.0.10:50023 on port 1883.
+1704418128: New client connected from 172.24.0.10:50023 as Respirometer (p2, c1, k30).
+1704418131: New connection from 172.24.0.13:46058 on port 1883.
+1704418131: New client connected from 172.24.0.13:46058 as PDCSReceiver (p2, c1, k60).
+1704418225: Client PDCSReceiver closed its connection.
+1704418235: Client Holter closed its connection.
+1704418235: Client Respirometer closed its connection.
+1704418235: Client Thermometer closed its connection.
+1704418235: Client Oximeter closed its connection.
+1704418236: mosquitto version 2.0.18 terminating
+1704418236: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704418268: mosquitto version 2.0.18 starting
+1704418268: Config loaded from /mosquitto/config/mosquitto.conf.
+1704418268: Opening ipv4 listen socket on port 1883.
+1704418268: mosquitto version 2.0.18 running
+1704418268: New connection from 172.24.0.8:47685 on port 1883.
+1704418268: New connection from 172.24.0.9:35697 on port 1883.
+1704418268: New client connected from 172.24.0.8:47685 as Respirometer (p2, c1, k30).
+1704418268: New client connected from 172.24.0.9:35697 as Thermometer (p2, c1, k30).
+1704418269: New connection from 172.24.0.11:38339 on port 1883.
+1704418269: New client connected from 172.24.0.11:38339 as Oximeter (p2, c1, k30).
+1704418269: New connection from 172.24.0.10:44469 on port 1883.
+1704418269: New client connected from 172.24.0.10:44469 as Holter (p2, c1, k30).
+1704418271: New connection from 172.24.0.14:60384 on port 1883.
+1704418271: New client connected from 172.24.0.14:60384 as PDCSReceiver (p2, c1, k60).
+1704418338: Client PDCSReceiver closed its connection.
+1704418349: Client Respirometer closed its connection.
+1704418349: Client Holter closed its connection.
+1704418349: Client Oximeter closed its connection.
+1704418349: Client Thermometer closed its connection.
+1704418349: mosquitto version 2.0.18 terminating
+1704418349: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704418381: mosquitto version 2.0.18 starting
+1704418381: Config loaded from /mosquitto/config/mosquitto.conf.
+1704418381: Opening ipv4 listen socket on port 1883.
+1704418381: mosquitto version 2.0.18 running
+1704418382: New connection from 172.24.0.9:48827 on port 1883.
+1704418382: New client connected from 172.24.0.9:48827 as Respirometer (p2, c1, k30).
+1704418382: New connection from 172.24.0.7:59975 on port 1883.
+1704418382: New client connected from 172.24.0.7:59975 as Oximeter (p2, c1, k30).
+1704418382: New connection from 172.24.0.10:45269 on port 1883.
+1704418382: New client connected from 172.24.0.10:45269 as Holter (p2, c1, k30).
+1704418382: New connection from 172.24.0.8:33673 on port 1883.
+1704418382: New client connected from 172.24.0.8:33673 as Thermometer (p2, c1, k30).
+1704418384: New connection from 172.24.0.14:55316 on port 1883.
+1704418385: New client connected from 172.24.0.14:55316 as PDCSReceiver (p2, c1, k60).
+1704418472: Client PDCSReceiver closed its connection.
+1704418483: Client Oximeter closed its connection.
+1704418483: Client Holter closed its connection.
+1704418483: Client Thermometer closed its connection.
+1704418483: Client Respirometer closed its connection.
+1704418483: mosquitto version 2.0.18 terminating
+1704418483: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704418519: mosquitto version 2.0.18 starting
+1704418519: Config loaded from /mosquitto/config/mosquitto.conf.
+1704418519: Opening ipv4 listen socket on port 1883.
+1704418519: mosquitto version 2.0.18 running
+1704418519: New connection from 172.24.0.7:51593 on port 1883.
+1704418519: New client connected from 172.24.0.7:51593 as Holter (p2, c1, k30).
+1704418520: New connection from 172.24.0.9:44359 on port 1883.
+1704418520: New client connected from 172.24.0.9:44359 as Respirometer (p2, c1, k30).
+1704418520: New connection from 172.24.0.8:37381 on port 1883.
+1704418520: New client connected from 172.24.0.8:37381 as Thermometer (p2, c1, k30).
+1704418520: New connection from 172.24.0.10:39199 on port 1883.
+1704418520: New client connected from 172.24.0.10:39199 as Oximeter (p2, c1, k30).
+1704418522: New connection from 172.24.0.14:42150 on port 1883.
+1704418522: New client connected from 172.24.0.14:42150 as PDCSReceiver (p2, c1, k60).
+1704418613: Client PDCSReceiver closed its connection.
+1704418623: Client Respirometer closed its connection.
+1704418623: Client Oximeter closed its connection.
+1704418623: Client Thermometer closed its connection.
+1704418623: Client Holter closed its connection.
+1704418623: mosquitto version 2.0.18 terminating
+1704418623: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704418657: mosquitto version 2.0.18 starting
+1704418657: Config loaded from /mosquitto/config/mosquitto.conf.
+1704418657: Opening ipv4 listen socket on port 1883.
+1704418657: mosquitto version 2.0.18 running
+1704418658: New connection from 172.24.0.8:52619 on port 1883.
+1704418658: New client connected from 172.24.0.8:52619 as Holter (p2, c1, k30).
+1704418658: New connection from 172.24.0.10:49221 on port 1883.
+1704418658: New client connected from 172.24.0.10:49221 as Thermometer (p2, c1, k30).
+1704418658: New connection from 172.24.0.11:39119 on port 1883.
+1704418658: New client connected from 172.24.0.11:39119 as Oximeter (p2, c1, k30).
+1704418658: New connection from 172.24.0.9:43987 on port 1883.
+1704418658: New client connected from 172.24.0.9:43987 as Respirometer (p2, c1, k30).
+1704418660: New connection from 172.24.0.14:36250 on port 1883.
+1704418660: New client connected from 172.24.0.14:36250 as PDCSReceiver (p2, c1, k60).
+1704418823: Client PDCSReceiver closed its connection.
+1704418833: Client Thermometer closed its connection.
+1704418833: Client Oximeter closed its connection.
+1704418833: Client Holter closed its connection.
+1704418833: Client Respirometer closed its connection.
+1704418834: mosquitto version 2.0.18 terminating
+1704418834: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704418867: mosquitto version 2.0.18 starting
+1704418867: Config loaded from /mosquitto/config/mosquitto.conf.
+1704418867: Opening ipv4 listen socket on port 1883.
+1704418867: mosquitto version 2.0.18 running
+1704418868: New connection from 172.24.0.6:56437 on port 1883.
+1704418868: New client connected from 172.24.0.6:56437 as Oximeter (p2, c1, k30).
+1704418868: New connection from 172.24.0.7:58755 on port 1883.
+1704418868: New client connected from 172.24.0.7:58755 as Respirometer (p2, c1, k30).
+1704418868: New connection from 172.24.0.8:34539 on port 1883.
+1704418868: New client connected from 172.24.0.8:34539 as Holter (p2, c1, k30).
+1704418868: New connection from 172.24.0.9:53541 on port 1883.
+1704418868: New client connected from 172.24.0.9:53541 as Thermometer (p2, c1, k30).
+1704418871: New connection from 172.24.0.14:58266 on port 1883.
+1704418871: New client connected from 172.24.0.14:58266 as PDCSReceiver (p2, c1, k60).
+1704418896: Client PDCSReceiver closed its connection.
+1704418906: Client Thermometer closed its connection.
+1704418906: Client Holter closed its connection.
+1704418906: Client Oximeter closed its connection.
+1704418906: Client Respirometer closed its connection.
+1704418907: mosquitto version 2.0.18 terminating
+1704418907: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704418955: mosquitto version 2.0.18 starting
+1704418955: Config loaded from /mosquitto/config/mosquitto.conf.
+1704418955: Opening ipv4 listen socket on port 1883.
+1704418955: mosquitto version 2.0.18 running
+1704418956: New connection from 172.24.0.10:58305 on port 1883.
+1704418956: New connection from 172.24.0.8:43339 on port 1883.
+1704418956: New client connected from 172.24.0.10:58305 as Oximeter (p2, c1, k30).
+1704418956: New client connected from 172.24.0.8:43339 as Thermometer (p2, c1, k30).
+1704418956: New connection from 172.24.0.9:40973 on port 1883.
+1704418956: New client connected from 172.24.0.9:40973 as Holter (p2, c1, k30).
+1704418956: New connection from 172.24.0.11:38843 on port 1883.
+1704418956: New client connected from 172.24.0.11:38843 as Respirometer (p2, c1, k30).
+1704418959: New connection from 172.24.0.14:54288 on port 1883.
+1704418959: New client connected from 172.24.0.14:54288 as PDCSReceiver (p2, c1, k60).
+1704418968: Client PDCSReceiver closed its connection.
+1704418978: Client Holter closed its connection.
+1704418978: Client Respirometer closed its connection.
+1704418978: Client Oximeter closed its connection.
+1704418978: Client Thermometer closed its connection.
+1704418978: mosquitto version 2.0.18 terminating
+1704418978: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704419023: mosquitto version 2.0.18 starting
+1704419023: Config loaded from /mosquitto/config/mosquitto.conf.
+1704419023: Opening ipv4 listen socket on port 1883.
+1704419023: mosquitto version 2.0.18 running
+1704419024: New connection from 172.24.0.9:54379 on port 1883.
+1704419024: New connection from 172.24.0.8:58941 on port 1883.
+1704419024: New client connected from 172.24.0.9:54379 as Holter (p2, c1, k30).
+1704419024: New client connected from 172.24.0.8:58941 as Thermometer (p2, c1, k30).
+1704419024: New connection from 172.24.0.10:51631 on port 1883.
+1704419024: New client connected from 172.24.0.10:51631 as Oximeter (p2, c1, k30).
+1704419024: New connection from 172.24.0.11:38527 on port 1883.
+1704419024: New client connected from 172.24.0.11:38527 as Respirometer (p2, c1, k30).
+1704419026: New connection from 172.24.0.14:59634 on port 1883.
+1704419026: New client connected from 172.24.0.14:59634 as PDCSReceiver (p2, c1, k60).
+1704419056: Client PDCSReceiver closed its connection.
+1704419066: Client Oximeter closed its connection.
+1704419066: Client Thermometer closed its connection.
+1704419066: Client Respirometer closed its connection.
+1704419066: Client Holter closed its connection.
+1704419066: mosquitto version 2.0.18 terminating
+1704419066: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704419157: mosquitto version 2.0.18 starting
+1704419157: Config loaded from /mosquitto/config/mosquitto.conf.
+1704419157: Opening ipv4 listen socket on port 1883.
+1704419157: mosquitto version 2.0.18 running
+1704419158: New connection from 172.24.0.8:48721 on port 1883.
+1704419158: New client connected from 172.24.0.8:48721 as Holter (p2, c1, k30).
+1704419158: New connection from 172.24.0.9:36185 on port 1883.
+1704419158: New client connected from 172.24.0.9:36185 as Thermometer (p2, c1, k30).
+1704419159: New connection from 172.24.0.11:53181 on port 1883.
+1704419159: New client connected from 172.24.0.11:53181 as Respirometer (p2, c1, k30).
+1704419159: New connection from 172.24.0.10:39603 on port 1883.
+1704419159: New client connected from 172.24.0.10:39603 as Oximeter (p2, c1, k30).
+1704419163: New connection from 172.24.0.14:40814 on port 1883.
+1704419163: New client connected from 172.24.0.14:40814 as PDCSReceiver (p2, c1, k60).
+1704419411: Client PDCSReceiver closed its connection.
+1704419421: Client Respirometer closed its connection.
+1704419421: Client Holter closed its connection.
+1704419421: Client Thermometer closed its connection.
+1704419421: Client Oximeter closed its connection.
+1704419422: mosquitto version 2.0.18 terminating
+1704419422: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704419446: mosquitto version 2.0.18 starting
+1704419446: Config loaded from /mosquitto/config/mosquitto.conf.
+1704419446: Opening ipv4 listen socket on port 1883.
+1704419446: mosquitto version 2.0.18 running
+1704419447: New connection from 172.25.0.8:58211 on port 1883.
+1704419447: New client connected from 172.25.0.8:58211 as Respirometer (p2, c1, k30).
+1704419447: New connection from 172.25.0.9:44041 on port 1883.
+1704419447: New client connected from 172.25.0.9:44041 as Holter (p2, c1, k30).
+1704419447: New connection from 172.25.0.7:57857 on port 1883.
+1704419447: New client connected from 172.25.0.7:57857 as Thermometer (p2, c1, k30).
+1704419447: New connection from 172.25.0.11:49553 on port 1883.
+1704419447: New client connected from 172.25.0.11:49553 as Oximeter (p2, c1, k30).
+1704419449: New connection from 172.25.0.14:59842 on port 1883.
+1704419450: New client connected from 172.25.0.14:59842 as PDCSReceiver (p2, c1, k60).
+1704419520: Client PDCSReceiver closed its connection.
+1704419531: Client Respirometer closed its connection.
+1704419531: Client Oximeter closed its connection.
+1704419531: Client Thermometer closed its connection.
+1704419531: Client Holter closed its connection.
+1704419531: mosquitto version 2.0.18 terminating
+1704419531: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704421853: mosquitto version 2.0.18 starting
+1704421853: Config loaded from /mosquitto/config/mosquitto.conf.
+1704421853: Opening ipv4 listen socket on port 1883.
+1704421853: mosquitto version 2.0.18 running
+1704421854: New connection from 172.25.0.9:39487 on port 1883.
+1704421854: New client connected from 172.25.0.9:39487 as Thermometer (p2, c1, k30).
+1704421854: New connection from 172.25.0.8:42137 on port 1883.
+1704421854: New client connected from 172.25.0.8:42137 as Oximeter (p2, c1, k30).
+1704421854: New connection from 172.25.0.10:48497 on port 1883.
+1704421854: New client connected from 172.25.0.10:48497 as Respirometer (p2, c1, k30).
+1704421854: New connection from 172.25.0.11:49747 on port 1883.
+1704421854: New client connected from 172.25.0.11:49747 as Holter (p2, c1, k30).
+1704421856: New connection from 172.25.0.14:40038 on port 1883.
+1704421856: New client connected from 172.25.0.14:40038 as PDCSReceiver (p2, c1, k60).
+1704421956: Client PDCSReceiver closed its connection.
+1704421966: Client Oximeter closed its connection.
+1704421966: Client Respirometer closed its connection.
+1704421966: Client Holter closed its connection.
+1704421966: Client Thermometer closed its connection.
+1704421967: mosquitto version 2.0.18 terminating
+1704421967: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704460379: mosquitto version 2.0.18 starting
+1704460379: Config loaded from /mosquitto/config/mosquitto.conf.
+1704460379: Opening ipv4 listen socket on port 1883.
+1704460379: mosquitto version 2.0.18 running
+1704460379: New connection from 172.18.0.8:47367 on port 1883.
+1704460379: New client connected from 172.18.0.8:47367 as Holter (p2, c1, k30).
+1704460379: New connection from 172.18.0.11:48179 on port 1883.
+1704460379: New client connected from 172.18.0.11:48179 as Thermometer (p2, c1, k30).
+1704460379: New connection from 172.18.0.12:60773 on port 1883.
+1704460379: New client connected from 172.18.0.12:60773 as Respirometer (p2, c1, k30).
+1704460379: New connection from 172.18.0.13:47961 on port 1883.
+1704460379: New client connected from 172.18.0.13:47961 as Oximeter (p2, c1, k30).
+1704460380: New connection from 172.18.0.15:43322 on port 1883.
+1704460381: New client connected from 172.18.0.15:43322 as PDCSReceiver (p2, c1, k60).
+1704461423: Client PDCSReceiver closed its connection.
+1704461433: Client Holter closed its connection.
+1704461433: Client Thermometer closed its connection.
+1704461433: Client Respirometer closed its connection.
+1704461433: Client Oximeter closed its connection.
+1704461434: mosquitto version 2.0.18 terminating
+1704461434: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704461438: mosquitto version 2.0.18 starting
+1704461438: Config loaded from /mosquitto/config/mosquitto.conf.
+1704461438: Opening ipv4 listen socket on port 1883.
+1704461438: mosquitto version 2.0.18 running
+1704461438: New connection from 172.18.0.8:38607 on port 1883.
+1704461438: New client connected from 172.18.0.8:38607 as Respirometer (p2, c1, k30).
+1704461438: New connection from 172.18.0.9:41363 on port 1883.
+1704461438: New client connected from 172.18.0.9:41363 as Thermometer (p2, c1, k30).
+1704461438: New connection from 172.18.0.10:46767 on port 1883.
+1704461438: New client connected from 172.18.0.10:46767 as Oximeter (p2, c1, k30).
+1704461438: New connection from 172.18.0.11:53207 on port 1883.
+1704461438: New client connected from 172.18.0.11:53207 as Holter (p2, c1, k30).
+1704461439: New connection from 172.18.0.14:37028 on port 1883.
+1704461440: New client connected from 172.18.0.14:37028 as PDCSReceiver (p2, c1, k60).
+1704461687: Client PDCSReceiver closed its connection.
+1704461697: Client Respirometer closed its connection.
+1704461697: Client Thermometer closed its connection.
+1704461697: Client Oximeter closed its connection.
+1704461697: Client Holter closed its connection.
+1704461697: mosquitto version 2.0.18 terminating
+1704461697: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704462333: mosquitto version 2.0.18 starting
+1704462333: Config loaded from /mosquitto/config/mosquitto.conf.
+1704462333: Opening ipv4 listen socket on port 1883.
+1704462333: mosquitto version 2.0.18 running
+1704462334: New connection from 172.18.0.8:54923 on port 1883.
+1704462334: New connection from 172.18.0.7:47531 on port 1883.
+1704462334: New client connected from 172.18.0.8:54923 as Thermometer (p2, c1, k30).
+1704462334: New client connected from 172.18.0.7:47531 as Oximeter (p2, c1, k30).
+1704462334: New connection from 172.18.0.9:42375 on port 1883.
+1704462334: New client connected from 172.18.0.9:42375 as Respirometer (p2, c1, k30).
+1704462334: New connection from 172.18.0.10:54793 on port 1883.
+1704462334: New client connected from 172.18.0.10:54793 as Holter (p2, c1, k30).
+1704462335: New connection from 172.18.0.14:55344 on port 1883.
+1704462335: New client connected from 172.18.0.14:55344 as PDCSReceiver (p2, c1, k60).
+1704462386: Client PDCSReceiver closed its connection.
+1704462396: Client Thermometer closed its connection.
+1704462396: Client Holter closed its connection.
+1704462396: Client Respirometer closed its connection.
+1704462396: Client Oximeter closed its connection.
+1704462396: mosquitto version 2.0.18 terminating
+1704462396: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704462421: mosquitto version 2.0.18 starting
+1704462421: Config loaded from /mosquitto/config/mosquitto.conf.
+1704462421: Opening ipv4 listen socket on port 1883.
+1704462421: mosquitto version 2.0.18 running
+1704462422: New connection from 172.18.0.7:58793 on port 1883.
+1704462422: New connection from 172.18.0.6:44055 on port 1883.
+1704462422: New client connected from 172.18.0.7:58793 as Holter (p2, c1, k30).
+1704462422: New client connected from 172.18.0.6:44055 as Thermometer (p2, c1, k30).
+1704462422: New connection from 172.18.0.9:60329 on port 1883.
+1704462422: New client connected from 172.18.0.9:60329 as Respirometer (p2, c1, k30).
+1704462422: New connection from 172.18.0.8:59737 on port 1883.
+1704462422: New client connected from 172.18.0.8:59737 as Oximeter (p2, c1, k30).
+1704462423: New connection from 172.18.0.13:38922 on port 1883.
+1704462423: New client connected from 172.18.0.13:38922 as PDCSReceiver (p2, c1, k60).
+1704462753: Client PDCSReceiver closed its connection.
+1704462763: Client Thermometer closed its connection.
+1704462763: Client Holter closed its connection.
+1704462763: Client Oximeter closed its connection.
+1704462763: Client Respirometer closed its connection.
+1704462763: mosquitto version 2.0.18 terminating
+1704462763: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704462824: mosquitto version 2.0.18 starting
+1704462824: Config loaded from /mosquitto/config/mosquitto.conf.
+1704462824: Opening ipv4 listen socket on port 1883.
+1704462824: mosquitto version 2.0.18 running
+1704462825: New connection from 172.18.0.8:54941 on port 1883.
+1704462825: New client connected from 172.18.0.8:54941 as Holter (p2, c1, k30).
+1704462825: New connection from 172.18.0.9:47761 on port 1883.
+1704462825: New client connected from 172.18.0.9:47761 as Respirometer (p2, c1, k30).
+1704462825: New connection from 172.18.0.10:44221 on port 1883.
+1704462825: New client connected from 172.18.0.10:44221 as Thermometer (p2, c1, k30).
+1704462825: New connection from 172.18.0.11:44161 on port 1883.
+1704462825: New client connected from 172.18.0.11:44161 as Oximeter (p2, c1, k30).
+1704462826: New connection from 172.18.0.14:42462 on port 1883.
+1704462826: New client connected from 172.18.0.14:42462 as PDCSReceiver (p2, c1, k60).
+1704462941: Client PDCSReceiver closed its connection.
+1704462951: Client Thermometer closed its connection.
+1704462951: Client Respirometer closed its connection.
+1704462951: Client Holter closed its connection.
+1704462951: Client Oximeter closed its connection.
+1704462952: mosquitto version 2.0.18 terminating
+1704462952: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704468169: mosquitto version 2.0.18 starting
+1704468169: Config loaded from /mosquitto/config/mosquitto.conf.
+1704468169: Opening ipv4 listen socket on port 1883.
+1704468169: mosquitto version 2.0.18 running
+1704468170: New connection from 172.18.0.8:41335 on port 1883.
+1704468170: New client connected from 172.18.0.8:41335 as Holter (p2, c1, k30).
+1704468170: New connection from 172.18.0.9:34939 on port 1883.
+1704468170: New client connected from 172.18.0.9:34939 as Oximeter (p2, c1, k30).
+1704468170: New connection from 172.18.0.11:59435 on port 1883.
+1704468170: New client connected from 172.18.0.11:59435 as Respirometer (p2, c1, k30).
+1704468170: New connection from 172.18.0.10:42719 on port 1883.
+1704468170: New client connected from 172.18.0.10:42719 as Thermometer (p2, c1, k30).
+1704468172: New connection from 172.18.0.14:52738 on port 1883.
+1704468173: New client connected from 172.18.0.14:52738 as PDCSReceiver (p2, c1, k60).
+1704468380: Client PDCSReceiver closed its connection.
+1704468391: Client Respirometer closed its connection.
+1704468391: Client Oximeter closed its connection.
+1704468391: Client Holter closed its connection.
+1704468391: Client Thermometer closed its connection.
+1704468391: mosquitto version 2.0.18 terminating
+1704468391: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704468554: mosquitto version 2.0.18 starting
+1704468554: Config loaded from /mosquitto/config/mosquitto.conf.
+1704468554: Opening ipv4 listen socket on port 1883.
+1704468554: mosquitto version 2.0.18 running
+1704468554: New connection from 172.18.0.9:44863 on port 1883.
+1704468554: New client connected from 172.18.0.9:44863 as Oximeter (p2, c1, k30).
+1704468554: New connection from 172.18.0.8:49595 on port 1883.
+1704468554: New client connected from 172.18.0.8:49595 as Holter (p2, c1, k30).
+1704468554: New connection from 172.18.0.10:53889 on port 1883.
+1704468554: New client connected from 172.18.0.10:53889 as Thermometer (p2, c1, k30).
+1704468554: New connection from 172.18.0.11:46117 on port 1883.
+1704468555: New client connected from 172.18.0.11:46117 as Respirometer (p2, c1, k30).
+1704468557: New connection from 172.18.0.14:59014 on port 1883.
+1704468557: New client connected from 172.18.0.14:59014 as PDCSReceiver (p2, c1, k60).
+1704468717: Client PDCSReceiver closed its connection.
+1704468727: Client Holter closed its connection.
+1704468727: Client Thermometer closed its connection.
+1704468727: Client Oximeter closed its connection.
+1704468727: Client Respirometer closed its connection.
+1704468727: mosquitto version 2.0.18 terminating
+1704468727: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704468851: mosquitto version 2.0.18 starting
+1704468851: Config loaded from /mosquitto/config/mosquitto.conf.
+1704468851: Opening ipv4 listen socket on port 1883.
+1704468851: mosquitto version 2.0.18 running
+1704468851: New connection from 172.18.0.8:46645 on port 1883.
+1704468851: New client connected from 172.18.0.8:46645 as Oximeter (p2, c1, k30).
+1704468851: New connection from 172.18.0.7:51047 on port 1883.
+1704468851: New client connected from 172.18.0.7:51047 as Holter (p2, c1, k30).
+1704468851: New connection from 172.18.0.9:41131 on port 1883.
+1704468851: New client connected from 172.18.0.9:41131 as Thermometer (p2, c1, k30).
+1704468851: New connection from 172.18.0.10:44405 on port 1883.
+1704468851: New client connected from 172.18.0.10:44405 as Respirometer (p2, c1, k30).
+1704468854: New connection from 172.18.0.14:37498 on port 1883.
+1704468854: New client connected from 172.18.0.14:37498 as PDCSReceiver (p2, c1, k60).
+1704468919: Client PDCSReceiver closed its connection.
+1704468929: Client Thermometer closed its connection.
+1704468929: Client Holter closed its connection.
+1704468929: Client Respirometer closed its connection.
+1704468929: Client Oximeter closed its connection.
+1704468929: mosquitto version 2.0.18 terminating
+1704468929: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704469021: mosquitto version 2.0.18 starting
+1704469021: Config loaded from /mosquitto/config/mosquitto.conf.
+1704469021: Opening ipv4 listen socket on port 1883.
+1704469021: mosquitto version 2.0.18 running
+1704469022: New connection from 172.18.0.6:58237 on port 1883.
+1704469022: New client connected from 172.18.0.6:58237 as Oximeter (p2, c1, k30).
+1704469022: New connection from 172.18.0.8:54309 on port 1883.
+1704469022: New client connected from 172.18.0.8:54309 as Thermometer (p2, c1, k30).
+1704469022: New connection from 172.18.0.7:42781 on port 1883.
+1704469022: New client connected from 172.18.0.7:42781 as Holter (p2, c1, k30).
+1704469022: New connection from 172.18.0.9:35405 on port 1883.
+1704469022: New client connected from 172.18.0.9:35405 as Respirometer (p2, c1, k30).
+1704469024: New connection from 172.18.0.14:47336 on port 1883.
+1704469024: New client connected from 172.18.0.14:47336 as PDCSReceiver (p2, c1, k60).
+1704469645: Client PDCSReceiver closed its connection.
+1704469655: Client Oximeter closed its connection.
+1704469655: Client Respirometer closed its connection.
+1704469655: Client Holter closed its connection.
+1704469655: Client Thermometer closed its connection.
+1704469655: mosquitto version 2.0.18 terminating
+1704469655: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704469683: mosquitto version 2.0.18 starting
+1704469683: Config loaded from /mosquitto/config/mosquitto.conf.
+1704469683: Opening ipv4 listen socket on port 1883.
+1704469683: mosquitto version 2.0.18 running
+1704469683: New connection from 172.18.0.8:53297 on port 1883.
+1704469683: New client connected from 172.18.0.8:53297 as Respirometer (p2, c1, k30).
+1704469683: New connection from 172.18.0.9:60559 on port 1883.
+1704469683: New client connected from 172.18.0.9:60559 as Holter (p2, c1, k30).
+1704469684: New connection from 172.18.0.10:50401 on port 1883.
+1704469684: New client connected from 172.18.0.10:50401 as Oximeter (p2, c1, k30).
+1704469684: New connection from 172.18.0.11:44001 on port 1883.
+1704469684: New client connected from 172.18.0.11:44001 as Thermometer (p2, c1, k30).
+1704469685: New connection from 172.18.0.14:35714 on port 1883.
+1704469686: New client connected from 172.18.0.14:35714 as PDCSReceiver (p2, c1, k60).
+1704469806: Client PDCSReceiver closed its connection.
+1704469816: Client Thermometer closed its connection.
+1704469816: Client Oximeter closed its connection.
+1704469816: Client Holter closed its connection.
+1704469816: Client Respirometer closed its connection.
+1704469817: mosquitto version 2.0.18 terminating
+1704469817: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704469844: mosquitto version 2.0.18 starting
+1704469844: Config loaded from /mosquitto/config/mosquitto.conf.
+1704469844: Opening ipv4 listen socket on port 1883.
+1704469844: mosquitto version 2.0.18 running
+1704469844: New connection from 172.18.0.7:59625 on port 1883.
+1704469844: New client connected from 172.18.0.7:59625 as Thermometer (p2, c1, k30).
+1704469844: New connection from 172.18.0.8:36511 on port 1883.
+1704469844: New client connected from 172.18.0.8:36511 as Oximeter (p2, c1, k30).
+1704469844: New connection from 172.18.0.9:49701 on port 1883.
+1704469844: New client connected from 172.18.0.9:49701 as Holter (p2, c1, k30).
+1704469844: New connection from 172.18.0.10:35893 on port 1883.
+1704469844: New client connected from 172.18.0.10:35893 as Respirometer (p2, c1, k30).
+1704469846: New connection from 172.18.0.14:46606 on port 1883.
+1704469847: New client connected from 172.18.0.14:46606 as PDCSReceiver (p2, c1, k60).
+1704469860: Client PDCSReceiver closed its connection.
+1704469870: Client Holter closed its connection.
+1704469870: Client Thermometer closed its connection.
+1704469870: Client Oximeter closed its connection.
+1704469870: Client Respirometer closed its connection.
+1704469870: mosquitto version 2.0.18 terminating
+1704469870: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704469898: mosquitto version 2.0.18 starting
+1704469898: Config loaded from /mosquitto/config/mosquitto.conf.
+1704469898: Opening ipv4 listen socket on port 1883.
+1704469898: mosquitto version 2.0.18 running
+1704469899: New connection from 172.18.0.6:55529 on port 1883.
+1704469899: New client connected from 172.18.0.6:55529 as Holter (p2, c1, k30).
+1704469899: New connection from 172.18.0.7:53409 on port 1883.
+1704469899: New client connected from 172.18.0.7:53409 as Oximeter (p2, c1, k30).
+1704469899: New connection from 172.18.0.8:46181 on port 1883.
+1704469899: New client connected from 172.18.0.8:46181 as Thermometer (p2, c1, k30).
+1704469899: New connection from 172.18.0.9:34035 on port 1883.
+1704469899: New client connected from 172.18.0.9:34035 as Respirometer (p2, c1, k30).
+1704469901: New connection from 172.18.0.14:51958 on port 1883.
+1704469901: New client connected from 172.18.0.14:51958 as PDCSReceiver (p2, c1, k60).
+1704470067: Client PDCSReceiver closed its connection.
+1704470078: Client Oximeter closed its connection.
+1704470078: Client Respirometer closed its connection.
+1704470078: Client Thermometer closed its connection.
+1704470078: Client Holter closed its connection.
+1704470078: mosquitto version 2.0.18 terminating
+1704470078: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704470610: mosquitto version 2.0.18 starting
+1704470610: Config loaded from /mosquitto/config/mosquitto.conf.
+1704470610: Opening ipv4 listen socket on port 1883.
+1704470610: mosquitto version 2.0.18 running
+1704470611: New connection from 172.18.0.8:35399 on port 1883.
+1704470611: New client connected from 172.18.0.8:35399 as Holter (p2, c1, k30).
+1704470611: New connection from 172.18.0.7:58835 on port 1883.
+1704470611: New client connected from 172.18.0.7:58835 as Thermometer (p2, c1, k30).
+1704470611: New connection from 172.18.0.9:50939 on port 1883.
+1704470611: New client connected from 172.18.0.9:50939 as Respirometer (p2, c1, k30).
+1704470611: New connection from 172.18.0.10:44433 on port 1883.
+1704470611: New client connected from 172.18.0.10:44433 as Oximeter (p2, c1, k30).
+1704470614: New connection from 172.18.0.14:50240 on port 1883.
+1704470615: New client connected from 172.18.0.14:50240 as PDCSReceiver (p2, c1, k60).
+1704470634: Client PDCSReceiver closed its connection.
+1704470645: Client Respirometer closed its connection.
+1704470645: Client Holter closed its connection.
+1704470645: Client Thermometer closed its connection.
+1704470645: Client Oximeter closed its connection.
+1704470645: mosquitto version 2.0.18 terminating
+1704470645: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704471097: mosquitto version 2.0.18 starting
+1704471097: Config loaded from /mosquitto/config/mosquitto.conf.
+1704471097: Opening ipv4 listen socket on port 1883.
+1704471097: mosquitto version 2.0.18 running
+1704471098: New connection from 172.18.0.7:33637 on port 1883.
+1704471098: New client connected from 172.18.0.7:33637 as Respirometer (p2, c1, k30).
+1704471098: New connection from 172.18.0.8:52351 on port 1883.
+1704471098: New client connected from 172.18.0.8:52351 as Holter (p2, c1, k30).
+1704471098: New connection from 172.18.0.10:57049 on port 1883.
+1704471098: New client connected from 172.18.0.10:57049 as Thermometer (p2, c1, k30).
+1704471098: New connection from 172.18.0.9:45353 on port 1883.
+1704471098: New client connected from 172.18.0.9:45353 as Oximeter (p2, c1, k30).
+1704471101: New connection from 172.18.0.14:56936 on port 1883.
+1704471101: New client connected from 172.18.0.14:56936 as PDCSReceiver (p2, c1, k60).
+1704471241: Client PDCSReceiver closed its connection.
+1704471251: Client Oximeter closed its connection.
+1704471251: Client Holter closed its connection.
+1704471251: Client Respirometer closed its connection.
+1704471251: Client Thermometer closed its connection.
+1704471252: mosquitto version 2.0.18 terminating
+1704471252: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704471370: mosquitto version 2.0.18 starting
+1704471370: Config loaded from /mosquitto/config/mosquitto.conf.
+1704471370: Opening ipv4 listen socket on port 1883.
+1704471370: mosquitto version 2.0.18 running
+1704471371: New connection from 172.18.0.6:37477 on port 1883.
+1704471371: New client connected from 172.18.0.6:37477 as Oximeter (p2, c1, k30).
+1704471371: New connection from 172.18.0.7:58461 on port 1883.
+1704471371: New client connected from 172.18.0.7:58461 as Respirometer (p2, c1, k30).
+1704471371: New connection from 172.18.0.9:33763 on port 1883.
+1704471371: New client connected from 172.18.0.9:33763 as Holter (p2, c1, k30).
+1704471371: New connection from 172.18.0.8:56917 on port 1883.
+1704471371: New client connected from 172.18.0.8:56917 as Thermometer (p2, c1, k30).
+1704471373: New connection from 172.18.0.12:50460 on port 1883.
+1704471373: New client connected from 172.18.0.12:50460 as PDCSReceiver (p2, c1, k60).
+1704471651: Client PDCSReceiver closed its connection.
+1704471661: Client Holter closed its connection.
+1704471661: Client Oximeter closed its connection.
+1704471661: Client Thermometer closed its connection.
+1704471661: Client Respirometer closed its connection.
+1704471661: mosquitto version 2.0.18 terminating
+1704471661: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704471739: mosquitto version 2.0.18 starting
+1704471739: Config loaded from /mosquitto/config/mosquitto.conf.
+1704471739: Opening ipv4 listen socket on port 1883.
+1704471739: mosquitto version 2.0.18 running
+1704471740: New connection from 172.18.0.6:58275 on port 1883.
+1704471740: New client connected from 172.18.0.6:58275 as Oximeter (p2, c1, k30).
+1704471740: New connection from 172.18.0.7:39785 on port 1883.
+1704471740: New client connected from 172.18.0.7:39785 as Holter (p2, c1, k30).
+1704471740: New connection from 172.18.0.8:37315 on port 1883.
+1704471740: New client connected from 172.18.0.8:37315 as Thermometer (p2, c1, k30).
+1704471741: New connection from 172.18.0.9:59579 on port 1883.
+1704471741: New client connected from 172.18.0.9:59579 as Respirometer (p2, c1, k30).
+1704471743: New connection from 172.18.0.13:46400 on port 1883.
+1704471743: New client connected from 172.18.0.13:46400 as PDCSReceiver (p2, c1, k60).
+1704472254: Client PDCSReceiver closed its connection.
+1704472264: Client Oximeter closed its connection.
+1704472264: Client Thermometer closed its connection.
+1704472264: Client Holter closed its connection.
+1704472264: Client Respirometer closed its connection.
+1704472264: mosquitto version 2.0.18 terminating
+1704472264: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704472371: mosquitto version 2.0.18 starting
+1704472371: Config loaded from /mosquitto/config/mosquitto.conf.
+1704472371: Opening ipv4 listen socket on port 1883.
+1704472371: mosquitto version 2.0.18 running
+1704472372: New connection from 172.18.0.9:34961 on port 1883.
+1704472372: New client connected from 172.18.0.9:34961 as Respirometer (p2, c1, k30).
+1704472372: New connection from 172.18.0.8:44523 on port 1883.
+1704472372: New client connected from 172.18.0.8:44523 as Thermometer (p2, c1, k30).
+1704472372: New connection from 172.18.0.10:54855 on port 1883.
+1704472372: New client connected from 172.18.0.10:54855 as Holter (p2, c1, k30).
+1704472372: New connection from 172.18.0.11:49561 on port 1883.
+1704472372: New client connected from 172.18.0.11:49561 as Oximeter (p2, c1, k30).
+1704472374: New connection from 172.18.0.14:55508 on port 1883.
+1704472374: New client connected from 172.18.0.14:55508 as PDCSReceiver (p2, c1, k60).
+1704472778: Client PDCSReceiver closed its connection.
+1704472788: Client Thermometer closed its connection.
+1704472788: Client Oximeter closed its connection.
+1704472788: Client Respirometer closed its connection.
+1704472788: Client Holter closed its connection.
+1704472788: mosquitto version 2.0.18 terminating
+1704472788: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704472824: mosquitto version 2.0.18 starting
+1704472824: Config loaded from /mosquitto/config/mosquitto.conf.
+1704472824: Opening ipv4 listen socket on port 1883.
+1704472824: mosquitto version 2.0.18 running
+1704472824: New connection from 172.18.0.7:34089 on port 1883.
+1704472824: New client connected from 172.18.0.7:34089 as Oximeter (p2, c1, k30).
+1704472824: New connection from 172.18.0.8:47951 on port 1883.
+1704472824: New client connected from 172.18.0.8:47951 as Thermometer (p2, c1, k30).
+1704472824: New connection from 172.18.0.9:50479 on port 1883.
+1704472824: New client connected from 172.18.0.9:50479 as Holter (p2, c1, k30).
+1704472824: New connection from 172.18.0.10:56971 on port 1883.
+1704472824: New client connected from 172.18.0.10:56971 as Respirometer (p2, c1, k30).
+1704472826: New connection from 172.18.0.14:39218 on port 1883.
+1704472826: New client connected from 172.18.0.14:39218 as PDCSReceiver (p2, c1, k60).
+1704472865: Client PDCSReceiver closed its connection.
+1704472876: Client Respirometer closed its connection.
+1704472876: Client Thermometer closed its connection.
+1704472876: Client Holter closed its connection.
+1704472876: Client Oximeter closed its connection.
+1704472876: mosquitto version 2.0.18 terminating
+1704472876: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704473328: mosquitto version 2.0.18 starting
+1704473328: Config loaded from /mosquitto/config/mosquitto.conf.
+1704473328: Opening ipv4 listen socket on port 1883.
+1704473328: mosquitto version 2.0.18 running
+1704473330: New connection from 172.19.0.8:49527 on port 1883.
+1704473330: New client connected from 172.19.0.8:49527 as Oximeter (p2, c1, k30).
+1704473330: New connection from 172.19.0.11:38505 on port 1883.
+1704473330: New client connected from 172.19.0.11:38505 as Holter (p2, c1, k30).
+1704473330: New connection from 172.19.0.9:40029 on port 1883.
+1704473330: New client connected from 172.19.0.9:40029 as Thermometer (p2, c1, k30).
+1704473330: New connection from 172.19.0.10:33341 on port 1883.
+1704473330: New client connected from 172.19.0.10:33341 as Respirometer (p2, c1, k30).
+1704473335: New connection from 172.19.0.15:48080 on port 1883.
+1704473335: New client connected from 172.19.0.15:48080 as PDCSReceiver (p2, c1, k60).
+1704473387: Client PDCSReceiver closed its connection.
+1704473397: Client Respirometer closed its connection.
+1704473397: Client Oximeter closed its connection.
+1704473397: Client Thermometer closed its connection.
+1704473397: Client Holter closed its connection.
+1704473398: mosquitto version 2.0.18 terminating
+1704473398: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704475994: mosquitto version 2.0.18 starting
+1704475994: Config loaded from /mosquitto/config/mosquitto.conf.
+1704475994: Opening ipv4 listen socket on port 1883.
+1704475994: mosquitto version 2.0.18 running
+1704475995: New connection from 192.168.96.7:34791 on port 1883.
+1704475995: New client connected from 192.168.96.7:34791 as Oximeter (p2, c1, k30).
+1704475995: New connection from 192.168.96.8:58703 on port 1883.
+1704475995: New client connected from 192.168.96.8:58703 as Respirometer (p2, c1, k30).
+1704475995: New connection from 192.168.96.9:57127 on port 1883.
+1704475995: New client connected from 192.168.96.9:57127 as Holter (p2, c1, k30).
+1704475995: New connection from 192.168.96.10:46099 on port 1883.
+1704475995: New client connected from 192.168.96.10:46099 as Thermometer (p2, c1, k30).
+1704475997: New connection from 192.168.96.14:35610 on port 1883.
+1704475997: New client connected from 192.168.96.14:35610 as PDCSReceiver (p2, c1, k60).
+1704476155: Client PDCSReceiver closed its connection.
+1704476165: Client Respirometer closed its connection.
+1704476165: Client Holter closed its connection.
+1704476165: Client Oximeter closed its connection.
+1704476165: Client Thermometer closed its connection.
+1704476166: mosquitto version 2.0.18 terminating
+1704476166: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704476227: mosquitto version 2.0.18 starting
+1704476227: Config loaded from /mosquitto/config/mosquitto.conf.
+1704476227: Opening ipv4 listen socket on port 1883.
+1704476227: mosquitto version 2.0.18 running
+1704476227: New connection from 192.168.96.8:58589 on port 1883.
+1704476227: New client connected from 192.168.96.8:58589 as Oximeter (p2, c1, k30).
+1704476228: New connection from 192.168.96.9:44031 on port 1883.
+1704476228: New client connected from 192.168.96.9:44031 as Thermometer (p2, c1, k30).
+1704476228: New connection from 192.168.96.10:44571 on port 1883.
+1704476228: New client connected from 192.168.96.10:44571 as Holter (p2, c1, k30).
+1704476228: New connection from 192.168.96.11:40455 on port 1883.
+1704476228: New client connected from 192.168.96.11:40455 as Respirometer (p2, c1, k30).
+1704476229: New connection from 192.168.96.14:34552 on port 1883.
+1704476229: New client connected from 192.168.96.14:34552 as PDCSReceiver (p2, c1, k60).
+1704476271: Client PDCSReceiver closed its connection.
+1704476281: Client Holter closed its connection.
+1704476281: Client Respirometer closed its connection.
+1704476281: Client Oximeter closed its connection.
+1704476281: Client Thermometer closed its connection.
+1704476282: mosquitto version 2.0.18 terminating
+1704476282: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1704482186: mosquitto version 2.0.18 starting
+1704482186: Config loaded from /mosquitto/config/mosquitto.conf.
+1704482186: Opening ipv4 listen socket on port 1883.
+1704482186: mosquitto version 2.0.18 running
+1704482187: New connection from 192.168.112.8:36393 on port 1883.
+1704482187: New client connected from 192.168.112.8:36393 as Holter (p2, c1, k30).
+1704482187: New connection from 192.168.112.10:45155 on port 1883.
+1704482187: New connection from 192.168.112.9:53755 on port 1883.
+1704482187: New connection from 192.168.112.11:45751 on port 1883.
+1704482187: New client connected from 192.168.112.10:45155 as Respirometer (p2, c1, k30).
+1704482187: New client connected from 192.168.112.9:53755 as Thermometer (p2, c1, k30).
+1704482187: New client connected from 192.168.112.11:45751 as Oximeter (p2, c1, k30).
+1704482188: New connection from 192.168.112.14:55348 on port 1883.
+1704482189: New client connected from 192.168.112.14:55348 as PDCSReceiver (p2, c1, k60).
+1704482534: Client PDCSReceiver closed its connection.
+1704482544: Client Holter closed its connection.
+1704482544: Client Oximeter closed its connection.
+1704482544: Client Respirometer closed its connection.
+1704482544: Client Thermometer closed its connection.
+1704482544: mosquitto version 2.0.18 terminating
+1704482544: Saving in-memory database to /mosquitto/data//mosquitto.db.

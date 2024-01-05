@@ -1,0 +1,37 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mqtt-and-sensors
+  labels:
+    app: mqtt-and-sensors
+spec:
+  containers:
+    - name: mosquitto
+      image: akanork/dhmas-mosquitto
+      ports:
+        - containerPort: 1883
+
+    - name: holter
+      image: akanork/dhmas-newest-holter
+
+    - name: oximeter
+      image: akanork/dhmas-newest-oximeter
+
+    - name: respirometer
+      image: akanork/dhmas-newest-respirometer
+
+    - name: thermometer
+      image: akanork/dhmas-newest-thermometer
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mosquitto
+spec:
+  selector:
+    app: mqtt-and-sensors
+  ports:
+    - protocol: TCP
+      port: 1883
+      targetPort: 1883

@@ -9,7 +9,7 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class GeneralInfo implements java.io.Serializable{
     @Id
-    private String patient_id;
+    private Integer patient_id;
     private Integer age;
     private String gender;
     private String diagnosis;
@@ -21,7 +21,7 @@ public class GeneralInfo implements java.io.Serializable{
     @Override
     public String toString() {
         return "GeneralInfo{" +
-                "patient_id='" + patient_id + '\'' +
+                "patient_id='" + patient_id.toString() + '\'' +
                 ", age=" + age +
                 ", gender='" + gender + '\'' +
                 ", diagnosis='" + diagnosis + '\'' +

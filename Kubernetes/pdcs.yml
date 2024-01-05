@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pdcs
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pdcs
+  template:
+    metadata:
+      labels:
+        app: pdcs
+    spec:
+      initContainers:
+        - name: wait-for-mqtt
+          image: appropriate/curl
+          command: ['sh', '-c', 'until nc -z mosquitto 1883; do echo waiting for mqtt; sleep 2; done;']
+      containers:
+        - name: pdcs
+          image: akanork/dhmas-newest-pdcs
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: pdcs
+spec:
+  selector:
+    app: pdcs
+  ports:
+    - protocol: TCP
+      port: 8083
+      targetPort: 8083

@@ -2,11 +2,20 @@ package ans;
 
 import ans.pojo.AlertMessage;
 import ans.pojo.AlertMessageRepository;
+import jakarta.annotation.PostConstruct;
+import org.apache.kafka.clients.consumer.ConsumerConfig;
+import org.apache.kafka.clients.consumer.ConsumerRecord;
+import org.apache.kafka.clients.consumer.ConsumerRecords;
+import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+
+import java.time.Duration;
+import java.util.Collections;
+import java.util.Properties;
 
 @Service
 public class KafkaConsumerService {
@@ -14,6 +23,7 @@ public class KafkaConsumerService {
     private final ObjectMapper objectMapper;
     private final EmailService emailService;
     private final AlertMessageRepository alertMessageRepository;
+    private KafkaConsumer<String, String> kafkaConsumer;
 
     @Autowired
     public KafkaConsumerService(EmailService emailService, AlertMessageRepository alertMessageRepository) {
@@ -23,10 +33,36 @@ public class KafkaConsumerService {
         this.objectMapper.registerModule(new JavaTimeModule());
     }
 
-    @KafkaListener(topics = "analysis-alert", groupId = "ans-group")
+    @PostConstruct
+    public void init() {
+        // Kafka Consumer Configuration
+        Properties properties = new Properties();
+        properties.setProperty("bootstrap.servers","kafka:29092");
+        properties.setProperty("group.id","ans");
+        properties.setProperty("enable.auto.commit","true");
+        properties.setProperty("auto.commit.interval.ms","1000");
+        properties.setProperty("key.deserializer","org.apache.kafka.common.serialization.StringDeserializer");
+        properties.setProperty("value.deserializer","org.apache.kafka.common.serialization.StringDeserializer");
+
+        kafkaConsumer = new KafkaConsumer<>(properties);
+        kafkaConsumer.subscribe(Collections.singletonList("analysis-alert"));
+        consumeMessages();
+    }
+
+    public void consumeMessages() {
+        new Thread(() -> {
+            while (true) {
+                ConsumerRecords<String, String> records = kafkaConsumer.poll(Duration.ofMillis(1000));
+                for (ConsumerRecord<String, String> record : records) {
+                    listen(record.value());
+                }
+            }
+        }).start();
+    }
+
     public void listen(String message) {
         try {
-//            System.out.println(message);
+            System.out.println(message);
             AlertMessage alertMessage = objectMapper.readValue(message, AlertMessage.class);
             System.out.println(alertMessage.getDate());
 
@@ -52,10 +88,10 @@ public class KafkaConsumerService {
         content.append("Health Alert for Patient ID: ").append(alertMessage.getPatientId()).append("\n\n");
 
         // Check and append specific alert reasons
-        if (alertMessage.getHeartRate() > 120 || alertMessage.getHeartRate() < 40) {
+        if (alertMessage.getHeartRate() > 120 || alertMessage.getHeartRate() < 90) {
             content.append("Abnormal Heart Rate Detected: ").append(alertMessage.getHeartRate()).append(" bpm\n");
         }
-        if (alertMessage.getRespiratoryRate() < 35) {
+        if (alertMessage.getRespiratoryRate() < 17 || alertMessage.getRespiratoryRate() > 26) {
             content.append("Abnormal Respiratory Rate Detected: ").append(alertMessage.getRespiratoryRate()).append(" breaths/min\n");
         }
         if (alertMessage.getSpO2() < 90) {
@@ -68,6 +104,5 @@ public class KafkaConsumerService {
 
         return content.toString();
     }
-
 
 }

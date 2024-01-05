@@ -1,0 +1,173 @@
+version: '3.8'
+
+services:
+  # Database service
+  database:
+    image: postgres:latest
+    container_name: database
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: health_database
+      POSTGRES_USER: db
+      POSTGRES_PASSWORD: 123456
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./Database/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  # Kafka service
+  zookeeper:
+    restart: always
+    container_name: zookeeper
+    image: docker.io/bitnami/zookeeper:3.8
+    ports:
+      - "2181:2181"
+    volumes:
+      - "zookeeper-volume:/bitnami"
+    environment:
+      - ALLOW_ANONYMOUS_LOGIN=yes
+  kafka:
+    restart: always
+    container_name: kafka
+    image: docker.io/bitnami/kafka:3.3
+    ports:
+      - "29092:29092"
+    expose:
+      - "9092"
+    volumes:
+      - "kafka-volume:/bitnami"
+    environment:
+      KAFKA_LISTENERS: PLAINTEXT://kafka:29092,PLAINTEXT_HOST://localhost:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:29092,PLAINTEXT_HOST://localhost:9092
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_CREATE_TOPICS: 'collection-analysis:1:1,analysis-alert:1:1'
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: 'true'
+    depends_on:
+      - zookeeper
+
+  # MQTT and Sensor services
+  mosquitto:
+    image: eclipse-mosquitto:latest
+    container_name: mosquitto
+    ports:
+      - "1883:1883"
+    volumes:
+      - ./MQTT/config:/mosquitto/config
+      - ./MQTT/data:/mosquitto/data
+      - ./MQTT/log:/mosquitto/log
+    restart: unless-stopped
+
+  holter:
+    build:
+      context: ./MQTT/clients/holter
+      dockerfile: Dockerfile
+    container_name: holter
+    tty: true
+    stdin_open: true
+    depends_on:
+      - mosquitto
+
+  oximeter:
+    build:
+      context: ./MQTT/clients/oximeter
+      dockerfile: Dockerfile
+    container_name: oximeter
+    tty: true
+    stdin_open: true
+    depends_on:
+      - mosquitto
+
+  respirometer:
+    build:
+      context: ./MQTT/clients/respirometer
+      dockerfile: Dockerfile
+    container_name: respirometer
+    tty: true
+    stdin_open: true
+    depends_on:
+      - mosquitto
+
+  thermometer:
+    build:
+      context: ./MQTT/clients/thermometer
+      dockerfile: Dockerfile
+    container_name: thermometer
+    tty: true
+    stdin_open: true
+    depends_on:
+      - mosquitto
+
+  # MailHog service
+  mailhog:
+    image: mailhog/mailhog:latest
+    container_name: mailhog
+    restart: always
+    ports:
+      - "1025:1025"
+      - "8025:8025"
+
+  # PDCS, HAS, ANS, PMS modules
+  pdcs:
+    build: ./PDCS
+    container_name: pdcs
+    ports:
+      - "8080:8080"
+    restart: always
+    depends_on:
+      - mosquitto
+      - holter
+      - oximeter
+      - respirometer
+      - thermometer
+      - kafka
+
+  has:
+    build: ./HAS
+    container_name: has
+    ports:
+      - "8085:8085"
+    restart: always
+    depends_on:
+      - database
+      - kafka
+
+  ans:
+    build: ./ANS
+    container_name: ans
+    ports:
+      - "8082:8082"
+    restart: always
+    depends_on:
+      - database
+      - kafka
+      - mailhog
+
+  pms:
+    build: ./PMS
+    container_name: pms
+    ports:
+      - "8083:8083"
+    restart: always
+    depends_on:
+      - database
+
+  frontend:
+    build: ./frontend
+    container_name: frontend
+    ports:
+      - "3000:3000"
+    restart: always
+    depends_on:
+      - database
+      - pms
+      - ans
+
+volumes:
+  pgdata:
+  kafka-volume:
+  zookeeper-volume:
+
+networks:
+  default:

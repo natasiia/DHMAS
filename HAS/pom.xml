@@ -50,12 +50,12 @@
             <version>1.18.30</version>
         </dependency>
 
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13.2</version>
-            <scope>test</scope>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>junit</groupId>-->
+<!--            <artifactId>junit</artifactId>-->
+<!--            <version>4.13.2</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>org.mybatis</groupId>
@@ -113,6 +113,20 @@
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+        </resources>
+
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -158,7 +172,7 @@
     </build>
 
     <properties>
-        <main.class>com.dhmas.has.HasApplication</main.class>
+        <main.class>com.dhmas.HAS.HasApplication</main.class>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

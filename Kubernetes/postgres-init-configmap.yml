@@ -1,0 +1,99 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgres-init-script
+data:
+  init.sql: |
+    -- Check if the database exists and create it if not
+    DO $$
+    BEGIN
+    IF NOT EXISTS (SELECT FROM pg_database WHERE datname = 'health_database') THEN
+    CREATE DATABASE health_database;
+    END IF;
+    END
+    $$;
+
+    -- Connect to the health_database
+    \c health_database;
+
+    -- SQL script to create the general_info table if it does not exist
+    DO $$
+    BEGIN
+    IF NOT EXISTS (SELECT * FROM information_schema.tables WHERE table_name = 'general_info') THEN
+    CREATE TABLE general_info (
+    patient_id SERIAL PRIMARY KEY,
+    age INT,
+    gender VARCHAR(10) CHECK (gender IN ('Male', 'Female')),
+    diagnosis VARCHAR(255) CHECK (diagnosis IN ('Heart Disease', 'Cancer', 'Diabetes', 'Influenza', 'Hypertension')),
+    medication VARCHAR(255) CHECK (medication IN ('Aspirin', 'Antibiotics', 'Chemotherapy', 'Statins', 'Insulin')),
+    insurance_type VARCHAR(50) CHECK (insurance_type IN ('Private', 'Uninsured', 'Medicaid', 'Medicare')),
+    treatment_duration INT,
+    email VARCHAR(255) NOT NULL
+    );
+
+    -- Insert initial data into general_info
+    INSERT INTO general_info (patient_id, age, gender, diagnosis, medication, insurance_type, treatment_duration, email)
+    VALUES
+    (1, 47, 'Female', 'Hypertension', 'Statins', 'Private', 330, 'schneideranthony@example.net'),
+    (2, 53, 'Male', 'Influenza', 'Statins', 'Medicare', 298, 'katherine77@example.com'),
+    (3, 91, 'Male', 'Heart Disease', 'Aspirin', 'Uninsured', 31, 'walkernicholas@example.org'),
+    (4, 69, 'Female', 'Hypertension', 'Aspirin', 'Medicaid', 56, 'vhall@example.org'),
+    (5, 99, 'Male', 'Diabetes', 'Insulin', 'Medicaid', 65, 'kevinjohnson@example.com'),
+    (6, 67, 'Female', 'Diabetes', 'Aspirin', 'Private', 258, 'lisa41@example.com'),
+    (7, 49, 'Female', 'Cancer', 'Chemotherapy', 'Medicare', 98, 'jenniferduncan@example.com'),
+    (8, 71, 'Male', 'Influenza', 'Insulin', 'Private', 153, 'butlerjonathan@example.com'),
+    (9, 45, 'Male', 'Diabetes', 'Chemotherapy', 'Medicare', 50, 'webbcynthia@example.org'),
+    (10, 52, 'Female', 'Cancer', 'Statins', 'Private', 346, 'rachelmartinez@example.org');
+
+    PERFORM setval('general_info_patient_id_seq', COALESCE((SELECT MAX(patient_id)+1 FROM general_info), 1), false);
+    -- ALTER SEQUENCE general_info_patient_id_seq RESTART WITH (SELECT count(*) FROM general_info);
+
+    END IF;
+    END
+    $$;
+
+    -- SQL script to create the status_localis table if it does not exist
+    DO $$
+    BEGIN
+    IF NOT EXISTS (SELECT * FROM information_schema.tables WHERE table_name = 'status_localis') THEN
+    CREATE TABLE status_localis (
+    patient_id INT NOT NULL,
+    date TIMESTAMP NOT NULL,
+    heart_rate FLOAT,
+    respiratory_rate INT,
+    SpO2 INT,
+    temperature FLOAT,
+    status VARCHAR(50) NOT NULL CHECK (status IN ('Normal', 'Abnormal')),
+    FOREIGN KEY (patient_id) REFERENCES general_info(patient_id),
+    id SERIAL PRIMARY KEY
+    );
+    END IF;
+    END
+    $$;
+
+    -- SQL script to create the alert_message table if it does not exist
+    DO $$
+    BEGIN
+    IF NOT EXISTS (SELECT * FROM information_schema.tables WHERE table_name = 'alert_message') THEN
+    CREATE TABLE alert_message (
+    id SERIAL PRIMARY KEY,
+    message TEXT,
+    patient_id INT NOT NULL,
+    age INT,
+    gender VARCHAR(10) CHECK (gender IN ('Male', 'Female')),
+    diagnosis VARCHAR(255),
+    medication VARCHAR(255),
+    insurance_type VARCHAR(50),
+    treatment_duration INT,
+    email VARCHAR(255),
+    date TIMESTAMP NOT NULL,
+    heart_rate FLOAT,
+    respiratory_rate INT,
+    SpO2 INT,
+    temperature FLOAT,
+    status VARCHAR(50) CHECK (status IN ('Normal', 'Abnormal')),
+    FOREIGN KEY (patient_id) REFERENCES general_info(patient_id)
+    );
+    END IF;
+    END
+    $$;

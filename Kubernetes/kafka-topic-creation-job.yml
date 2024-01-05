@@ -1,0 +1,17 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: kafka-topic-creation
+spec:
+  template:
+    spec:
+      containers:
+        - name: create-topics
+          image: confluentinc/cp-kafka:7.0.1
+          command: ["/bin/sh", "-c"]
+          args:
+            - |
+              until kafka-topics --create --bootstrap-server kafka-service:9092 --replication-factor 1 --partitions 1 --topic collection-analysis; do sleep 5; done
+              until kafka-topics --create --bootstrap-server kafka-service:9092 --replication-factor 1 --partitions 1 --topic analysis-alert; do sleep 5; done
+      restartPolicy: Never
+  backoffLimit: 6

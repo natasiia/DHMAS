@@ -13,6 +13,7 @@ import java.time.LocalDateTime;
 @Entity
 @JsonDeserialize(using = AlertMessageDeserializer.class)
 @SequenceGenerator(name="alert_message_seq", sequenceName="ALERT_MESSAGE_SEQ", allocationSize=1)
+@Table(name = "alert_message")
 public class AlertMessage {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator="alert_message_seq")
@@ -21,7 +22,7 @@ public class AlertMessage {
     private String message; // Email content
 
     @Column(name = "patient_id")
-    private String patientId;
+    private Integer patientId;
 
     private int age;
     private String gender;

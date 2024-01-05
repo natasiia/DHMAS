@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: holter
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: holter
+  template:
+    metadata:
+      labels:
+        app: holter
+    spec:
+      containers:
+        - name: holter
+          image: akanork/dhmas-newest-holter

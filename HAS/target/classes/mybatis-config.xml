@@ -17,15 +17,15 @@
 <!--            Use postgreSql-->
             <dataSource type="POOLED">
                 <property name="driver" value="org.postgresql.Driver"/>
-                <property name="url" value="jdbc:postgresql://localhost:5432/health_database"/>
+                <property name="url" value="jdbc:postgresql://database:5432/health_database"/>
                 <property name="username" value="db"/>
                 <property name="password" value="123456"/>
             </dataSource>
         </environment>
     </environments>
     <mappers>
-        <mapper resource="com/dhmas/has/mapper/patientstatus.xml"/>
-        <mapper resource="com/dhmas/has/mapper/GeneralInfoMapper.xml"/>
+        <mapper resource="PatientStatus.xml"/>
+        <mapper resource="GeneralInfoMapper.xml"/>
 
     </mappers>
 </configuration>

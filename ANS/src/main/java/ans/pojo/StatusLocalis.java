@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 public class StatusLocalis implements java.io.Serializable{
     @Id
     private Integer id;
-    private String patient_id;
+    private Integer patient_id;
     private LocalDateTime date;
     private float heart_rate;
     private Integer respiratory_rate;
@@ -23,7 +23,7 @@ public class StatusLocalis implements java.io.Serializable{
     private float temperature;
     private String status;
 
-    public StatusLocalis(String patient_id, LocalDateTime date, float heart_rate, Integer respiratory_rate, Integer spO2, float temperature, String status) {
+    public StatusLocalis(Integer patient_id, LocalDateTime date, float heart_rate, Integer respiratory_rate, Integer spO2, float temperature, String status) {
         this.patient_id = patient_id;
         this.date = date;
         this.heart_rate = heart_rate;
@@ -36,7 +36,7 @@ public class StatusLocalis implements java.io.Serializable{
     @Override
     public String toString() {
         return "StatusLocalis{" +
-                "patient_id=" + patient_id +
+                "patient_id=" + patient_id.toString() +
                 ", date=" + date +
                 ", heart_rate=" + heart_rate +
                 ", respiratory_rate=" + respiratory_rate +

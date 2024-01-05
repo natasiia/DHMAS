@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: postgres
+spec:
+  selector:
+    matchLabels:
+      app: postgres
+  template:
+    metadata:
+      labels:
+        app: postgres
+    spec:
+      containers:
+        - name: postgres
+          image: postgres:latest
+          env:
+            - name: POSTGRES_DB
+              value: "health_database"
+            - name: POSTGRES_USER
+              value: "db"
+            - name: POSTGRES_PASSWORD
+              value: "123456"
+          ports:
+            - containerPort: 5432
+          volumeMounts:
+            - name: init-script
+              mountPath: /docker-entrypoint-initdb.d
+      volumes:
+        - name: init-script
+          configMap:
+            name: postgres-init-script
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: database
+spec:
+  ports:
+    - port: 5432
+  selector:
+    app: postgres
