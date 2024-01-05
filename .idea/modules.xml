@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ANS/ANS.iml" filepath="$PROJECT_DIR$/ANS/ANS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/DHMAS.iml" filepath="$PROJECT_DIR$/.idea/DHMAS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PMS/PMS.iml" filepath="$PROJECT_DIR$/PMS/PMS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HAS/has.iml" filepath="$PROJECT_DIR$/HAS/has.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PDCS/pdcs.iml" filepath="$PROJECT_DIR$/PDCS/pdcs.iml" />
+    </modules>
+  </component>
+</project>
