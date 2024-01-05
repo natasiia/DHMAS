@@ -104,8 +104,8 @@ DHMAS system consists of five components:
 - After all pods are running, run `minikube service react-app --url`. You will see a URL after running.
 - Open the URL in the browser, and you will see the same website as in the Docker Version.
 
-### Report links
-
+### Report link
+https://github.com/natasiia/DHMAS/blob/main/Pioneers_Team_Report.pdf
 
 ### Video links
 1. Pioneers_DHMAS_video_docker_version
