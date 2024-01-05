@@ -108,3 +108,7 @@ DHMAS system consists of five components:
 
 
 ### Video links
+1. Pioneers_DHMAS_video_docker_version
+https://drive.google.com/file/d/1XPLILE_NIltcflIQ8xguKlPARRrTRHKh/view?usp=sharing
+2. Pioneers_DHMAS_video_Kubernetes_version
+https://drive.google.com/file/d/1K2aJC4XjDDh0O51lsYYfCE7ZrlY4Q8lF/view?usp=sharing
